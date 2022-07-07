@@ -1,0 +1,3 @@
+[submodule "ink-free"]
+	path = ink-free
+	url = https://github.com/chollinger93/ink-free
