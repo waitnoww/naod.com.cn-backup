@@ -8,7 +8,7 @@ type: "page"
 
 #### 专注于软件测试信息分享
 
-##### 网站基于 hexo 和 Github page 实现
+##### 网站基于 hugo 和 Github page 实现
 
 #### 微信公众号：
 
