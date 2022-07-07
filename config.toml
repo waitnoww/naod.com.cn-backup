@@ -12,7 +12,7 @@ copyright = "© Copyright www.naod.com.cn"
   posts = "/:year/:month/:title"
 
 [params]
-	subtitle = "Crisp, minimal, privacy-conscious personal [blog theme for Hugo](https://github.com/chollinger93/ink-free)"
+	subtitle = "专注于软件测试信息分享"
 
 	# Optional 64x64 avatar image.
 	#avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
@@ -35,7 +35,7 @@ copyright = "© Copyright www.naod.com.cn"
 	]
 
 	# Github base url
-  	github = "https://github.com/chollinger93/ink-free"
+  	github = "https://github.com/waitnoww"
 
 
 # Nav.
@@ -62,7 +62,7 @@ weight = 4
 [[params.social]]
 name = "Github"
 icon = "github"
-url = "https://github.com/chollinger93/"
+url = "https://github.com/waitnoww/"
 
 [[params.social]]
 name = "RSS"
