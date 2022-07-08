@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>测试用例设计方法-决策表 - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="测试用例设计方法-决策表">
+<meta itemprop="description" content="软件测试教程-如何用决策表去设计测试用例"><meta itemprop="datePublished" content="2018-01-04T13:34:41+00:00" />
+<meta itemprop="dateModified" content="2018-01-04T13:34:41+00:00" />
+<meta itemprop="wordCount" content="53">
+<meta itemprop="keywords" content="测试设计,测试相关,测试用例," /><meta property="og:title" content="测试用例设计方法-决策表" />
+<meta property="og:description" content="软件测试教程-如何用决策表去设计测试用例" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naod.com.cn/test-decision-table/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2018-01-04T13:34:41+00:00" />
+<meta property="article:modified_time" content="2018-01-04T13:34:41+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="测试用例设计方法-决策表"/>
+<meta name="twitter:description" content="软件测试教程-如何用决策表去设计测试用例"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://naod.com.cn/css/dark.css" />
+
+	<script src="https://naod.com.cn/js/feather.min.js"></script>
+	
+		<script src="https://naod.com.cn/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://naod.com.cn/">软件测试同学</a></h1>
+	<div class="site-description"><p>专注于软件测试信息分享</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/waitnoww/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">04</span>
+							<span class="rest">Jan 2018</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">测试用例设计方法-决策表</h1>
+				</div>
+			</div>
+
+			
+			
+					
+			<div class="markdown">
+				<p>等价划分和边界值分析技术通常应用于特定情况或输入。但是，如果输入的不同组合导致采取不同的操作，则使用等效分区和边界值分析可能更难以显示，这往往更侧重于用户界面。</p>
+<p>另外两种基于规范的软件测试技术，决策表和状态转换测试更侧重于业务逻辑或业务规则。</p>
+<p>一个决策表的处理（例如输入）的东西组合的好方法。该技术有时也称为“因果”表。</p>
+<p>tryqa 其原因在于存在一种称为“因果图形”的相关逻辑图表技术，它有时用于帮助推导决策表（迈尔斯将其描述为组合逻辑网络[Myers，1979]）。但是，大多数人发现使用[Copeland，2003]中描述的表更有用。</p>
+<p>决策表提供了一种表明复杂业务规则的系统方法，这对开发人员和测试人员都很有用。
+决策表可用于测试设计，无论它们是否在规范中使用，因为它们有助于测试人员探索必须正确实现业务规则的不同输入和其他软件状态组合的影响。
+它有助于开发人员做得更好，也可以带来更好的关系。测试组合可能是一个挑战，因为组合的数量通常很大。如果不是不可能，测试所有组合可能是不切实际的。我们必须对仅测试一小部分组合感到满意，但是要选择要测试哪些组合以及哪些组合要省略也很重要。如果您没有系统的方法来选择组合，则将使用任意子集，这可能导致无效的测试工作。
+如何使用决策表进行测试设计？
+第一项任务是确定一个合适的功能或子系统，它根据输入或事件的组合作出反应。系统不应包含太多输入，否则组合的数量将变得难以管理。</p>
+<p>最好通过将它们分成子集并一次处理一个子集来处理大量条件。</p>
+<p>一旦确定了需要组合的方面，然后将它们放入一个表中，列出了每个方面的所有True和False组合。</p>
+<p>让我们考虑贷款申请的一个例子，您可以在其中输入每月还款金额或您想要支付的年数（贷款期限）。</p>
+<p>如果同时输入两者，系统将在两者冲突时进行折衷。这两个条件是贷款金额和期限，因此我们将它们放在一个表格中（见表4.2）。</p>
+<p>表4.2空决策表：</p>
+<p>
+  <img src="https://ws1.sinaimg.cn/large/627422dely1g2tm4q7y80j20wk0cs0to.jpg" alt="img">
+
+</p>
+<p>接下来，我们将确定True和False的所有组合（参见表4.3）。有两个条件，每个条件可以是真或假，我们将有四个组合（两个组合的事物数量的功率）。</p>
+<p>请注意，如果我们有三个要结合的东西，我们将有八个组合，有四个东西，有16个，等等。</p>
+<p>这就是为什么一次处理小组合很好的原因。为了跟踪我们有哪些组合，我们将在底行交替使用True和False，在底行上方的行上放置两个Trues然后两个Falses，等等，</p>
+<p>所以最上面的行将包含所有的Trues，然后是所有的Falses（这个原则适用于所有这些表）。</p>
+<p>表4.3带有输入组合的决策表：
+
+  <img src="https://ws1.sinaimg.cn/large/627422dely1g2tm4q94hcj20x00fagmo.jpg" alt="img">
+
+</p>
+<p>在下一步中，我们现在将确定每种组合的正确结果（见表4.4）。在此示例中，我们可以输入两个字段中的一个或两个。每种组合有时被称为规则。</p>
+<p>表4.4包含组合和结果的决策表：
+
+  <img src="https://ws1.sinaimg.cn/large/627422dely1g2tm4p0bekj20y00kqmyu.jpg" alt="img">
+
+</p>
+<p>在这一点上，我们可能会意识到，如果客户没有在两个字段中的任何一个字段中输入任何内容，我们就没有想过会发生什么。</p>
+<p>该表突出显示了此示例的规范中未提及的组合。我们可以假设这种组合应该导致错误消息，因此我们需要添加另一个操作（参见表4.5）。</p>
+<p>这凸显了该技术的优势，可以发现规范中的遗漏和含糊之处。某些组合从规范中省略是很常见的; 因此，在审查测试基础时，这也是一种有价值的技术。</p>
+<p>表4。5具有附加结果的决策表：
+
+  <img src="https://ws1.sinaimg.cn/large/627422dely1g2tm4nsybrj20wy0oiwga.jpg" alt="img">
+
+</p>
+<p>现在，我们在此示例中稍作更改，以便不允许客户同时输入还款和期限。现在我们表的结果将会改变，因为如果输入两者，也应该有一条错误消息，所以它看起来像表4.6。</p>
+<p>表4。6变更结果的决策表：
+
+  <img src="https://ws1.sinaimg.cn/large/627422dely1g2tm4qlm41j20x00nuq4t.jpg" alt="img">
+
+</p>
+<p>您现在可能会注意到每列中只有一个“是”，即我们的操作是互斥的 - 每个条件组合只会发生一个操作。</p>
+<p>我们可以通过列出一行单元格中的操作以不同的方式表示这一点，如表4.7所示。请注意，如果任何组合产生多个操作，那么最好将它们显示为单独的行，而不是将它们组合成一行。</p>
+<p>表4.7一行结果的决策表：
+
+  <img src="https://ws1.sinaimg.cn/large/627422dely1g2tm4q36pzj20wy0kytai.jpg" alt="img">
+
+</p>
+<p>这种技术的最后一步是编写测试用例来练习表中的四个规则。</p>
+<p>信用卡示例：
+让我们再举一个例子。如果您是新客户，并且想要开设信用卡账户，那么有三个条件，首先您将获得今天所有购买的15％折扣，第二个如果您是现有客户并且持有会员卡，则获得10％的折扣和第三，如果你有优惠券，你今天可以获得20％的折扣（但它不能与&rsquo;新客户&rsquo;折扣一起使用）。</p>
+<p>如果适用，则添加折扣金额。如表4.8所示。</p>
+<p>表4.8信用卡示例的决策表</p>
+<p>
+  <img src="https://ws1.sinaimg.cn/large/627422dely1g2tm4yryswj215o0as48p.jpg" alt="img">
+
+</p>
+<p>在表4.8中，条件和操作列在左侧列中。决策表中的所有其他列均表示单独的规则，每个条件对应一个条件。</p>
+<p>我们可能会选择测试每个规则/组合，如果只有少数，那么通常就是这种情况。但是，如果规则/组合的数量很大，我们更有可能通过选择一个富子集进行测试来对它们进行抽样。</p>
+<p>现在让我们看看上面显示的信用卡决策表：</p>
+<p>请注意，我们已将X作为两个列（规则1和2）的折扣 - 这意味着不应发生此组合。根据上述条件，您既不能成为新客户，也不能持有会员卡。因此，应该有一条错误消息说明这一点。
+我们在规则3中做出了假设。由于优惠券的折扣大于新客户折扣，我们假设客户将选择20％而不是15％。我们无法添加它们，因为优惠券不能与上述条件中所述的“新客户”折扣一起使用。20％的行动是我们的假设，我们应该通过询问编写规范的人或用户来检查这个假设（以及我们做出的任何其他假设）是否正确。
+但是，对于规则5，我们可以添加折扣; 因为优惠券和会员卡折扣都应该适用（这是我们的假设）。
+规则4,6和7只有一种折扣，规则8没有折扣，所以0％。
+如果我们彻底应用这种技术，我们将对决策表的每个列或规则进行一次测试。这样做的好处是，我们可能会测试一些我们可能没有测试过但可能发现缺陷的组合。</p>
+<p>但是，如果我们有很多组合，那么测试每种组合可能是不可能或不明智的。如果我们有时间限制，我们可能没有时间测试所有组合。不要只是假设需要测试所有组合。</p>
+<p>优先考虑和测试最重要的组合总是更好。拥有全表有助于我们决定哪些组合应该测试，哪些组合不要测试。</p>
+<p>在上面的示例中，所有条件都是二进制的，即它们只有两个可能的值：True或False（或者我们可以说是或否）。</p>
+
+			</div>
+
+			<div class="tags">
+				
+			</div>
+
+			
+			<div class="back">
+				<a href="https://github.com/waitnoww/blob/master/content/test-decision-table.md" title="github"><i data-feather="github"></i> Edit this on GitHub</a>
+			</div>
+			
+			
+			<div class="back">
+				<a href="https://naod.com.cn/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+					
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2018  © Copyright 2022 www.naod.com.cn </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

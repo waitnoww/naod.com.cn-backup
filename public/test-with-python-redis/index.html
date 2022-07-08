@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>python操作redis - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="python操作redis">
+<meta itemprop="description" content="测试开发用python-python操作redis"><meta itemprop="datePublished" content="2020-03-10T10:02:30+00:00" />
+<meta itemprop="dateModified" content="2020-03-10T10:02:30+00:00" />
+<meta itemprop="wordCount" content="67">
+<meta itemprop="keywords" content="测试开发,python,测试工具开发," /><meta property="og:title" content="python操作redis" />
+<meta property="og:description" content="测试开发用python-python操作redis" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naod.com.cn/test-with-python-redis/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2020-03-10T10:02:30+00:00" />
+<meta property="article:modified_time" content="2020-03-10T10:02:30+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="python操作redis"/>
+<meta name="twitter:description" content="测试开发用python-python操作redis"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://naod.com.cn/css/dark.css" />
+
+	<script src="https://naod.com.cn/js/feather.min.js"></script>
+	
+		<script src="https://naod.com.cn/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://naod.com.cn/">软件测试同学</a></h1>
+	<div class="site-description"><p>专注于软件测试信息分享</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/waitnoww/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">10</span>
+							<span class="rest">Mar 2020</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">python操作redis</h1>
+				</div>
+			</div>
+
+			
+			
+					
+			<div class="markdown">
+				<h2 id="安装redis-模块">安装redis 模块</h2>
+<pre tabindex="0"><code>pip3 install redis
+</code></pre><h2 id="连接redis">连接redis</h2>
+<pre tabindex="0"><code># -*- coding: UTF-8 -*-
+# 引入redis模块
+import redis
+
+# 连接redis
+r = redis.Redis(host=&#39;redis_host&#39;, port=&#39;redis_host&#39;,&#39;password&#39;: &#39;redis_password&#39;,  decode_responses=True)  
+</code></pre><h2 id="不同redis数据类型操作">不同redis数据类型操作</h2>
+<h3 id="string类型操作">string类型操作</h3>
+<blockquote>
+<p>string类型在redis中存储格式为按照一个name对应一个value来存储的</p>
+</blockquote>
+<pre tabindex="0"><code># 插入key为python，value为helloworld的
+r.set(&#39;python&#39;,&#39;helloworld&#39;)
+# 查询刚才插入的key值
+print(r.get(&#39;python&#39;))
+# 修改key为python的value为helloworld1
+r.set(&#39;python&#39;,&#39;helloworld1&#39;)
+# 删除插入的key值
+r.delete(&#39;python&#39;)
+</code></pre><h3 id="hash类型操作">hash类型操作</h3>
+<blockquote>
+<p>hash类型在redis中存储格式为(name,key,value)</p>
+</blockquote>
+<ul>
+<li>
+<p>hget(name,key)：获取hash中的value</p>
+</li>
+<li>
+<p>hset(name,key,value)：在name对应的hash中设置一个键值对，不存在则创建否则修改</p>
+</li>
+<li>
+<p>hmset(name,mapping)：在name对应的hash中批量设置键值对</p>
+</li>
+<li>
+<p>hmget(name,keys,*args)：获取过个hash的key的值</p>
+</li>
+<li>
+<p>hgetall(name)：获取hash的所有键值对</p>
+</li>
+<li>
+<p>hlen(name)：获取hash中键值对的个数</p>
+</li>
+<li>
+<p>hkeys(name)：获取hash中所有keys的值</p>
+</li>
+<li>
+<p>hvals(name):获取hash中所有value的值</p>
+</li>
+<li>
+<p>hexists(name,key)：检查hash中是否存在key</p>
+</li>
+<li>
+<p>hdel(name,*key)：删除hash中的key</p>
+</li>
+</ul>
+<pre tabindex="0"><code># 插入name为python，key为3.8，value为3.8.1的hash值
+r.hset(&#39;python&#39;,&#39;3.8&#39;,&#39;3.8.1&#39;)
+# 查询刚才插入的key值
+print(r.hgetall(&#39;python&#39;))
+# 修改name为python key为3.8的value为3.8.2
+r.hset(&#39;python&#39;,&#39;3.8&#39;,&#39;3.8.2&#39;)
+# 删除插入的key值
+r.hdel(&#39;python&#39;,&#39;3.8&#39;)
+</code></pre><h3 id="list类型操作">list类型操作</h3>
+<blockquote>
+<p>待补充</p>
+</blockquote>
+<h3 id="set类型操作">set类型操作</h3>
+<blockquote>
+<p>待补充</p>
+</blockquote>
+
+			</div>
+
+			<div class="tags">
+				
+			</div>
+
+			
+			<div class="back">
+				<a href="https://github.com/waitnoww/blob/master/content/test-with-python-redis.md" title="github"><i data-feather="github"></i> Edit this on GitHub</a>
+			</div>
+			
+			
+			<div class="back">
+				<a href="https://naod.com.cn/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+					
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2020  © Copyright 2022 www.naod.com.cn </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

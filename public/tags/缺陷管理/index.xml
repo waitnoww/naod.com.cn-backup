@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>缺陷管理 on 软件测试同学</title>
+    <link>https://naod.com.cn/tags/%E7%BC%BA%E9%99%B7%E7%AE%A1%E7%90%86/</link>
+    <description>Recent content in 缺陷管理 on 软件测试同学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright 2022 www.naod.com.cn</copyright>
+    <lastBuildDate>Fri, 20 Mar 2020 09:55:17 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/%E7%BC%BA%E9%99%B7%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>测试人员复现BUG的一些思路</title>
+      <link>https://naod.com.cn/some-skill-for-bug/</link>
+      <pubDate>Fri, 20 Mar 2020 09:55:17 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/some-skill-for-bug/</guid>
+      <description>对于测试人员，被开发人员要求复现BUG是家常便饭。特别针对在测试过程中低概率出现的BUG，会让我们觉得难以着手。下面我就谈一谈我的一些思路吧。 我认为一个BUG是由三个要素构成的：环境、数据、操作步骤。那么如何从这三点入手，总结了以下思路：
+1.BUG本地“再现” （1）确定问题发生的环境，比如哪个浏览器的哪个版本发生的此现象。 （2）使用导致问题出现的数据。 （3）按照之前的操作步骤进行操作，使BUG再次出现
+2.分析本地复现BUG需要的环境、数据、步骤，找出根本原因 （1）查看其他浏览器在相同数据，同样操作步骤的情况下是否仍旧会使该BUG出现。明确是否是特定浏览器，还是在其他浏览器都会出现。
+（2）是否是数据的特殊性造成的问题？是单个数据？还是相似的一类数据？还是所有的数据？
+（3）剖析操作步骤，尽量找到最短路径。
+a.分解操作步骤
+b.分析每一步骤的前提条件、期望结果。找到导致BUG产生的可能的必要操作步骤。如果期望结果与实际结果不同，猜测造成的原因，这时，可以通过抓包等一些工具来帮助分析其中的原因。
+c.思考产生问题的可能原因和相关的操作步骤，明确一下产生的步骤，进行尝试，验证自己的想法是否正确。
+3.如何在其他环境复现BUG 为了进一步明确问题的普遍性，确定自己环境的没有特殊的设置，需要在其他电脑上按照总结出来的产生bug的三要素，来重现BUG。对于通过上述步骤没有出现BUG的机器，要进一步追踪原因，查看为什么没有发生问题。 个人经验、之前分析步骤时的一些猜测。对于web端来说，一般可以从浏览器的配置，设置等出发。比较两个环境的不同。
+4.分析、寻找BUG的最短路径 结合2.3两步的结论，同时结合自己的分析和判断寻找到最短路径。找到产生问题的根本原因。当然，如果因为技术限制，可以找其他人员一起查看原因，最终一定要定位到产生问题的根本原因。并要总结和记录。</description>
+    </item>
+    
+  </channel>
+</rss>

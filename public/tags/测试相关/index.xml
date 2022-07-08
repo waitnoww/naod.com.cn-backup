@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>软件测试同学</title>
-    <link>https://naod.com.cn/</link>
-    <description>Recent content on 软件测试同学</description>
+    <title>测试相关 on 软件测试同学</title>
+    <link>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E7%9B%B8%E5%85%B3/</link>
+    <description>Recent content in 测试相关 on 软件测试同学</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright 2022 www.naod.com.cn</copyright>
-    <lastBuildDate>Sun, 24 May 2020 09:40:00 +0000</lastBuildDate><atom:link href="https://naod.com.cn/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://naod.com.cn/about/</link>
-      <pubDate>Wed, 06 Jul 2022 21:37:58 +0530</pubDate>
-      
-      <guid>https://naod.com.cn/about/</guid>
-      <description>软件测试同学网站 专注于软件测试信息分享 网站基于 hugo 和 Github page 实现 微信公众号： </description>
-    </item>
-    
+    <lastBuildDate>Sun, 24 May 2020 09:40:00 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在RaspberryPi上安装Jenkins</title>
       <link>https://naod.com.cn/raspberrypi-jenkins/</link>
@@ -34,20 +25,6 @@
       <guid>https://naod.com.cn/git-awsome-1/</guid>
       <description>[TOC]
 Git安装 推荐官网安装，上链接：https://gitscm.com/downloads/ 默认设置安装即可 配置ssh 打开安装完成git中的git bash 输入ssh-keygen -t rsa -C &amp;lsquo;xxx@xxx.com&amp;rsquo; （xxx@xxx.com是你的邮箱地址） 一路按回车键，等待命令执行完成 然后找到你电脑目录中打开~/.ssh/id_rsa.pub文件 复制id_rsa.pub文件中的内容到github或者gitlab的ssh key中即可完成设置 Git命令 # 在当前目录新建一个Git代码库 $ git init # 新建一个目录，将其初始化为Git代码库 $ git init [project-name] # 下载一个项目和它的整个代码历史 $ git clone [url] # 添加指定文件到暂存区 $ git add [file1] [file2] ... # 添加指定目录到暂存区，包括子目录 $ git add [dir] # 添加当前目录的所有文件到暂存区 $ git add . # 添加每个变化前，都会要求确认 # 对于同一个文件的多处变化，可以实现分次提交 $ git add -p # 删除工作区文件，并且将这次删除放入暂存区 $ git rm [file1] [file2] .</description>
-    </item>
-    
-    <item>
-      <title>使用python的turtle来画图</title>
-      <link>https://naod.com.cn/python-turtle-for-any/</link>
-      <pubDate>Thu, 02 Apr 2020 09:16:06 +0000</pubDate>
-      
-      <guid>https://naod.com.cn/python-turtle-for-any/</guid>
-      <description>首先是安装turtle包，安装教程在这里
-然后开始画图吧
-默认窗口 源代码如下：
-import turtle import time # 默认窗口 def new(): turtle.dot(10, &amp;#39;red&amp;#39;) turtle.write(&amp;#39;(0, 0), zfont = (8)&amp;#39;) turtle.ht() # 这里sleep是为了让窗口展示时间延长，大家可以自由调整 time.sleep(5) if __name__ == &amp;#34;__main__&amp;#34;: new() 运行结果： 画个简版太阳 源代码如下：
-import turtle import time # 太阳 def sun(): turtle.color(&amp;#39;red&amp;#39;) turtle.penup() turtle.goto(250, 200) turtle.pendown() turtle.begin_fill() turtle.circle(50) turtle.end_fill() turtle.color(&amp;#39;black&amp;#39;, &amp;#39;blue&amp;#39;) turtle.begin_fill() # 这里sleep是为了让窗口展示时间延长，大家可以自由调整 time.sleep(5) if __name__ == &amp;#34;__main__&amp;#34;: sun() 运行结果： 画纸飞机 源代码如下：
-import turtle import time # 飞机 def plane(): turtle.penup() turtle.</description>
     </item>
     
     <item>
@@ -172,36 +149,6 @@ V模型的缺点： 非常僵硬，最不灵活。
     </item>
     
     <item>
-      <title>从0到1搭建接口自动化测试框架-python2&amp;python3共存</title>
-      <link>https://naod.com.cn/python-api-test-2/</link>
-      <pubDate>Sun, 22 Mar 2020 19:13:35 +0000</pubDate>
-      
-      <guid>https://naod.com.cn/python-api-test-2/</guid>
-      <description>很多同学之前的电脑系统都装过python2，很多老程序也是只兼容python2的，所以不想卸载系统的python2，想要python2和python3共存，我也是一样的想法。
-下面是windows系统python2&amp;amp;python3共存方案步骤：
-1.安装python3
-备注：安装方法参考我上一篇博文
-2.修改python3目录下python.exe为python3.exe，修改python3目录下pythonw.exe为pythonw3.exe
-备注：因为博主我之前都是使用python2，所以修改了python3目录
-3.配置pip3
-python3 -m pip install --upgrade pip --force-reinstall 4.命令行验证
-（1）命令行输入python，正常展示python2的版本且无报错则ok （2）命令行输入python3，正常展示python3的版本且无报错则ok （3）命令行输入pip -v，正常展示python2的pip版本且无报错则ok （4）命令行输入pip3 -v，正常展示python3的pip版本且无报错则ok 5.python包安装
-（1）python2安装，pip2 install XXX （2）python3安装，pip3 install XXX 6.pycharm和python3开发环境设置
-在项目设置中打开project Interpreter选择已有的运行环境，路径选择电脑上的python3安装路径即可</description>
-    </item>
-    
-    <item>
-      <title>从0到1搭建接口自动化测试框架-python环境搭建</title>
-      <link>https://naod.com.cn/python-api-test-1/</link>
-      <pubDate>Sat, 21 Mar 2020 20:55:40 +0000</pubDate>
-      
-      <guid>https://naod.com.cn/python-api-test-1/</guid>
-      <description>网上搭建python环境的教程很多，我推荐菜鸟教程的Python3 环境搭建.
-下面我列举一下主要步骤，以windows系统为例(苹果电脑python环境搭建有问题的直接评论下留言，我会一一帮你解答）
-python安装包下载 1.进入python官网 2.选择downloads-windows 3.选择最新release的python3版本，我以python3.8.3举例 4.进入页面后，选择下载 Windows x86-64 executable installer 5.等待安装包下载完成 安装python包 1.直接点击运行 2.选择默认安装install now 3.记得勾选Add Python 3.8 to PATH（若不勾选，就需自己设置python的path环境，所以建议勾选） 4.按照安装程序指示，将python安装完成 windows命令行执行python 1.进入windows系统cmd命令行界面 2.输入python，未报错且展示了你安装的python3.8.2版本号,说明python3环境安装成功,若展示的不是你安装的版本号，有可能你系统安装了多个python版本，后面我会单独出文章介绍如何一个系统多个python版本共存 3.输入简单python程序 print(hello_python) 4.按下回车键执行展示hello_python，代表python程序执行成功 python自带IDLE windows系统程序列表搜索python，选择IDLE，就可以展示python的脚本边界页面 python开发工具 推荐PyCharm,好用，推荐pycharm官网安装 windows系统python环境变量配置 右键点击&amp;quot;计算机&amp;quot;，然后点击&amp;quot;属性&amp;quot;，选择&amp;quot;高级系统设置&amp;quot; 然后选择&amp;quot;系统变量&amp;quot;窗口下面的&amp;quot;Path&amp;quot;,在&amp;quot;Path&amp;quot;行，添加python安装路径即可（注意：安装路径直接用分号&amp;quot;；&amp;ldquo;分割开） 保存后，重新打开cmd命令行，输入命令&amp;quot;python&amp;rdquo;，展示python版本号无报错表明环境变量设置成功。 </description>
-    </item>
-    
-    <item>
       <title>测试人员复现BUG的一些思路</title>
       <link>https://naod.com.cn/some-skill-for-bug/</link>
       <pubDate>Fri, 20 Mar 2020 09:55:17 +0000</pubDate>
@@ -238,34 +185,6 @@ c.思考产生问题的可能原因和相关的操作步骤，明确一下产生
 5、部署 测试成功后，产品将交付/部署给客户使用。
 一旦产品被提供给客户，他们将首先做β测试。如果需要进行任何更改，或者发现了任何错误，那么他们将向工程团队报告。一旦进行了这些更改，或者bug修复了，那么最终的部署就会发生。
 6、维护 一旦客户开始使用开发的系统，那么实际的问题就会出现，需要不时地解决。这一过程中对开发产品的注意被称为维护。</description>
-    </item>
-    
-    <item>
-      <title>python3下json串转urlencode</title>
-      <link>https://naod.com.cn/python-json-to-urlencode/</link>
-      <pubDate>Wed, 18 Mar 2020 09:33:42 +0000</pubDate>
-      
-      <guid>https://naod.com.cn/python-json-to-urlencode/</guid>
-      <description>昨天在编写一个python自动化脚本时，其中一个需求是把json串进行urlencode，看起来很简单的操作 想要的结果是：
-{&amp;#34;name&amp;#34;:&amp;#34;dengnao&amp;#34;,&amp;#34;pwd&amp;#34;:&amp;#34;123456&amp;#34;} 转换如下：
-%7B%22name%22%3A%22dengnao%22%2C%22pwd%22%3A%22123456%22%7D 常规首先的代码如下： 运行结果为：
-name=dengnao&amp;amp;pwd=123456 看起来没有满足结果
-尝试使用urllib.parse.quote
-直接报错了
-test = urllib.parse.quote(json_data) File &amp;#34;/Users/waitnoww/opt/anaconda3/lib/python3.7/urllib/parse.py&amp;#34;, line 834, in quote return quote_from_bytes(string, safe) File &amp;#34;/Users/waitnoww/opt/anaconda3/lib/python3.7/urllib/parse.py&amp;#34;, line 859, in quote_from_bytes raise TypeError(&amp;#34;quote_from_bytes() expected bytes&amp;#34;) TypeError: quote_from_bytes() expected bytes 百度一波后，才发现quote必须是字符串
-urllib.quote(s, safe=&amp;#39;/&amp;#39;) 接受参数s为字符串，safe是指定某字符不被urlencode，默认为&amp;#39;/&amp;#39;， 那就把传入的json串转成字符串 运行结果如下：
-%7B%22name%22%3A%20nn%2C%20%22pwd%22%3A%20%22123456%22%7D 确实urlencode了，但是name并没有参数化 再来参数化代码 运行结果如下：
-%7B%22name%22%3A%20dengnao%2C%20%22pwd%22%3A%20%22123456%22%7D 还是对不上,对应的name参数没有加引号，再改一波代码 终于得到正确的运行结果
-%7B%22name%22%3A%22dengnao%22%2C%22pwd%22%3A%22123456%22%7D </description>
-    </item>
-    
-    <item>
-      <title>python3安装turtle时出错解决办法</title>
-      <link>https://naod.com.cn/python-install-turtle-error/</link>
-      <pubDate>Mon, 16 Mar 2020 09:43:53 +0000</pubDate>
-      
-      <guid>https://naod.com.cn/python-install-turtle-error/</guid>
-      <description>前些天看到有个用python3来画飞机的教程，就想来尝试一下。教程中使用的是turtle包，那么首先我们就要来按照turtle，结果第一步就失败了，当我使用pip3安装的时候，出现如下报错 出现报错，阅读了一下报错信息，先使用搜索引擎查找一下报错信息，发现报错信息搜索不到正确答案。可能是我搜索的关键词不对，然后我去turtle包的介绍页看了一下 https://pypi.org/project/turtle 就想说尝试一下下载包来安装，于是下载了turtle 0.0.2进行安装，结果解压之后又报错了，查看报错信息如下 根据提示 python setup.py egg_info查看详细报错信息 进入turtle下载文件夹下打开setup.py 文件，看看 40 行，发现少了括号 加上括号，还是报错，原来是没有指定修改目录导致,那就指定目录安装，安装成功 总结一下：仔细阅读报错信息，分析根本原因</description>
     </item>
     
     <item>
@@ -377,56 +296,6 @@ Verification makes sure that the product is designed to deliver all functionalit
     </item>
     
     <item>
-      <title>python操作redis</title>
-      <link>https://naod.com.cn/test-with-python-redis/</link>
-      <pubDate>Tue, 10 Mar 2020 10:02:30 +0000</pubDate>
-      
-      <guid>https://naod.com.cn/test-with-python-redis/</guid>
-      <description>安装redis 模块 pip3 install redis 连接redis # -*- coding: UTF-8 -*- # 引入redis模块 import redis # 连接redis r = redis.Redis(host=&amp;#39;redis_host&amp;#39;, port=&amp;#39;redis_host&amp;#39;,&amp;#39;password&amp;#39;: &amp;#39;redis_password&amp;#39;, decode_responses=True) 不同redis数据类型操作 string类型操作 string类型在redis中存储格式为按照一个name对应一个value来存储的
-# 插入key为python，value为helloworld的 r.set(&amp;#39;python&amp;#39;,&amp;#39;helloworld&amp;#39;) # 查询刚才插入的key值 print(r.get(&amp;#39;python&amp;#39;)) # 修改key为python的value为helloworld1 r.set(&amp;#39;python&amp;#39;,&amp;#39;helloworld1&amp;#39;) # 删除插入的key值 r.delete(&amp;#39;python&amp;#39;) hash类型操作 hash类型在redis中存储格式为(name,key,value)
-hget(name,key)：获取hash中的value
-hset(name,key,value)：在name对应的hash中设置一个键值对，不存在则创建否则修改
-hmset(name,mapping)：在name对应的hash中批量设置键值对
-hmget(name,keys,*args)：获取过个hash的key的值
-hgetall(name)：获取hash的所有键值对
-hlen(name)：获取hash中键值对的个数
-hkeys(name)：获取hash中所有keys的值
-hvals(name):获取hash中所有value的值
-hexists(name,key)：检查hash中是否存在key
-hdel(name,*key)：删除hash中的key
-# 插入name为python，key为3.8，value为3.8.1的hash值 r.hset(&amp;#39;python&amp;#39;,&amp;#39;3.8&amp;#39;,&amp;#39;3.8.1&amp;#39;) # 查询刚才插入的key值 print(r.hgetall(&amp;#39;python&amp;#39;)) # 修改name为python key为3.8的value为3.8.2 r.hset(&amp;#39;python&amp;#39;,&amp;#39;3.8&amp;#39;,&amp;#39;3.8.2&amp;#39;) # 删除插入的key值 r.hdel(&amp;#39;python&amp;#39;,&amp;#39;3.8&amp;#39;) list类型操作 待补充
-set类型操作 待补充</description>
-    </item>
-    
-    <item>
-      <title>python使用163邮箱发邮件</title>
-      <link>https://naod.com.cn/test-with-python-2/</link>
-      <pubDate>Mon, 09 Mar 2020 16:14:11 +0000</pubDate>
-      
-      <guid>https://naod.com.cn/test-with-python-2/</guid>
-      <description># -*- coding: UTF-8 -*- # 引入邮件对象 import smtplib from email.header import Header from email.mime.text import MIMEText # 设置163邮箱的smtp服务 # 邮箱发送地址 sender = &amp;#39;python@163.com&amp;#39; # 设置发送邮箱密码(163为授权码) password = &amp;#39;python&amp;#39; # 设置邮件接收地址 receivers = &amp;#39;python@qq.com&amp;#39; # 设置163服务器地址 server_host = &amp;#39;smtp.163.com&amp;#39; # 邮件正文 msg = MIMEText(&amp;#39;hello, send from Python...&amp;#39;, &amp;#39;plain&amp;#39;, &amp;#39;utf-8&amp;#39;) msg[&amp;#39;From&amp;#39;] = sender msg[&amp;#39;To&amp;#39;] = receivers # 邮件标题 msg[&amp;#39;Subject&amp;#39;] = Header(&amp;#39;python脚本邮件&amp;#39;, &amp;#39;utf-8&amp;#39;).encode() try: server = smtplib.SMTP_SSL(server_host, 465) # 开启邮件服务操作日志 1为开启 0为关闭 server.</description>
-    </item>
-    
-    <item>
-      <title>python操作数据库</title>
-      <link>https://naod.com.cn/test-with-python-1/</link>
-      <pubDate>Mon, 09 Mar 2020 16:05:50 +0000</pubDate>
-      
-      <guid>https://naod.com.cn/test-with-python-1/</guid>
-      <description># -*- coding: UTF-8 -*- import MySQLdb # 连接数据库 db = MySQLdb.connect(&amp;#34;db_ip&amp;#34;, &amp;#34;db_username&amp;#34;, &amp;#34;db_password&amp;#34;, &amp;#34;db_name&amp;#34;, charset=&amp;#39;utf8&amp;#39; ) # 使用cursor()方法获取操作游标 cursor = db.cursor() # SQL查询语句(可输入增删改查sql语句) sql = &amp;#34;SELECT * FROM python&amp;#34; # noinspection PyBroadException try: cursor.execute(sql) # 执行SQL语句 results = cursor.fetchall() # 获取所有记录列表 for row in results: comments = row[1] ip = row[3] print (&amp;#34;python1=%s,python2=%s&amp;#34; % \ (&amp;#34;python1&amp;#34;, &amp;#34;python2&amp;#34;)) except: print &amp;#34;Error: 没查询到数据&amp;#34; # 关闭数据库连接 db.close() </description>
-    </item>
-    
-    <item>
-      <title>hexo同时托管在github和coding</title>
-      <link>https://naod.com.cn/hexo-in-github-coding/</link>
-      <pubDate>Sun, 08 Mar 2020 13:55:16 +0000</pubDate>
-      
-      <guid>https://naod.com.cn/hexo-in-github-coding/</guid>
-      <description>前提： 已拥有hexo博客 已拥有github仓库 已拥有coding page仓库 1。修改配置文件 找到hexo目录下站点配置文件 _config.yml
-deploy: type: git repo: github: https://github.com/waitnoww/waitnoww.github.com.git,master coding: https://git.coding.net/waitnoww/www.dengnao.com.cn.git,coding-pages 2.hexo安装部署插件： npm install hexo-deployer-git --save 3.尝试一下 hexo clean hexo g hexo d </description>
-    </item>
-    
-    <item>
       <title>测试建模：Google ACC</title>
       <link>https://naod.com.cn/google-acc-for-test/</link>
       <pubDate>Fri, 06 Mar 2020 14:00:50 +0000</pubDate>
@@ -510,29 +379,6 @@ QCon十年回顾：软件正在定义世界：暂缺 蚂蚁金服十五年技术
 下载地址： http://recordit.co/
 后话 录屏工具很多，够用好用就行，可不要贪杯。
 下一期会介绍markdown软件和相关语法介绍，让你专注于文字内容本身，而不被格式样式所束缚。</description>
-    </item>
-    
-    <item>
-      <title>如何用Django搭建一个博客[一]</title>
-      <link>https://naod.com.cn/django-blog-1/</link>
-      <pubDate>Mon, 08 Jul 2019 13:55:16 +0000</pubDate>
-      
-      <guid>https://naod.com.cn/django-blog-1/</guid>
-      <description>克隆项目到本地 https://github.com/waitnoww/www.dengnao.com.cn 创建并激活虚拟环境
-在命令行进入到保存虚拟环境的文件夹，输入如下命令创建并激活虚拟环境：
-virtualenv blogproject_env # windows blogproject_env\Scripts\activate # linux source blogproject_env/bin/activate 安装项目依赖
-如果使用了虚拟环境，确保激活并进入了虚拟环境，在命令行进入项目所在的 django-blog-tutorial 文件夹，运行如下命令：
-pip install -r requirements.txt 迁移数据库
-在上一步所在的位置运行如下命令迁移数据库：
-python manage.py migrate 创建后台管理员账户
-在上一步所在的位置运行如下命令创建后台管理员账户
-python manage.py createsuperuser 运行开发服务器
-在上一步所在的位置运行如下命令开启开发服务器：
-python manage.py runserver 在浏览器输入：127.0.0.1:8000
-进入后台发布文章
-在浏览器输入：127.0.0.1:8000/admin
-使用第 5 步创建的后台管理员账户登录
-enjoy it！</description>
     </item>
     
     <item>

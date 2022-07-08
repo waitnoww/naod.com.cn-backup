@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>《软件测试实践-微软技术专家经验总结》读书笔记-3 - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="《软件测试实践-微软技术专家经验总结》读书笔记-3">
+<meta itemprop="description" content="读书笔记分享系列-《软件测试实践-微软技术专家经验总结》读书笔记-3"><meta itemprop="datePublished" content="2016-10-02T18:20:23+00:00" />
+<meta itemprop="dateModified" content="2016-10-02T18:20:23+00:00" />
+<meta itemprop="wordCount" content="132">
+<meta itemprop="keywords" content="测试书籍,读书笔记,测试相关," /><meta property="og:title" content="《软件测试实践-微软技术专家经验总结》读书笔记-3" />
+<meta property="og:description" content="读书笔记分享系列-《软件测试实践-微软技术专家经验总结》读书笔记-3" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naod.com.cn/read-book-microsoft-3/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2016-10-02T18:20:23+00:00" />
+<meta property="article:modified_time" content="2016-10-02T18:20:23+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="《软件测试实践-微软技术专家经验总结》读书笔记-3"/>
+<meta name="twitter:description" content="读书笔记分享系列-《软件测试实践-微软技术专家经验总结》读书笔记-3"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://naod.com.cn/css/dark.css" />
+
+	<script src="https://naod.com.cn/js/feather.min.js"></script>
+	
+		<script src="https://naod.com.cn/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://naod.com.cn/">软件测试同学</a></h1>
+	<div class="site-description"><p>专注于软件测试信息分享</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/waitnoww/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">02</span>
+							<span class="rest">Oct 2016</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">《软件测试实践-微软技术专家经验总结》读书笔记-3</h1>
+				</div>
+			</div>
+
+			
+			
+					
+			<div class="markdown">
+				<h2 id="测试技术分类系统">测试技术分类系统：</h2>
+<hr>
+<blockquote>
+<p>Cem Kaner-测试技术分类系统。测试技术会从7个方面对测试过程进行指导：范围-测试的对象；覆盖-测试的程度；测试者-由谁来执行测试；风险-测试要去发现的潜在问题；活动-测试如何执行；评估和测试先知-如何评价测试是否通过；结果导向-测试的目标。</p>
+</blockquote>
+<h3 id="六要素测试分类系统">六要素测试分类系统：</h3>
+<hr>
+<h4 id="一基于覆盖的测试技术关注测试的范围和覆盖">一、基于覆盖的测试技术关注测试的范围和覆盖。</h4>
+<p>典型的测试技术如下：</p>
+<ul>
+<li>
+<p>功能测试  &ndash;覆盖产品的功能</p>
+</li>
+<li>
+<p>功能或特性的集成测试 &ndash;覆盖功能之间的交互</p>
+</li>
+<li>
+<p>漫游测试 &ndash;覆盖指定的一组测试对象</p>
+</li>
+<li>
+<p>等价类分析 &ndash;覆盖所有的等价类</p>
+</li>
+<li>
+<p>边界测试 &ndash;覆盖边界值和邻近区域</p>
+</li>
+<li>
+<p>最佳代表测试 &ndash;要求从众多测试用例中选择最有代表性的测试用例，常见的例子包括用户最可    能使用的数据、给产品最大挑战的数据、最能暴露风险的数据等。</p>
+</li>
+<li>
+<p>域测试 &ndash;从一个数值集合中选择测试输入数据（如等价类、边界值&hellip;）,选择典型数据</p>
+</li>
+<li>
+<p>测试想法目录 &ndash;包括测试想法列表、质量特性列表、缺陷目录等启发式想法集合。测试人员要依次检查每个想法，选择合适的想法来设计具体的测试。</p>
+</li>
+<li>
+<p>逻辑表达式 &ndash;覆盖逻辑表达式的所有可能输入</p>
+</li>
+<li>
+<p>多变量测试 &ndash;测试多个变量的取值组合，组合测试时一种多变量测试</p>
+</li>
+<li>
+<p>状态变迁测试 &ndash;覆盖状态机中所有的变迁</p>
+</li>
+<li>
+<p>用户界面测试 &ndash;覆盖所有用户可访问的页面元素</p>
+</li>
+<li>
+<p>基于规格说明的测试 &ndash;检查规格说明的所有陈述得到正确的实现</p>
+</li>
+<li>
+<p>基于需求的测试 &ndash;检查所有需求被正确的实现</p>
+</li>
+<li>
+<p>依从性测试 &ndash;检查软件符合所有需要满足的法律和约定</p>
+</li>
+<li>
+<p>配置测试 &ndash;覆盖所有或典型的软硬件配置组合</p>
+</li>
+<li>
+<p>本地化测试 &ndash;覆盖所有被本地化的元素，包括界面字符串、日期格式、货币格式、字符集等。</p>
+</li>
+</ul>
+<h4 id="二基于测试者的测试技术关注谁来执行测试">二、基于测试者的测试技术关注谁来执行测试。</h4>
+<ul>
+<li>
+<p>用户测试 &ndash;让实际用户测试产品。</p>
+</li>
+<li>
+<p>Alpha测试 &ndash;让产品的早期用户（公司同事等）试用产品。</p>
+</li>
+<li>
+<p>Beta测试 &ndash;让一批实际用户测试产品</p>
+</li>
+<li>
+<p>缺陷大扫除 &ndash;邀请项目团队的所有人员参与测试。</p>
+</li>
+<li>
+<p>专家测试 &ndash;邀请领域专家和测试人员结对测试</p>
+</li>
+<li>
+<p>结对测试  &ndash;让测试人员和测试人员结对、测试人员和程序员结对，从而产生更多差异化的测试想法。</p>
+</li>
+<li>
+<p>内部试用 &ndash;让项目团队在日常工作中使用自己开发的产品，从而尽早发现实际用户会遇到的问题。</p>
+</li>
+<li>
+<p>本地化测试 &ndash;让熟悉目标市场文化的人来测试软件。</p>
+</li>
+</ul>
+<h4 id="三基于风险的测试技术关注潜在问题">三、基于风险的测试技术关注潜在问题。</h4>
+<ul>
+<li>
+<p>边界测试 &ndash;关注软件在处理边界值时很可能出错的风险</p>
+</li>
+<li>
+<p>快速测试 &ndash;针对一组典型的软件错误实施攻击</p>
+</li>
+<li>
+<p>结束测试 &ndash;利用输入约束、输出约束、计算约束和数据约束对软件进行测试。这些约束往往涉及软件能力的边界，会暴露软件的不足。</p>
+</li>
+<li>
+<p>逻辑表达式 &ndash;关注多个条件变量的组合，以检查软件能否处理一些罕见的情况。</p>
+</li>
+<li>
+<p>压力测试 &ndash;关注软件如何应对远远超出正常工作量的负荷，此时一些隐藏的缺陷很可能会暴露。</p>
+</li>
+<li>
+<p>负载测试 &ndash;关注软件能否有效地利用资源去处理工作负荷。其针对的风险是软件不能合理地使用资源，当工作负荷还没有到达预期上限时，它已经占用了太多的资源，且处理速度变得很慢。</p>
+</li>
+<li>
+<p>性能测试 &ndash;关注软件能否在可接受的时间内完成计算任务。其针对的风险是软件的反应速度不能满足用户的期望。</p>
+</li>
+<li>
+<p>基于历史的测试 &ndash;要求测试人员分析先前版本中所发现的错误，识别出可能再次复现的缺陷，利用它们去设计测试。其针对的风险是程序员会犯同样的错误，或者某些缺陷描述了业务或技术面临的根本性困难，很难彻底解决。</p>
+</li>
+<li>
+<p>基于风险的多变量测试 &ndash;从风险的角度测试多个变量的取值集合。</p>
+</li>
+<li>
+<p>可用性测试 &ndash;检查软件是否容易学习和使用。其关注的风险是糟糕的软件设计让用户感到挫折，以致他们会使用竞争对手的产品。</p>
+</li>
+<li>
+<p>配置和兼容性测试 &ndash;检查软件在不同软硬件平台上的表现，所针对的风险是产品可能在某些平台上失败。</p>
+</li>
+<li>
+<p>互操作性测试 &ndash;检查软件和相关系统的交互。因为几个系统通常由不同的团队开发，他们对交互协议可能有不同的解读，所以系统交互总是会暴露出各种复杂的问题。</p>
+</li>
+<li>
+<p>长序列测试 &ndash;反复且随机地运行一组测试用例。因为测试序列漫长且覆盖面广，它可能暴露内存泄漏、竞态条件、悬挂指针等问题。</p>
+</li>
+</ul>
+<h4 id="四基于活动的测试技术关注如何执行测试">四、基于活动的测试技术关注如何执行测试。</h4>
+<ul>
+<li>
+<p>游击测试 &ndash;测试人员在固定的时间盒内，对软件的固定区域实施基于风险的测试。</p>
+</li>
+<li>
+<p>两因素组合测试 &ndash;测试人员需要生成符合两因素组合覆盖标准的测试数据。通常测试人员会利用组合测试工具生成测试数据。</p>
+</li>
+<li>
+<p>随机测试 &ndash;利用随机数生成器去产生测试数据、安排测试顺序或选择测试对象。</p>
+</li>
+<li>
+<p>用例测试 &ndash;根据用例或序列图来设计测试序列，以覆盖软件的操作序列</p>
+</li>
+<li>
+<p>情景测试 &ndash;创建一个或一组故事来测试软件在故事场景中的表现</p>
+</li>
+<li>
+<p>安装测试 &ndash;在不同的平台上安装和卸载软件，并检查操作结果</p>
+</li>
+<li>
+<p>回归测试 &ndash;运行已有的测试用例来再次测试相同的功能</p>
+</li>
+<li>
+<p>长序列测试 &ndash;要求测试整晚运行或持续几天，以发现一些短时间测试不能发现的问题。</p>
+</li>
+<li>
+<p>猴子测试 &ndash;要求测试人员构建自动化测试程序，来随机地、持续地、自动地测试产品。</p>
+</li>
+<li>
+<p>性能测试 &ndash;要求测试人员识别用户使用产品的典型模式，确定需要评估的性能指标，然后构造出相应的测试流程去考察软件的性能。</p>
+</li>
+</ul>
+<h4 id="五基于评估的测试技术关注如何哦按段测试通过">五、基于评估的测试技术关注如何哦按段测试通过。</h4>
+<ul>
+<li>
+<p>功能等价测试 &ndash;比较被测软件的行为和参考软件（例如已发布的上一版软件）的行为。如果被测软件的行为与参考软件不一致，那么它很可能出现错误。</p>
+</li>
+<li>
+<p>数学先知 &ndash;根据数学规则判断测试结果的对错。例如，三角函数、求平方根、矩阵专职等计算的结果都需要满足数学定理和计算法则。</p>
+</li>
+<li>
+<p>约束检查 &ndash;根据一组规则判断测试是否通过。例如，测试随机数生成函数时，测试人员很难判断每一个输出是否正确。他可以持续调用改函数，收集一大批随机数结果，然后分许这批数据。根据数据分布足够均匀，不存在明显的规律，那么该函数的质量就较好；若果数据分布呈现出某种规律，以致测试人员可以预测下一次输出的取值，那么该函数还需要改进。</p>
+</li>
+<li>
+<p>自检验数据 &ndash;包含可以用于校验的数据。例如，为了暴露对数据的异常修改，测试人员计算了数据的哈希值，让它随数据在系统中传播。每经过一个模块后，测试程序会重新计算数据的哈希值，并与先前保存的值进行比较。如果两个值不同，那么数据被该模块篡改。</p>
+</li>
+<li>
+<p>比较已保存的结果 &ndash;通过比较前后两个版本产生的数据，来侦测新版本可能引入的错误。</p>
+</li>
+<li>
+<p>比较规格说明文档或其他权威文档 &ndash;根据权威文档来判断软件的行为是否准确。</p>
+</li>
+<li>
+<p>基于诊断的测试 &ndash;会使用软件的调试功能或一些调试辅助工具。当调试功能被打开或辅助工具被启用时，这些面向诊断的代码会持续检查产品的状态。当测试人员运行测试时，它们可以发现产品的异常状态，如内存泄漏、句柄泄漏、未处理系统调用错误等，并报告给测试人员。</p>
+</li>
+<li>
+<p>可检查的错误模型 &ndash;使用测试人员构建的状态机为测试先知。测试程序调用软件接口，以驱动状态变迁，然后比较软件的实际状态和预期状态，以检查可能的错误。</p>
+</li>
+</ul>
+<h4 id="六结果导向的测试技术专注于特定目标或文档">六、结果导向的测试技术专注于特定目标或文档。</h4>
+<ul>
+<li>
+<p>构建检验 &ndash;其目标是判断当前构建是否足够好，能否提供给测试小组或更广泛的用户去测试。</p>
+</li>
+<li>
+<p>确认测试 &ndash;运行精心设计的确认测试用例，其目标是证明软件满足预先定义的要求。</p>
+</li>
+<li>
+<p>用户接受（验收）测试 &ndash;运行用户指定货认可的一批测试用例，其目标是证明软件达到了用户可接受的标准。</p>
+</li>
+<li>
+<p>认证测试 &ndash;要求测试小组提供证据以表明产品或产品制造过程满足某个认证标准。</p>
+</li>
+</ul>
+
+			</div>
+
+			<div class="tags">
+				
+			</div>
+
+			
+			<div class="back">
+				<a href="https://github.com/waitnoww/blob/master/content/read-book-microsoft-3.md" title="github"><i data-feather="github"></i> Edit this on GitHub</a>
+			</div>
+			
+			
+			<div class="back">
+				<a href="https://naod.com.cn/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+					
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2016  © Copyright 2022 www.naod.com.cn </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

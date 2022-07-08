@@ -6,77 +6,194 @@
     <description>Recent content in Tags on 软件测试同学</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© Copyright www.naod.com.cn</copyright>
-    <lastBuildDate>Fri, 03 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© Copyright 2022 www.naod.com.cn</copyright>
+    <lastBuildDate>Sun, 24 May 2020 09:40:00 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>css</title>
-      <link>https://naod.com.cn/tags/css/</link>
-      <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
+      <title>jenkins</title>
+      <link>https://naod.com.cn/tags/jenkins/</link>
+      <pubDate>Sun, 24 May 2020 09:40:00 +0000</pubDate>
       
-      <guid>https://naod.com.cn/tags/css/</guid>
+      <guid>https://naod.com.cn/tags/jenkins/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>html</title>
-      <link>https://naod.com.cn/tags/html/</link>
-      <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
+      <title>raspberrypi</title>
+      <link>https://naod.com.cn/tags/raspberrypi/</link>
+      <pubDate>Sun, 24 May 2020 09:40:00 +0000</pubDate>
       
-      <guid>https://naod.com.cn/tags/html/</guid>
+      <guid>https://naod.com.cn/tags/raspberrypi/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>markdown</title>
-      <link>https://naod.com.cn/tags/markdown/</link>
-      <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
+      <title>测试工具</title>
+      <link>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Sun, 24 May 2020 09:40:00 +0000</pubDate>
       
-      <guid>https://naod.com.cn/tags/markdown/</guid>
+      <guid>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>themes</title>
-      <link>https://naod.com.cn/tags/themes/</link>
-      <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
+      <title>测试相关</title>
+      <link>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E7%9B%B8%E5%85%B3/</link>
+      <pubDate>Sun, 24 May 2020 09:40:00 +0000</pubDate>
       
-      <guid>https://naod.com.cn/tags/themes/</guid>
+      <guid>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E7%9B%B8%E5%85%B3/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Procrastinating</title>
-      <link>https://naod.com.cn/tags/procrastinating/</link>
-      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      <title>python</title>
+      <link>https://naod.com.cn/tags/python/</link>
+      <pubDate>Thu, 02 Apr 2020 09:16:06 +0000</pubDate>
       
-      <guid>https://naod.com.cn/tags/procrastinating/</guid>
+      <guid>https://naod.com.cn/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Space</title>
-      <link>https://naod.com.cn/tags/space/</link>
-      <pubDate>Sun, 18 Mar 2018 12:13:30 +0530</pubDate>
+      <title>测试工具开发</title>
+      <link>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Thu, 02 Apr 2020 09:16:06 +0000</pubDate>
       
-      <guid>https://naod.com.cn/tags/space/</guid>
+      <guid>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E5%BC%80%E5%8F%91/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Primer</title>
-      <link>https://naod.com.cn/tags/primer/</link>
-      <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
+      <title>测试开发</title>
+      <link>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Thu, 02 Apr 2020 09:16:06 +0000</pubDate>
       
-      <guid>https://naod.com.cn/tags/primer/</guid>
+      <guid>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>todo</title>
-      <link>https://naod.com.cn/tags/todo/</link>
-      <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
+      <title>测试基础</title>
+      <link>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Wed, 01 Apr 2020 09:40:22 +0000</pubDate>
       
-      <guid>https://naod.com.cn/tags/todo/</guid>
+      <guid>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试理论</title>
+      <link>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/</link>
+      <pubDate>Wed, 01 Apr 2020 09:40:22 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>软件测试</title>
+      <link>https://naod.com.cn/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Wed, 01 Apr 2020 09:40:22 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试设计</title>
+      <link>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Fri, 20 Mar 2020 09:55:17 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>缺陷管理</title>
+      <link>https://naod.com.cn/tags/%E7%BC%BA%E9%99%B7%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Fri, 20 Mar 2020 09:55:17 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/tags/%E7%BC%BA%E9%99%B7%E7%AE%A1%E7%90%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>缺陷管理工具</title>
+      <link>https://naod.com.cn/tags/%E7%BC%BA%E9%99%B7%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Sun, 15 Mar 2020 15:25:23 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/tags/%E7%BC%BA%E9%99%B7%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>工作思考</title>
+      <link>https://naod.com.cn/tags/%E5%B7%A5%E4%BD%9C%E6%80%9D%E8%80%83/</link>
+      <pubDate>Fri, 13 Mar 2020 09:07:21 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/tags/%E5%B7%A5%E4%BD%9C%E6%80%9D%E8%80%83/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试经历</title>
+      <link>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E7%BB%8F%E5%8E%86/</link>
+      <pubDate>Fri, 13 Mar 2020 09:07:21 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E7%BB%8F%E5%8E%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试书籍</title>
+      <link>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E4%B9%A6%E7%B1%8D/</link>
+      <pubDate>Thu, 12 Mar 2020 09:48:56 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E4%B9%A6%E7%B1%8D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>读书笔记</title>
+      <link>https://naod.com.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Thu, 12 Mar 2020 09:48:56 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>其他</title>
+      <link>https://naod.com.cn/tags/%E5%85%B6%E4%BB%96/</link>
+      <pubDate>Sun, 08 Mar 2020 13:55:16 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/tags/%E5%85%B6%E4%BB%96/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>博客建设</title>
+      <link>https://naod.com.cn/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/</link>
+      <pubDate>Sun, 08 Mar 2020 13:55:16 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试建模</title>
+      <link>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%BB%BA%E6%A8%A1/</link>
+      <pubDate>Fri, 06 Mar 2020 14:00:50 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%BB%BA%E6%A8%A1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试用例</title>
+      <link>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/</link>
+      <pubDate>Fri, 06 Mar 2020 14:00:50 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/</guid>
       <description></description>
     </item>
     

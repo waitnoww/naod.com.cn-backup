@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>《软件测试实践-微软技术专家经验总结》读书笔记-2 - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="《软件测试实践-微软技术专家经验总结》读书笔记-2">
+<meta itemprop="description" content="读书笔记分享系列-《软件测试实践-微软技术专家经验总结》读书笔记-2"><meta itemprop="datePublished" content="2016-10-02T09:37:23+00:00" />
+<meta itemprop="dateModified" content="2016-10-02T09:37:23+00:00" />
+<meta itemprop="wordCount" content="56">
+<meta itemprop="keywords" content="测试书籍,读书笔记,测试相关," /><meta property="og:title" content="《软件测试实践-微软技术专家经验总结》读书笔记-2" />
+<meta property="og:description" content="读书笔记分享系列-《软件测试实践-微软技术专家经验总结》读书笔记-2" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naod.com.cn/read-book-microsoft-2/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2016-10-02T09:37:23+00:00" />
+<meta property="article:modified_time" content="2016-10-02T09:37:23+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="《软件测试实践-微软技术专家经验总结》读书笔记-2"/>
+<meta name="twitter:description" content="读书笔记分享系列-《软件测试实践-微软技术专家经验总结》读书笔记-2"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://naod.com.cn/css/dark.css" />
+
+	<script src="https://naod.com.cn/js/feather.min.js"></script>
+	
+		<script src="https://naod.com.cn/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://naod.com.cn/">软件测试同学</a></h1>
+	<div class="site-description"><p>专注于软件测试信息分享</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/waitnoww/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">02</span>
+							<span class="rest">Oct 2016</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">《软件测试实践-微软技术专家经验总结》读书笔记-2</h1>
+				</div>
+			</div>
+
+			
+			
+					
+			<div class="markdown">
+				<h2 id="测试文档">测试文档</h2>
+<h4 id="移交文档">移交文档</h4>
+<blockquote>
+<p>测试人员离开项目时，需要移交的测试文档</p>
+</blockquote>
+<ul>
+<li>被测对象概述</li>
+<li>文档链接（需求文档，实际文档，测试设计规约等文档的链接）</li>
+<li>基本测试想法(列举10条最重要的测试想法)</li>
+<li>经验和技巧（阐述测试人员在测试实战中积累的经验与技巧，包括好用的工具，未公开的设置，快速的调试手段）</li>
+<li>已知局限（介绍被测试对象的局限和缺陷）</li>
+<li>测试自动化（介绍可用的自动化工具和测试用例）</li>
+<li>测试数据（介绍可用的测试数据文件，测试数据库）</li>
+</ul>
+<h4 id="何处可以增加测试设计的深度">何处可以增加测试设计的深度</h4>
+<h5 id="--最可能发生错误的区域">- 最可能发生错误的区域</h5>
+<blockquote>
+<p>如果测试人员知道哪些区域可能存在大量缺陷，就在那里仔细的测试。缺陷往往聚集在一起，应该尽早测试这些高危区域</p>
+</blockquote>
+<h5 id="--错误最明显的区域">- 错误最明显的区域</h5>
+<blockquote>
+<p>从用户的角度看待产品，尝试去发现那些用户最容易发现的错误。这让测试人员专注于对用户最重要的情景和功能。</p>
+</blockquote>
+<h5 id="--最常使用的程序区域">- 最常使用的程序区域</h5>
+<blockquote>
+<p>测试用户最常使用的功能，以提高软件的稳定性</p>
+</blockquote>
+<h5 id="--最有差别的测试区域">- 最有差别的测试区域</h5>
+<blockquote>
+<p>产品想要赢得用户需要提供独一无二的特性，这些特性被称为软件的“卖点”。测试人员需要仔细测试这些区域，因为在卖点上失败将导致竞争失利。</p>
+</blockquote>
+<h5 id="--最难修正的区域">- 最难修正的区域</h5>
+<blockquote>
+<p>许多软件缺陷没有被修正是因为没有时间完成高难度的修复。应该尽早测试难以修正的区域。以便程序员有更多的时间去修复缺陷</p>
+</blockquote>
+<h5 id="--测试人员最理解的区域">- 测试人员最理解的区域</h5>
+<blockquote>
+<p>通过测试一个熟悉的区域和它的周边区域，测试人员能够快速的测完一个局部，并更好的理解产品。这有助于它更有效的进入下一个区域</p>
+</blockquote>
+<h2 id="测试技术">测试技术</h2>
+<blockquote>
+<p>测试是为了发现错误而执行程序的过程，那么测试技术就是运行程序并判断其对错的具体方法</p>
+</blockquote>
+<h4 id="测试技术会从7个方面对测试过程进行指导">测试技术会从7个方面对测试过程进行指导</h4>
+<h5 id="--范围">- 范围</h5>
+<blockquote>
+<p>测试的对象。例如功能测试的测试对象通常是一个具体的功能或特性</p>
+</blockquote>
+<h5 id="--覆盖">- 覆盖</h5>
+<blockquote>
+<p>测试的程度。例如如果测试时间有限，测试人员通常只能测试一个功能的主要场景；如果测试时间充裕，他会测试更多的场景和操作方式，以扩大测试覆盖。通常，测试人员会统一考虑测试的范围和覆盖。</p>
+</blockquote>
+<h5 id="--测试者">- 测试者</h5>
+<blockquote>
+<p>是谁来执行测试</p>
+</blockquote>
+<h5 id="--风险">- 风险</h5>
+<blockquote>
+<p>测试要去发现的潜在问题，例如Google ACC所重点侦测的风险是产品的功能不能提供有竞争力的特性。</p>
+</blockquote>
+<h5 id="--活动">- 活动</h5>
+<blockquote>
+<p>测试如何执行。例如两因素组合测试规定测试用例要覆盖任意两个因素的取值组合。</p>
+</blockquote>
+<h5 id="--评估和测试先知">- 评估和测试先知</h5>
+<blockquote>
+<p>如歌评价测试是否通过。例如测试人员会使用软件的先前版本来判断软件的行为是否向后兼容。</p>
+</blockquote>
+<h5 id="--结果导向">- 结果导向</h5>
+<blockquote>
+<p>测试的目标。例如BVT(Build verification testing)的目标是检查构建是否足够稳定可用于更大范围的测试</p>
+</blockquote>
+
+			</div>
+
+			<div class="tags">
+				
+			</div>
+
+			
+			<div class="back">
+				<a href="https://github.com/waitnoww/blob/master/content/read-book-microsoft-2.md" title="github"><i data-feather="github"></i> Edit this on GitHub</a>
+			</div>
+			
+			
+			<div class="back">
+				<a href="https://naod.com.cn/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+					
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2016  © Copyright 2022 www.naod.com.cn </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

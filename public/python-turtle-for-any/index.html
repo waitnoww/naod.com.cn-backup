@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>使用python的turtle来画图 - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="使用python的turtle来画图">
+<meta itemprop="description" content="测试开发用python-使用python的turtle来画图"><meta itemprop="datePublished" content="2020-04-02T09:16:06+00:00" />
+<meta itemprop="dateModified" content="2020-04-02T09:16:06+00:00" />
+<meta itemprop="wordCount" content="571">
+<meta itemprop="keywords" content="测试开发,python,测试工具开发," /><meta property="og:title" content="使用python的turtle来画图" />
+<meta property="og:description" content="测试开发用python-使用python的turtle来画图" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naod.com.cn/python-turtle-for-any/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2020-04-02T09:16:06+00:00" />
+<meta property="article:modified_time" content="2020-04-02T09:16:06+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用python的turtle来画图"/>
+<meta name="twitter:description" content="测试开发用python-使用python的turtle来画图"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://naod.com.cn/css/dark.css" />
+
+	<script src="https://naod.com.cn/js/feather.min.js"></script>
+	
+		<script src="https://naod.com.cn/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://naod.com.cn/">软件测试同学</a></h1>
+	<div class="site-description"><p>专注于软件测试信息分享</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/waitnoww/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">02</span>
+							<span class="rest">Apr 2020</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">使用python的turtle来画图</h1>
+				</div>
+			</div>
+
+			
+			
+			<aside class="toc">
+				<header>
+				<h2>Contents</h2>
+				</header>
+				<nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+			</aside>
+			
+					
+			<div class="markdown">
+				<p>首先是安装turtle包，安装教程<a href="https://www.dengnao.com.cn/post/python-install-turtle-error.html">在这里</a></p>
+<p>然后开始画图吧</p>
+<h4 id="默认窗口">默认窗口</h4>
+<p>源代码如下：</p>
+<pre tabindex="0"><code>import turtle
+import time
+
+
+# 默认窗口
+def new():
+    turtle.dot(10, &#39;red&#39;)
+    turtle.write(&#39;(0, 0), zfont = (8)&#39;)
+    turtle.ht()
+    # 这里sleep是为了让窗口展示时间延长，大家可以自由调整
+    time.sleep(5)
+
+if __name__ == &#34;__main__&#34;:
+    new()
+</code></pre><p>运行结果：
+
+  <img src="https://tva1.sinaimg.cn/large/00831rSTgy1gdf5vlle31j30v30u0jsj.jpg" alt="默认窗口">
+
+</p>
+<h4 id="画个简版太阳">画个简版太阳</h4>
+<p>源代码如下：</p>
+<pre tabindex="0"><code>import turtle
+import time
+
+
+# 太阳
+def sun():
+    turtle.color(&#39;red&#39;)
+    turtle.penup()
+    turtle.goto(250, 200)
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.circle(50)
+    turtle.end_fill()
+    turtle.color(&#39;black&#39;, &#39;blue&#39;)
+    turtle.begin_fill()
+    # 这里sleep是为了让窗口展示时间延长，大家可以自由调整
+    time.sleep(5)
+
+if __name__ == &#34;__main__&#34;:
+    sun()
+</code></pre><p>运行结果：
+
+  <img src="https://tva1.sinaimg.cn/large/00831rSTgy1gdf5xzn7mwj30uy0u00tc.jpg" alt="默认窗口">
+
+</p>
+<h4 id="画纸飞机">画纸飞机</h4>
+<p>源代码如下：</p>
+<pre tabindex="0"><code>import turtle
+import time
+
+
+# 飞机
+def plane():
+    turtle.penup()
+    turtle.home()
+    turtle.pendown()
+    turtle.pensize(5)
+    turtle.goto(-300, 150)
+    turtle.goto(100, 50)
+    turtle.goto(0, 0)
+    turtle.end_fill()
+    turtle.goto(-30, -125)
+    turtle.goto(-50, -50)
+    turtle.begin_fill()
+    turtle.goto(-300, 150)
+    turtle.goto(-125, -125)
+    turtle.goto(-50, -50)
+    turtle.goto(-30, -125)
+    turtle.goto(-85, -85)
+    turtle.end_fill()
+    # 这里sleep是为了让窗口展示时间延长，大家可以自由调整
+    time.sleep(5)
+
+if __name__ == &#34;__main__&#34;:
+    plane()
+</code></pre><p>运行结果：
+
+  <img src="https://tva1.sinaimg.cn/large/00831rSTgy1gdf60i8g1cj30v90u0jsl.jpg" alt="默认窗口">
+
+</p>
+<h4 id="画线条">画线条</h4>
+<p>源代码如下：</p>
+<pre tabindex="0"><code>import turtle
+import time
+
+
+# 线条
+def lines():
+    turtle.pensize(3)
+    turtle.penup()
+    turtle.goto(75, 25)
+    turtle.pendown()
+    turtle.goto(200, 0)
+    turtle.penup()
+    turtle.goto(50, -5)
+    turtle.pendown()
+    turtle.goto(250, -30)
+    turtle.penup()
+    turtle.goto(10, -80)
+    turtle.pendown()
+    turtle.goto(100, -150)
+    turtle.penup()
+    turtle.goto(-80, -125)
+    turtle.pendown()
+    turtle.goto(120, -200)
+    turtle.ht()
+    # 这里sleep是为了让窗口展示时间延长，大家可以自由调整
+    time.sleep(5)
+
+if __name__ == &#34;__main__&#34;:
+    lines()
+</code></pre><p>运行结果：
+
+  <img src="https://tva1.sinaimg.cn/large/00831rSTgy1gdf61rb8tyj30uv0u0t98.jpg" alt="默认窗口">
+
+</p>
+<h4 id="画小猪佩奇">画小猪佩奇</h4>
+<p>源代码如下：</p>
+<pre tabindex="0"><code>import turtle as t
+
+
+# 小猪佩奇
+def pig():
+    t.pensize(4)
+    t.hideturtle()
+    t.colormode(255)
+    t.color((255, 155, 192), &#34;pink&#34;)
+    t.setup(840, 500)
+    t.speed(10)
+
+    # 鼻子
+    t.pu()
+    t.goto(-100, 100)
+    t.pd()
+    t.seth(-30)
+    t.begin_fill()
+    a = 0.4
+    for i in range(120):
+        if 0 &lt;= i &lt; 30 or 60 &lt;= i &lt; 90:
+            a = a + 0.08
+            t.lt(3)  # 向左转3度
+            t.fd(a)  # 向前走a的步长
+        else:
+            a = a - 0.08
+            t.lt(3)
+            t.fd(a)
+            t.end_fill()
+
+    t.pu()
+    t.seth(90)
+    t.fd(25)
+    t.seth(0)
+    t.fd(10)
+    t.pd()
+    t.pencolor(255, 155, 192)
+    t.seth(10)
+    t.begin_fill()
+    t.circle(5)
+    t.color(160, 82, 45)
+    t.end_fill()
+
+    t.pu()
+    t.seth(0)
+    t.fd(20)
+    t.pd()
+    t.pencolor(255, 155, 192)
+    t.seth(10)
+    t.begin_fill()
+    t.circle(5)
+    t.color(160, 82, 45)
+    t.end_fill()
+
+    # 头
+    t.color((255, 155, 192), &#34;pink&#34;)
+    t.pu()
+    t.seth(90)
+    t.fd(41)
+    t.seth(0)
+    t.fd(0)
+    t.pd()
+    t.begin_fill()
+    t.seth(180)
+    t.circle(300, -30)
+    t.circle(100, -60)
+    t.circle(80, -100)
+    t.circle(150, -20)
+    t.circle(60, -95)
+    t.seth(161)
+    t.circle(-300, 15)
+    t.pu()
+    t.goto(-100, 100)
+    t.pd()
+    t.seth(-30)
+    a = 0.4
+    for i in range(60):
+        if 0 &lt;= i &lt; 30 or 60 &lt;= i &lt; 90:
+            a = a + 0.08
+            t.lt(3)  # 向左转3度
+            t.fd(a)  # 向前走a的步长
+        else:
+            a = a - 0.08
+            t.lt(3)
+            t.fd(a)
+            t.end_fill()
+
+    # 耳朵
+    t.color((255, 155, 192), &#34;pink&#34;)
+    t.pu()
+    t.seth(90)
+    t.fd(-7)
+    t.seth(0)
+    t.fd(70)
+    t.pd()
+    t.begin_fill()
+    t.seth(100)
+    t.circle(-50, 50)
+    t.circle(-10, 120)
+    t.circle(-50, 54)
+    t.end_fill()
+
+    t.pu()
+    t.seth(90)
+    t.fd(-12)
+    t.seth(0)
+    t.fd(30)
+    t.pd()
+    t.begin_fill()
+    t.seth(100)
+    t.circle(-50, 50)
+    t.circle(-10, 120)
+    t.circle(-50, 56)
+    t.end_fill()
+
+    # 眼睛
+    t.color((255, 155, 192), &#34;white&#34;)
+    t.pu()
+    t.seth(90)
+    t.fd(-20)
+    t.seth(0)
+    t.fd(-95)
+    t.pd()
+    t.begin_fill()
+    t.circle(15)
+    t.end_fill()
+
+    t.color(&#34;black&#34;)
+    t.pu()
+    t.seth(90)
+    t.fd(12)
+    t.seth(0)
+    t.fd(-3)
+    t.pd()
+    t.begin_fill()
+    t.circle(3)
+    t.end_fill()
+
+    t.color((255, 155, 192), &#34;white&#34;)
+    t.pu()
+    t.seth(90)
+    t.fd(-25)
+    t.seth(0)
+    t.fd(40)
+    t.pd()
+    t.begin_fill()
+    t.circle(15)
+    t.end_fill()
+
+    t.color(&#34;black&#34;)
+    t.pu()
+    t.seth(90)
+    t.fd(12)
+    t.seth(0)
+    t.fd(-3)
+    t.pd()
+    t.begin_fill()
+    t.circle(3)
+    t.end_fill()
+
+    # 腮
+    t.color((255, 155, 192))
+    t.pu()
+    t.seth(90)
+    t.fd(-95)
+    t.seth(0)
+    t.fd(65)
+    t.pd()
+    t.begin_fill()
+    t.circle(30)
+    t.end_fill()
+
+    # 嘴
+    t.color(239, 69, 19)
+    t.pu()
+    t.seth(90)
+    t.fd(15)
+    t.seth(0)
+    t.fd(-100)
+    t.pd()
+    t.seth(-80)
+    t.circle(30, 40)
+    t.circle(40, 80)
+
+    # 身体
+    t.color(&#34;red&#34;, (255, 99, 71))
+    t.pu()
+    t.seth(90)
+    t.fd(-20)
+    t.seth(0)
+    t.fd(-78)
+    t.pd()
+    t.begin_fill()
+    t.seth(-130)
+    t.circle(100, 10)
+    t.circle(300, 30)
+    t.seth(0)
+    t.fd(230)
+    t.seth(90)
+    t.circle(300, 30)
+    t.circle(100, 3)
+    t.color((255, 155, 192), (255, 100, 100))
+    t.seth(-135)
+    t.circle(-80, 63)
+    t.circle(-150, 24)
+    t.end_fill()
+
+    # 手
+    t.color((255, 155, 192))
+    t.pu()
+    t.seth(90)
+    t.fd(-40)
+    t.seth(0)
+    t.fd(-27)
+    t.pd()
+    t.seth(-160)
+    t.circle(300, 15)
+    t.pu()
+    t.seth(90)
+    t.fd(15)
+    t.seth(0)
+    t.fd(0)
+    t.pd()
+    t.seth(-10)
+    t.circle(-20, 90)
+
+    t.pu()
+    t.seth(90)
+    t.fd(30)
+    t.seth(0)
+    t.fd(237)
+    t.pd()
+    t.seth(-20)
+    t.circle(-300, 15)
+    t.pu()
+    t.seth(90)
+    t.fd(20)
+    t.seth(0)
+    t.fd(0)
+    t.pd()
+    t.seth(-170)
+    t.circle(20, 90)
+
+    # 脚
+    t.pensize(10)
+    t.color((240, 128, 128))
+    t.pu()
+    t.seth(90)
+    t.fd(-75)
+    t.seth(0)
+    t.fd(-180)
+    t.pd()
+    t.seth(-90)
+    t.fd(40)
+    t.seth(-180)
+    t.color(&#34;black&#34;)
+    t.pensize(15)
+    t.fd(20)
+
+    t.pensize(10)
+    t.color((240, 128, 128))
+    t.pu()
+    t.seth(90)
+    t.fd(40)
+    t.seth(0)
+    t.fd(90)
+    t.pd()
+    t.seth(-90)
+    t.fd(40)
+    t.seth(-180)
+    t.color(&#34;black&#34;)
+    t.pensize(15)
+    t.fd(20)
+
+    # 尾巴
+    t.pensize(4)
+    t.color((255, 155, 192))
+    t.pu()
+    t.seth(90)
+    t.fd(70)
+    t.seth(0)
+    t.fd(95)
+    t.pd()
+    t.seth(0)
+    t.circle(70, 20)
+    t.circle(10, 330)
+    t.circle(70, 30)
+    t.done()
+
+
+if __name__ == &#34;__main__&#34;:
+    pig()
+</code></pre><p>运行结果：
+
+  <img src="https://tva1.sinaimg.cn/large/00831rSTgy1gdf65qid7cj31ag0ssmyf.jpg" alt="默认窗口">
+
+</p>
+<p>开始玩耍吧。</p>
+
+			</div>
+
+			<div class="tags">
+				
+			</div>
+
+			
+			<div class="back">
+				<a href="https://github.com/waitnoww/blob/master/content/python-turtle-for-any.md" title="github"><i data-feather="github"></i> Edit this on GitHub</a>
+			</div>
+			
+			
+			<div class="back">
+				<a href="https://naod.com.cn/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+					
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2020  © Copyright 2022 www.naod.com.cn </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

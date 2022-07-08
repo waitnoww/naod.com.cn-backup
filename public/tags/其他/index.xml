@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>其他 on 软件测试同学</title>
+    <link>https://naod.com.cn/tags/%E5%85%B6%E4%BB%96/</link>
+    <description>Recent content in 其他 on 软件测试同学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright 2022 www.naod.com.cn</copyright>
+    <lastBuildDate>Sun, 08 Mar 2020 13:55:16 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/%E5%85%B6%E4%BB%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hexo同时托管在github和coding</title>
+      <link>https://naod.com.cn/hexo-in-github-coding/</link>
+      <pubDate>Sun, 08 Mar 2020 13:55:16 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/hexo-in-github-coding/</guid>
+      <description>前提： 已拥有hexo博客 已拥有github仓库 已拥有coding page仓库 1。修改配置文件 找到hexo目录下站点配置文件 _config.yml
+deploy: type: git repo: github: https://github.com/waitnoww/waitnoww.github.com.git,master coding: https://git.coding.net/waitnoww/www.dengnao.com.cn.git,coding-pages 2.hexo安装部署插件： npm install hexo-deployer-git --save 3.尝试一下 hexo clean hexo g hexo d </description>
+    </item>
+    
+    <item>
+      <title>如何用Django搭建一个博客[一]</title>
+      <link>https://naod.com.cn/django-blog-1/</link>
+      <pubDate>Mon, 08 Jul 2019 13:55:16 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/django-blog-1/</guid>
+      <description>克隆项目到本地 https://github.com/waitnoww/www.dengnao.com.cn 创建并激活虚拟环境
+在命令行进入到保存虚拟环境的文件夹，输入如下命令创建并激活虚拟环境：
+virtualenv blogproject_env # windows blogproject_env\Scripts\activate # linux source blogproject_env/bin/activate 安装项目依赖
+如果使用了虚拟环境，确保激活并进入了虚拟环境，在命令行进入项目所在的 django-blog-tutorial 文件夹，运行如下命令：
+pip install -r requirements.txt 迁移数据库
+在上一步所在的位置运行如下命令迁移数据库：
+python manage.py migrate 创建后台管理员账户
+在上一步所在的位置运行如下命令创建后台管理员账户
+python manage.py createsuperuser 运行开发服务器
+在上一步所在的位置运行如下命令开启开发服务器：
+python manage.py runserver 在浏览器输入：127.0.0.1:8000
+进入后台发布文章
+在浏览器输入：127.0.0.1:8000/admin
+使用第 5 步创建的后台管理员账户登录
+enjoy it！</description>
+    </item>
+    
+  </channel>
+</rss>

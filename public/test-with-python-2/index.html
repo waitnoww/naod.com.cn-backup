@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>python使用163邮箱发邮件 - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="python使用163邮箱发邮件">
+<meta itemprop="description" content="测试开发用python-python使用163邮箱发邮件"><meta itemprop="datePublished" content="2020-03-09T16:14:11+00:00" />
+<meta itemprop="dateModified" content="2020-03-09T16:14:11+00:00" />
+<meta itemprop="wordCount" content="87">
+<meta itemprop="keywords" content="测试开发,python,测试工具开发," /><meta property="og:title" content="python使用163邮箱发邮件" />
+<meta property="og:description" content="测试开发用python-python使用163邮箱发邮件" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naod.com.cn/test-with-python-2/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2020-03-09T16:14:11+00:00" />
+<meta property="article:modified_time" content="2020-03-09T16:14:11+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="python使用163邮箱发邮件"/>
+<meta name="twitter:description" content="测试开发用python-python使用163邮箱发邮件"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://naod.com.cn/css/dark.css" />
+
+	<script src="https://naod.com.cn/js/feather.min.js"></script>
+	
+		<script src="https://naod.com.cn/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://naod.com.cn/">软件测试同学</a></h1>
+	<div class="site-description"><p>专注于软件测试信息分享</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/waitnoww/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">09</span>
+							<span class="rest">Mar 2020</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">python使用163邮箱发邮件</h1>
+				</div>
+			</div>
+
+			
+			
+					
+			<div class="markdown">
+				<pre tabindex="0"><code># -*- coding: UTF-8 -*-
+
+# 引入邮件对象
+import smtplib
+from email.header import Header
+from email.mime.text import MIMEText
+
+# 设置163邮箱的smtp服务
+# 邮箱发送地址
+sender = &#39;python@163.com&#39;
+# 设置发送邮箱密码(163为授权码)
+password = &#39;python&#39;
+# 设置邮件接收地址
+receivers = &#39;python@qq.com&#39;
+# 设置163服务器地址
+server_host = &#39;smtp.163.com&#39;
+
+# 邮件正文
+msg = MIMEText(&#39;hello, send from Python...&#39;, &#39;plain&#39;, &#39;utf-8&#39;)
+msg[&#39;From&#39;] = sender
+msg[&#39;To&#39;] = receivers
+# 邮件标题
+msg[&#39;Subject&#39;] = Header(&#39;python脚本邮件&#39;, &#39;utf-8&#39;).encode()
+
+try:
+    server = smtplib.SMTP_SSL(server_host, 465)
+    # 开启邮件服务操作日志 1为开启 0为关闭
+    server.set_debuglevel(0)
+    server.login(sender, password)
+    server.sendmail(sender, [receivers], msg.as_string())
+    server.quit()
+    print &#39;哈哈好，邮件发送成功了&#39;
+except Exception as e:
+    print (&#39;Exception: 嘤嘤嘤，邮件发送失败了&#39;, e)
+    
+</code></pre>
+			</div>
+
+			<div class="tags">
+				
+			</div>
+
+			
+			<div class="back">
+				<a href="https://github.com/waitnoww/blob/master/content/test-with-python-2.md" title="github"><i data-feather="github"></i> Edit this on GitHub</a>
+			</div>
+			
+			
+			<div class="back">
+				<a href="https://naod.com.cn/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+					
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2020  © Copyright 2022 www.naod.com.cn </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

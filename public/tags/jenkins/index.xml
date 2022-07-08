@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jenkins on 软件测试同学</title>
+    <link>https://naod.com.cn/tags/jenkins/</link>
+    <description>Recent content in jenkins on 软件测试同学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright 2022 www.naod.com.cn</copyright>
+    <lastBuildDate>Sun, 24 May 2020 09:40:00 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在RaspberryPi上安装Jenkins</title>
+      <link>https://naod.com.cn/raspberrypi-jenkins/</link>
+      <pubDate>Sun, 24 May 2020 09:40:00 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/raspberrypi-jenkins/</guid>
+      <description>安装Java pi@raspberrypi:~ $ java -version java version &amp;#34;1.8.0_65&amp;#34; Java(TM) SE Runtime Environment (build 1.8.0_65-b17) Java HotSpot(TM) Client VM (build 25.65-b01, mixed mode) 安装Jenkins pi@raspberrypi:~ $ wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add - OK pi@raspberrypi:~ $ sudo sh -c &amp;#39;echo deb http://pkg.jenkins.io/debian-stable binary/ &amp;gt; /etc/apt/sources.list.d/jenkins.list&amp;#39; pi@raspberrypi:~ $ sudo apt-get update Ign http://pkg.jenkins.io binary/ InRelease Get:1 http://mirrordirector.raspbian.org jessie InRelease [15.0 kB] Get:2 http://pkg.jenkins.io binary/ Release.gpg [181 B] Get:3 http://pkg.jenkins.io binary/ Release [2,042 B] Get:4 http://archive.</description>
+    </item>
+    
+  </channel>
+</rss>

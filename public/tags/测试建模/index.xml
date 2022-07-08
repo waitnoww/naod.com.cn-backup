@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>测试建模 on 软件测试同学</title>
+    <link>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%BB%BA%E6%A8%A1/</link>
+    <description>Recent content in 测试建模 on 软件测试同学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright 2022 www.naod.com.cn</copyright>
+    <lastBuildDate>Fri, 06 Mar 2020 14:00:50 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%BB%BA%E6%A8%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>测试建模：Google ACC</title>
+      <link>https://naod.com.cn/google-acc-for-test/</link>
+      <pubDate>Fri, 06 Mar 2020 14:00:50 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/google-acc-for-test/</guid>
+      <description>ACC（Attributes Components Capability）是Google测试团队使用的一种建模方法，用来快速地建立产品的模型，以指导下一步的测试计划和设计。 在Google内部，ACC得到较普遍的应用，一些工程师还开发了支持ACC模型的Web应用，并将其开源。本文将介绍ACC的内容，所引用的Google+的例子摘录自《How Google Tests Software》一书。此外，本文还将使用启发式测试策略模型（Heuristic Test Strategy Model，简称HTSM）来分析ACC。
+运用ACC建模的第一步是确定产品的Attributes（属性）。 按照谷歌的定义，Attributes是产品的形容词（adjectives），是与竞争对手相区别的关键特征。按照敏捷开发的观点，Attributes是产品所交付的核心价值（values）。从HTSM的角度，Attributes位于HTSM-&amp;gt;Quality Criteria-&amp;gt;Operation Criteria，隶属于面向用户的质量标准。
+Google+的Attributes如下：
+○ Social（社交）：鼓励用户去分享信息和他们的状态 ○ Expressive（表现力）：用户可以运用各种功能去表达自我 ○ Easy（容易）：让用户以直观的方式做他们想做的事 ○ Relevant（相关）：只显示用户感兴趣的内容 ○ Extensible（可扩展）：能够与Google的已有功能、第三方网站和应用（Application）集成 ○ Private（隐私）：用户数据不会泄漏 ACC以Attribute开始，是产品竞争的自然选择，也符合Google的开发实践。
+在Google的项目中，开发人员和测试人员的比例通常是10：1或更高。开发人员会编写大量的自动化测试用例，对产品实施周密的测试，因此测试人员主要关注用户价值和系统级测试。即便如此，测试人员也没有足够的资源测试所有用户行为。所以，测试人员需要通过确定Attributes来明确产品的核心价值，从而区分出测试对象的轻重缓急（priorities）。
+获取Attributes的信息源可以是产品经理、市场营销人员、技术布道者、商业宣传材料、产品广告等。测试人员也可以使用“卖点漫游”（The Money Tour）来发掘和检验产品的卖点。
+第二步是确定产品的Components（部件）。 Components是产品的名词（nouns），可以理解为产品的主要模块、组件、子系统。
+从HTSM的角度，Components位于HTSM-&amp;gt;Product Elements-&amp;gt;Structure和HTSM-&amp;gt;Product Elements-&amp;gt;Function，即同时具备代码结构和产品功能的特征。
+Google+的Components如下：
+○ Profile（个人资料）：用户的帐户信息和兴趣爱好 ○ People（人脉）：用户已经连接的好友 ○ Stream（信息流）：由帖子、评论、通知、照片等组成的有序的信息流 ○ Circles（圈子）：将好友分组，如把不同的好友归于“朋友”、“同事”等小组 ○ Notifications（通知）：当用户被帖子提到时，向他显示提示信息 ○ Hangouts（视频群聊）：视频对话的小组 ○ Posts（帖子）：用户和好友所发表的信息 ○ Comments（评论）：对帖子、照片、视频等的评论 ○ Photos（照片）：用户和好友所上传的照片 Components可以看作功能列表（Function List）的顶层元素，是产品核心功能的清单。
+《How Google Tests Software》建议Components列表要尽可能简单，10个Components很好，20个就太多了。其目的是重点考虑对产品、对用户最重要的功能与代码，并避免漫长的Components列表所导致的分析瘫痪。
+第三步是确定产品的Capabilities（能力）。 Capabilities是产品的动词（verbs），描述了一个Component提供了何种能力来实现一个Attribute。
+在HTSM的角度，Capabilities位于HTSM-&amp;gt;Product Elements-&amp;gt;Function和HTSM-&amp;gt;Quality Criteria-&amp;gt;Operation Criteria-&amp;gt;Capability，刻画了产品实现其核心价值的手段。
+Capabilities通常是面向用户的（user-oriented），反映了用户视角的产品行为。测试人员也应该保持Capabilities矩阵的简洁，他们应该关注对用户而言最有价值、最有吸引力的能力，并在合适的抽象层次（right level of abstraction）记录Capabilities。</description>
+    </item>
+    
+  </channel>
+</rss>

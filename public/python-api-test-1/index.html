@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>从0到1搭建接口自动化测试框架-python环境搭建 - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="从0到1搭建接口自动化测试框架-python环境搭建">
+<meta itemprop="description" content="python接口自动化测试框架开发教程-python环境搭建"><meta itemprop="datePublished" content="2020-03-21T20:55:40+00:00" />
+<meta itemprop="dateModified" content="2020-03-21T20:55:40+00:00" />
+<meta itemprop="wordCount" content="37">
+<meta itemprop="keywords" content="测试开发,python,测试工具开发," /><meta property="og:title" content="从0到1搭建接口自动化测试框架-python环境搭建" />
+<meta property="og:description" content="python接口自动化测试框架开发教程-python环境搭建" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naod.com.cn/python-api-test-1/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2020-03-21T20:55:40+00:00" />
+<meta property="article:modified_time" content="2020-03-21T20:55:40+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="从0到1搭建接口自动化测试框架-python环境搭建"/>
+<meta name="twitter:description" content="python接口自动化测试框架开发教程-python环境搭建"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://naod.com.cn/css/dark.css" />
+
+	<script src="https://naod.com.cn/js/feather.min.js"></script>
+	
+		<script src="https://naod.com.cn/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://naod.com.cn/">软件测试同学</a></h1>
+	<div class="site-description"><p>专注于软件测试信息分享</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/waitnoww/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">21</span>
+							<span class="rest">Mar 2020</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">从0到1搭建接口自动化测试框架-python环境搭建</h1>
+				</div>
+			</div>
+
+			
+			
+					
+			<div class="markdown">
+				<p>网上搭建python环境的教程很多，我推荐菜鸟教程的<a href="https://www.runoob.com/python3/python3-install.html">Python3 环境搭建</a>.</p>
+<p>下面我列举一下主要步骤，以windows系统为例(苹果电脑python环境搭建有问题的直接评论下留言，我会一一帮你解答）</p>
+<h4 id="python安装包下载">python安装包下载</h4>
+<ul>
+<li>1.进入<a href="https://www.python.org">python官网</a></li>
+<li>2.选择downloads-<a href="https://www.python.org/downloads/windows/">windows</a></li>
+<li>3.选择最新release的python3版本，我以<a href="https://www.python.org/downloads/release/python-382/">python3.8.3</a>举例</li>
+<li>4.进入页面后，选择下载 <a href="https://www.python.org/ftp/python/3.7.7/python-3.7.7-amd64.exe">Windows x86-64 executable installer</a></li>
+<li>5.等待安装包下载完成</li>
+</ul>
+<h4 id="安装python包">安装python包</h4>
+<ul>
+<li>1.直接点击运行</li>
+<li>2.选择默认安装install now</li>
+<li>3.记得勾选Add Python 3.8 to PATH（若不勾选，就需自己设置python的path环境，所以建议勾选）</li>
+<li>4.按照安装程序指示，将python安装完成</li>
+</ul>
+<h4 id="windows命令行执行python">windows命令行执行python</h4>
+<ul>
+<li>1.进入windows系统cmd命令行界面</li>
+<li>2.输入python，未报错且展示了你安装的python3.8.2版本号,说明python3环境安装成功,若展示的不是你安装的版本号，有可能你系统安装了多个python版本，后面我会单独出文章介绍如何一个系统多个python版本共存</li>
+<li>3.输入简单python程序
+<pre tabindex="0"><code>print(hello_python)
+</code></pre></li>
+<li>4.按下回车键执行展示hello_python，代表python程序执行成功</li>
+</ul>
+<h4 id="python自带idle">python自带IDLE</h4>
+<ul>
+<li>windows系统程序列表搜索python，选择IDLE，就可以展示python的脚本边界页面</li>
+</ul>
+<h4 id="python开发工具">python开发工具</h4>
+<ul>
+<li>推荐PyCharm,好用，推荐<a href="https://www.jetbrains.com/pycharm/download/#section=windows">pycharm官网</a>安装</li>
+</ul>
+<h4 id="windows系统python环境变量配置">windows系统python环境变量配置</h4>
+<ul>
+<li>右键点击&quot;计算机&quot;，然后点击&quot;属性&quot;，选择&quot;高级系统设置&quot;</li>
+<li>然后选择&quot;系统变量&quot;窗口下面的&quot;Path&quot;,在&quot;Path&quot;行，添加python安装路径即可（注意：安装路径直接用分号&quot;；&ldquo;分割开）</li>
+<li>保存后，重新打开cmd命令行，输入命令&quot;python&rdquo;，展示python版本号无报错表明环境变量设置成功。</li>
+</ul>
+
+			</div>
+
+			<div class="tags">
+				
+			</div>
+
+			
+			<div class="back">
+				<a href="https://github.com/waitnoww/blob/master/content/python-api-test-1.md" title="github"><i data-feather="github"></i> Edit this on GitHub</a>
+			</div>
+			
+			
+			<div class="back">
+				<a href="https://naod.com.cn/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+					
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2020  © Copyright 2022 www.naod.com.cn </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

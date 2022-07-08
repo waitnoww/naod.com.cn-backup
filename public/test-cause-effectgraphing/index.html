@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>测试用例设计方法-因果图法 - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="测试用例设计方法-因果图法">
+<meta itemprop="description" content="软件测试教程-如何用因果图法去设计测试用例"><meta itemprop="datePublished" content="2018-03-11T13:34:41+00:00" />
+<meta itemprop="dateModified" content="2018-03-11T13:34:41+00:00" />
+<meta itemprop="wordCount" content="48">
+<meta itemprop="keywords" content="测试设计,测试相关,测试用例," /><meta property="og:title" content="测试用例设计方法-因果图法" />
+<meta property="og:description" content="软件测试教程-如何用因果图法去设计测试用例" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naod.com.cn/test-cause-effectgraphing/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2018-03-11T13:34:41+00:00" />
+<meta property="article:modified_time" content="2018-03-11T13:34:41+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="测试用例设计方法-因果图法"/>
+<meta name="twitter:description" content="软件测试教程-如何用因果图法去设计测试用例"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://naod.com.cn/css/dark.css" />
+
+	<script src="https://naod.com.cn/js/feather.min.js"></script>
+	
+		<script src="https://naod.com.cn/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://naod.com.cn/">软件测试同学</a></h1>
+	<div class="site-description"><p>专注于软件测试信息分享</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/waitnoww/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">11</span>
+							<span class="rest">Mar 2018</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">测试用例设计方法-因果图法</h1>
+				</div>
+			</div>
+
+			
+			
+					
+			<div class="markdown">
+				<h3 id="定义">定义</h3>
+<p>因果图法是一种利用图解法分析输入的各种组合情况，从而设计测试用例的方法，它适合于检查程序输入条件的各种组合情况。</p>
+<h3 id="应用">应用</h3>
+<p>等价类划分法和边界值分析方法都是着重考虑输入条件，但没有考虑输入条件的各种组合、输入条件之间的相互制约关系。这样虽然各种输入条件可能出错的情况已经测试到了，但多个输入条件组合起来可能出错的情况却被忽视了。</p>
+<p>如果在测试时必须考虑输入条件的各种组合，则可能的组合数目将是天文数字，因此必须考虑采用一种适合于描述多种条件的组合、相应产生多个动作的形式来进行测试用例的设计，这就需要利用因果图（逻辑模型）。</p>
+<h4 id="1-因果图介绍">1. 因果图介绍</h4>
+<h5 id="1-4种符号分别表示了规格说明中向4种因果关系">1) 4种符号分别表示了规格说明中向4种因果关系。</h5>
+<p>
+  <img src="https://images.cnblogs.com/cnblogs_com/jackc/tc7.gif" alt="img">
+
+</p>
+<h5 id="2-因果图中使用了简单的逻辑符号以直线联接左右结点左结点表示输入状态或称原因右结点表示输出状态或称结果">2) 因果图中使用了简单的逻辑符号，以直线联接左右结点。左结点表示输入状态（或称原因），右结点表示输出状态（或称结果）。</h5>
+<h5 id="3-c1表示原因通常置于图的左部e1表示结果通常在图的右部c1和e1均可取值0或10表示某状态不出现1表示某状态出现">3) C1表示原因，通常置于图的左部；e1表示结果，通常在图的右部。C1和e1均可取值0或1，0表示某状态不出现，1表示某状态出现。</h5>
+<h4 id="2因果图涉及的概念">2.因果图涉及的概念</h4>
+<h5 id="1-关系">1) 关系</h5>
+<p>Ø 恒等：若c1是1，则e1也是1；否则e1为0。</p>
+<p>Ø 非：若c1是1，则e1是0；否则e1是1。</p>
+<p>Ø 或：若c1或c2或c3是1，则e1是1；否则e1为0。“或”可有任意个输入。</p>
+<p>Ø 与：若c1和c2都是1，则e1为1；否则e1为0。“与”也可有任意个输入。</p>
+<h5 id="2----约束">2)    约束</h5>
+<p>输入状态相互之间还可能存在某些依赖关系，称为约束。例如,某些输入条件本身不可能同时出现。输出状态之间也往往存在约束。在因果图中,用特定的符号标明这些约束。</p>
+<p>
+  <img src="https://images.cnblogs.com/cnblogs_com/jackc/tc8.gif" alt="img">
+
+</p>
+<p>Ø 输入条件的约束有以下4类：</p>
+<p>·        E约束（异）：a和b中至多有一个可能为1，即a和b不能同时为1。</p>
+<p>·        I约束（或）：a、b和c中至少有一个必须是1，即 a、b 和c不能同时为0。</p>
+<p>·        O约束（唯一）；a和b必须有一个，且仅有1个为1。</p>
+<p>·        R约束（要求）：a是1时，b必须是1，即不可能a是1时b是0。</p>
+<p>Ø 输出条件约束类型
+输出条件的约束只有M约束（强制）：若结果a是1，则结果b强制为0。</p>
+<h4 id="3采用因果图法设计测试用例的步骤">3.采用因果图法设计测试用例的步骤：</h4>
+<ul>
+<li>
+<ol>
+<li>分析软件规格说明描述中,那些是原因(即输入条件或输入条件的等价类),那些是结果(即输出条件),并给每个原因和结果赋予一个标识符。</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>分析软件规格说明描述中的语义，找出原因与结果之间,原因与原因之间对应的关系，根据这些关系,画出因果图。</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>由于语法或环境限制,有些原因与原因之间,原因与结果之间的组合情况不可能出现，为表明这些特殊情况,在因果图上用一些记号表明约束或限制条件。</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>把因果图转换为判定表。</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>把判定表的每一列拿出来作为依据,设计测试用例。</li>
+</ol>
+</li>
+</ul>
+
+			</div>
+
+			<div class="tags">
+				
+			</div>
+
+			
+			<div class="back">
+				<a href="https://github.com/waitnoww/blob/master/content/test-Cause-EffectGraphing.md" title="github"><i data-feather="github"></i> Edit this on GitHub</a>
+			</div>
+			
+			
+			<div class="back">
+				<a href="https://naod.com.cn/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+					
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2018  © Copyright 2022 www.naod.com.cn </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

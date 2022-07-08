@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>测试工具 on 软件测试同学</title>
+    <link>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 测试工具 on 软件测试同学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright 2022 www.naod.com.cn</copyright>
+    <lastBuildDate>Sun, 24 May 2020 09:40:00 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在RaspberryPi上安装Jenkins</title>
+      <link>https://naod.com.cn/raspberrypi-jenkins/</link>
+      <pubDate>Sun, 24 May 2020 09:40:00 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/raspberrypi-jenkins/</guid>
+      <description>安装Java pi@raspberrypi:~ $ java -version java version &amp;#34;1.8.0_65&amp;#34; Java(TM) SE Runtime Environment (build 1.8.0_65-b17) Java HotSpot(TM) Client VM (build 25.65-b01, mixed mode) 安装Jenkins pi@raspberrypi:~ $ wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add - OK pi@raspberrypi:~ $ sudo sh -c &amp;#39;echo deb http://pkg.jenkins.io/debian-stable binary/ &amp;gt; /etc/apt/sources.list.d/jenkins.list&amp;#39; pi@raspberrypi:~ $ sudo apt-get update Ign http://pkg.jenkins.io binary/ InRelease Get:1 http://mirrordirector.raspbian.org jessie InRelease [15.0 kB] Get:2 http://pkg.jenkins.io binary/ Release.gpg [181 B] Get:3 http://pkg.jenkins.io binary/ Release [2,042 B] Get:4 http://archive.</description>
+    </item>
+    
+    <item>
+      <title>Git简易上手指南</title>
+      <link>https://naod.com.cn/git-awsome-1/</link>
+      <pubDate>Thu, 16 Apr 2020 11:18:30 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/git-awsome-1/</guid>
+      <description>[TOC]
+Git安装 推荐官网安装，上链接：https://gitscm.com/downloads/ 默认设置安装即可 配置ssh 打开安装完成git中的git bash 输入ssh-keygen -t rsa -C &amp;lsquo;xxx@xxx.com&amp;rsquo; （xxx@xxx.com是你的邮箱地址） 一路按回车键，等待命令执行完成 然后找到你电脑目录中打开~/.ssh/id_rsa.pub文件 复制id_rsa.pub文件中的内容到github或者gitlab的ssh key中即可完成设置 Git命令 # 在当前目录新建一个Git代码库 $ git init # 新建一个目录，将其初始化为Git代码库 $ git init [project-name] # 下载一个项目和它的整个代码历史 $ git clone [url] # 添加指定文件到暂存区 $ git add [file1] [file2] ... # 添加指定目录到暂存区，包括子目录 $ git add [dir] # 添加当前目录的所有文件到暂存区 $ git add . # 添加每个变化前，都会要求确认 # 对于同一个文件的多处变化，可以实现分次提交 $ git add -p # 删除工作区文件，并且将这次删除放入暂存区 $ git rm [file1] [file2] .</description>
+    </item>
+    
+    <item>
+      <title>mac Unable to access Android SDK add-on list</title>
+      <link>https://naod.com.cn/mac-android-studio-unable/</link>
+      <pubDate>Wed, 01 Apr 2020 14:02:09 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/mac-android-studio-unable/</guid>
+      <description>当我的Mac搭建好Android Studio环境后，第一次使用Android Studio时，会提示Unable to access Android SDK add-on list，如下图所示： 网上查询到的解决方法也是Windows中的相同：打开bin\idea.properties这个文件，末尾添加一行disable.android.first.run=true就行了。
+那问题来了，刚刚入手mac的我来说，首要的问题是怎么找到bin\idea.properties这个文件
+继续网上检索到最后的答案是：
+打开Finder 在左侧的列表中点击应用程序 然后会在右侧的程序列表中看到已经安装的AndroidStudio 右键AndroidStudio的图标 选择显示包内容 会看到一个Contents文件夹 进入Contents文件夹 就会看到bin文件夹了 进入bin文件夹然后修改idea.properties文件了 末尾添加一行disable.android.first.run=true </description>
+    </item>
+    
+    <item>
+      <title>缺陷平台引入阶段定义解析</title>
+      <link>https://naod.com.cn/bug-manage-1/</link>
+      <pubDate>Sun, 15 Mar 2020 15:25:23 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/bug-manage-1/</guid>
+      <description>“缺陷引入阶段”分以下几种： 1.历史遗留 2.需求分析 3.产品设计 4.编码实现 5.需求变更 不同阶段含义解释 1.历史遗留
+属于历史版本，继承版本或移植代码中的问题，非新开发引入的问题
+2.需求分析
+缺陷是在产品需求设计阶段引入的，主要包含以下几种情况： 需求不清的问题，需求错误的问题，系统整体设计的问题
+3.产品设计
+缺陷是在产品设计阶段引入的问题，主要包含以下几种情况： 功能与功能之间接口的问题，功能交互的问题，边界值设计方面的问题，流程,逻辑设计相关的问题，算法设计方面的问题。
+4.编码实现
+缺陷是在编码实现阶段引入的问题，主要包含以下几种情况： 流程,逻辑实现相关的问题，算法实现相关的问题，编码规范相关的问题，模块和模块之间接口的问题
+5.需求变更
+缺陷是因为新需求，需求变更或设计变更引入的问题</description>
+    </item>
+    
+    <item>
+      <title>Mantis BUG管理平台使用手册</title>
+      <link>https://naod.com.cn/mantis-user-1/</link>
+      <pubDate>Fri, 13 Mar 2020 09:17:57 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/mantis-user-1/</guid>
+      <description>Mantis BUG管理平台使用手册 登录 登录地址：https://mantisbt.org/bugs/my_view_page.php 账号密码：自己注册账号密码 首页 首页会展示“等待我解决的问题”数量和“我报告的未解决的问题”数量 同样会展示项目新闻，RSS信息 我的视图 登录之后首先进入“我的视图”页，这里显示5类问题：
+指定给我的：需要由登录者处理的问题 未指定的：已经报告但尚未分配到开发人员的问题 由我报告的：由登录者本人报告的问题 已解决的 最近修改 我正在监视的：用户可以选择需要关注的问题进行监视 注：页面右上角有一个切换项目的下拉菜单，可以选择查看本人需要关注的某个项目的问题。不同状态的问题会有不同的颜色标注。 查看问题 查看问题页面上面一部分为查询条件组合（过滤器），用户可以指定查找问题的条件，点击某项之后将出现下拉菜单供用户选择； 功能点有：
+高级过滤器：全部塞选条件 创建固定链接：给选择好的过滤条件创建一个固定的链接，给其他人访问 重置过滤器：重置所选择的塞选过滤条件 保存当前过滤器：保存当前所选择的塞选过滤条件 查看问题页面下面一部分为所有问题列表，列出了问题的摘要信息，点击问题之后将出现“查看问题详细资料”页，也可以将塞选过滤查询出的问题打印成报告和导出CSV文件
+查看单个问题详情页 “查看问题详细资料”：各项不详细解释了。其中最下面一行按钮可以对问题进行操作。由于权限的设置不同，各级别用户可使用的按钮个数不同。 “修改问题”：修改问题的各项基本属性，并添加注释。 “分派”：将问题分派给某个开发人员来处理，分派之后系统将自动向被分派人发送邮件通知，被分派人打开mantis之后将在“我的视图”页看到被分派的问题。 “将状态改为”：这里是对问题状态的定性，分为6个层次，具体使用方法见“BUG跟踪流程”。 “监视问题”：点击此按钮后用户就可以对该问题进行监视，也就是说只要该问题有改动，系统就会自动发邮件通知到本人。在“我的视图”页也可以体现出来。 “创建子项问题”：可以创建该问题的子项问题。 “移动问题”：可以将该问题移动到别的项目中（需要相应的权限）。 “删除问题”：删除无用的问题，已处理完毕的问题建议不必删除，关闭即可，以保留问题记录。 “关系”：可以指定问题之间的关联关系，具体关联方式见下拉菜单。 “上传文件”：可以上传与问题相关的文件，大小暂时限制为5M。 “问题历史”：此项为问题处理的历史记录。 修改问题状态：这是mantis比较重要的一个功能，问题的每次改动都要发生状态的改变，以此来标记问题的处理情况。 统计报表 顾名思义，一个项目的BUG统计报表：不同维度的统计报表（管理员用户才能看到） 提供打印报告和报告摘要的功能
+提交BUG 测试人员第一次点击提交BUG链接会首先打开一个选择项目的页面，你可以选择所提交BUG的项目（也可以设为默认值，后面不会多次选择，也可以在个人资料页面进行更改默认值） 提交BUG详情页面字段详细介绍（*为必填项）
+分类：BUG的类型（目前有兼容性，易用性等）此字段也可以作为模块分类来使用，项目管理页面可以进行设置（为必填项） 出现频率：BUG的出现频率 严重性：BUG的严重级别 优先级：BUG的优先级别 选择平台配置：BUG发生的平台（项目管理页面可以配置后进行塞选，也可以自己填写） 分派给：将BUG指派给开发人员（可以通过姓名的姓来进行搜索选择） 摘要：BUG的简单描述（为必填项） 说明：BUG的详细说明，富文本编辑器，功能强大（可以粘贴截图）（为必填项） 上传文件：上传BUG的附件（最大限制为5M） 查看权限：BUG的查看权限（默认为公有） 继续报告:勾选此选项后，点击提交BUG后，会新开一个提交BUG页面 BUG分派 测试人员提交BUG时可以不选指派人，由专门的人来进行问题指派 个人资料
+个人帐号：设置个人信息，包括密码、邮件、姓名。 更改个人设置：设置邮件通知的紧急程度级别等，可根据个人需要和喜好来设置接收邮件通知的级别。 管理平台配置（管理员权限才有）：配置平台，包括硬件平台，操作系统，版本等信息。 mantis管理 Mantis管理功能（管理员权限才能可见和操作）
+用户管理：创建、修改、删除帐号，重设帐号密码，给用户分配项目等。 项目管理：项目管理功能 编辑项目：设置项目的基本属性，上传文件路径不需要设置，因为目前采用数据库的方式存储文件。 子项目：将现有项目添加到本项目的子项目中（必须有相应的权限）。 分类：上面已提到过，为了查找问题的方便而设置的问题类别，可根据项目情况设置。 版本：设置项目的版本号。 添加用户至项目：添加参与本项目的人员，并设置人员权限，注意这里的权限与用户本身的权限不同，需要单独指定。目前指定测试组的成员为“测试人员”，其他程序员都指定为“开发人员”，如果项目查看状态为私有，则只有在这里添加了的人员才可以访问本项目的问题。通过最下面一行的按钮可以快速地从别的项目导入人员，或将本项目的人员导出到别的项目。 自定义字段管理：可以为报告问题添加必要的自定义字段，可以是时间类型，字符串类型，数字类型等。 管理全局配置：添加、编辑、删除平台配置 管理配置：包括权限报表、工作流开始、工作流、邮件提醒四项，可根据实际需要灵活配置，不详述。 BUG搜索 按编号搜索：输入BUG编号，点击【跳转到该问题编号】； 按标题中所含的文字搜索：输入查询文字（支持模糊查询），点击【筛选】； “查询问题”页面：设置查询条件，点击【筛选】 移动BUG BUG详情页面:选择移动，可以将bug移动到某一个项目 查看问题页面：勾选bug，可以将bug移动到某一个项目 BUG状态 新建：新提交的且尚未指派给开发人员的bug。 已分派：项目经理或系统实施顾问将bug指派给开发人员，开发人员尚未接收确认的bug。 公认：开发人员看到指派给自己修改的bug后，将bug状态设置为“公认”，以告知指派人自己收到了分配的bug。 已解决：开发人员修复bug后，将bug状态设置为“已解决”；等待验证测试的bug。 打回：验证测试未通过，需要开发人员重新修改的bug。 已关闭：验证测试通过，关闭的bug。 已确认：即暂时不改的bug，（完成度）“暂停”的bug。 BUG的完成状态：未处理，已修正，重新打开，无法重现，无法修复，重复问题，不是问题，暂停，不做修改 系统角色介绍 系统管理员：主要创建用户，创建项目；维护其他信息。 经理：主要维护项目信息（如：维护测试模块，维护项目组成员，测试版本，发布公告；维护缺陷分类、实施版本）。研发部的项目经理、系统实施顾问、测试部的测试负责人、技服部项目经理有此权限；（各部门经理：不维护信息，监督特殊问题的处理、浏览统计报表数据等功能） 报告人员：主要提交bug。测试工程师执行测试时，提交发现的bug；技术工程师提交客户反馈的软件缺陷。 开发人员：主要修复bug。研发部各项目的bug修改人员有此权限。 - 查看人员：主要浏览bug。 修改人员：目前不用此角色。 Mantis中的经理角色拥有“报告人员”“开发人员”“查看人员”的操作权限。各操作权限限制在所分配的项目范围内。 新建和维护项目信息 管理员在管理-项目管理下可以新建和维护项目信息</description>
+    </item>
+    
+    <item>
+      <title>测试小工具一期-录屏工具</title>
+      <link>https://naod.com.cn/some-test-tool-01/</link>
+      <pubDate>Tue, 03 Mar 2020 20:03:27 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/some-test-tool-01/</guid>
+      <description>前言 工欲善其事必先利其器，这将是一个工具介绍合集，此文只是其一。
+在实际测试工作过程中，我们经常需要很清晰的描述BUG的复现步骤，除了详细的文字描述外，bug复现步骤的录制GIF图更能接地气的直接反应发现bug的过程。
+下面会介绍几个录屏工具，供大家选取使用。
+1.LICEcap 这一款录屏软件我用的最多，后台常驻软件之一
+介绍： 软件很小，只有 432KB，不要看它小，录制动图绝对够用。这一款，需要安装，界面是英文的，不过也好理解。安装好，软件打开后，中间是空的，也就是录制的地方。尺寸，你可以自己设定，也可随意的拖。当你固定好要录制的位置时，就可以点击 Record，它就开始录制了。需要提醒的是，首次录制它需要让你选择保存位置。还有就是，保存位置的路径里面，一定不要有中文，否则保存会失败。
+下载地址： https://www.cockos.com/licecap/
+2.Gif CAM 介绍 这一款稍微大一点，有 1.54MB，但不用安装，功能和上面的那款差不多。中间也是空的，也就是录制区域。右边是功能键，很简单，你点一下就可以看。它好在录完了，可以直接编辑所录的 GIF 图。比如录多了，就可以删除录多的那一部分。再保存就好了。值得提醒的是，这一款每录一次图，需要关掉，再重开。否则它会把你录制的内容全连到一起，认成一个文件。
+下载地址： http://www.gif-cam.com/
+3.ScreenToGif 非常强大的gif录制/剪辑工具
+介绍 可以自定义热键以及设置文件存放目录、设置 gif 质量、编辑 gif 文件等等，官网也有很多动画演示。
+但是世界上没有完美的东西，相较于其他几款 Gif 录制工具，ScreenToGif 也是有不少不足之处，文件达到了9MB，而其他几款均只有几百KB
+下载地址： http://pan.baidu.com/s/17Ey78?utm_source=www.appinn.com
+4.Recordit 介绍 Recordit 一共就一个按钮，开始 或者 结束。简单简洁。
+点击 Record，选取录制区域，点击开始，点击结束，分享。
+视频会自动上传到 Recordit 网站并得到一个 url，你可以直接分享这个 url 或者打开后下载 GIF 再分享。
+下载地址： http://recordit.co/
+后话 录屏工具很多，够用好用就行，可不要贪杯。
+下一期会介绍markdown软件和相关语法介绍，让你专注于文字内容本身，而不被格式样式所束缚。</description>
+    </item>
+    
+    <item>
+      <title>测试工具合集</title>
+      <link>https://naod.com.cn/some-test-tool-02/</link>
+      <pubDate>Sun, 04 Sep 2016 13:34:41 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/some-test-tool-02/</guid>
+      <description>测试相关 测试论坛 谷歌测试博客：http://googletesting.blogspot.com/
+testerhome：https://testerhome.com/
+51testing：http://bbs.51testing.com/forum.php
+淘测试：http://test.taobao.com/index.htm
+测试之道：http://www.testtao.com/forum.php
+腾讯移动品质中心：http://tmq.qq.com/
+&amp;hellip;其他社区如CSDN,博客园,SegmentFault下的测试话题
+测试小工具 Unix时间戳转换：http://unixtime.51240.com/
+Unicode编码转换：http://tool.chinaz.com/Tools/Unicode.aspx
+Redis客户端工具：https://github.com/uglide/RedisDesktopManager
+其他在线工具：http://tool.oschina.net/
+测试之外： 谷歌host：https://laod.org/hosts/2016-google-hosts.html
+shadowsocks工具：https://github.com/shadowsocks/shadowsocks-windows/tree/master
+Hexo博客相关 免费博客服务 Github Page：https://pages.github.com/
+Coding Pages https://coding.net/help/doc/pages/index.html?utm_source=baidusem&amp;amp;utm_medium=ppc&amp;amp;utm_term=jekyll&amp;amp;utm_campaign=Coding-BD-SEM
+hexo博客搭建教程 hexo官网：https://hexo.io/
+教程：https://getpocket.com/a/read/497254555
+博客图床服务 七牛：https://portal.qiniu.com/signup?code=3lqitro65gz0y
+Dropbox：https://www.dropbox.com</description>
+    </item>
+    
+  </channel>
+</rss>
