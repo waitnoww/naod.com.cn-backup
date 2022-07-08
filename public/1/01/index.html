@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title> - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="">
+<meta itemprop="description" content="Cypress UI自动化测试框架学习（4）- 数据驱动，方法封装参数化和测试框架 测试数据驱动 js格式测试数据驱动 简介 数据以js格式存储，使用js的import方法导入使用
+使用方法 新建测试数据js文件 示例：在项目的cypress/integration 文件夹下新建testData目录,然后在该目录下创建一个js文件，示例文件名为：testLogin.data.js
+testLogin.data.js示例代码如下：
+//账号密码记得换成自己的 export const testLoginUserEmail = [ { summary: &#34;正确邮箱账号登录验证&#34;, username:&#34;dengnao.123@163.com&#34;, password:&#34;xxxx&#34; } ] export const testLoginUserId = [ { summary: &#34;正确id账号登录验证&#34;, username:&#34;waitnoww&#34;, password:&#34;xxxx&#34; } ] export const testLoginUserMobilephone = [ { summary: &#34;正确手机号账号登录验证&#34;, username:&#34;18888139031&#34;, password:&#34;xxxx&#34; } ] 编写测试用例 在项目cypress/integration文件夹下新建js测试用例文件，示例文件名为：testLogin_guanggoo_data_by_js.js
+示例代码如下：
+// 导入js文件获取测试数据 import { testLoginUserEmail, testLoginUserId, testLoginUserMobilephone } from &#34;./testData/testLogin.data&#34;; // 测试用例 describe(&#34;光谷社区登录验证&#34;, function () { // 执行用例执行用例之前先进入首页 beforeEach(function () { // 访问并登录光谷社区 cy.">
+
+<meta itemprop="wordCount" content="599">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="" />
+<meta property="og:description" content="Cypress UI自动化测试框架学习（4）- 数据驱动，方法封装参数化和测试框架 测试数据驱动 js格式测试数据驱动 简介 数据以js格式存储，使用js的import方法导入使用
+使用方法 新建测试数据js文件 示例：在项目的cypress/integration 文件夹下新建testData目录,然后在该目录下创建一个js文件，示例文件名为：testLogin.data.js
+testLogin.data.js示例代码如下：
+//账号密码记得换成自己的 export const testLoginUserEmail = [ { summary: &#34;正确邮箱账号登录验证&#34;, username:&#34;dengnao.123@163.com&#34;, password:&#34;xxxx&#34; } ] export const testLoginUserId = [ { summary: &#34;正确id账号登录验证&#34;, username:&#34;waitnoww&#34;, password:&#34;xxxx&#34; } ] export const testLoginUserMobilephone = [ { summary: &#34;正确手机号账号登录验证&#34;, username:&#34;18888139031&#34;, password:&#34;xxxx&#34; } ] 编写测试用例 在项目cypress/integration文件夹下新建js测试用例文件，示例文件名为：testLogin_guanggoo_data_by_js.js
+示例代码如下：
+// 导入js文件获取测试数据 import { testLoginUserEmail, testLoginUserId, testLoginUserMobilephone } from &#34;./testData/testLogin.data&#34;; // 测试用例 describe(&#34;光谷社区登录验证&#34;, function () { // 执行用例执行用例之前先进入首页 beforeEach(function () { // 访问并登录光谷社区 cy." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naod.com.cn/1/01/" /><meta property="article:section" content="posts" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Cypress UI自动化测试框架学习（4）- 数据驱动，方法封装参数化和测试框架 测试数据驱动 js格式测试数据驱动 简介 数据以js格式存储，使用js的import方法导入使用
+使用方法 新建测试数据js文件 示例：在项目的cypress/integration 文件夹下新建testData目录,然后在该目录下创建一个js文件，示例文件名为：testLogin.data.js
+testLogin.data.js示例代码如下：
+//账号密码记得换成自己的 export const testLoginUserEmail = [ { summary: &#34;正确邮箱账号登录验证&#34;, username:&#34;dengnao.123@163.com&#34;, password:&#34;xxxx&#34; } ] export const testLoginUserId = [ { summary: &#34;正确id账号登录验证&#34;, username:&#34;waitnoww&#34;, password:&#34;xxxx&#34; } ] export const testLoginUserMobilephone = [ { summary: &#34;正确手机号账号登录验证&#34;, username:&#34;18888139031&#34;, password:&#34;xxxx&#34; } ] 编写测试用例 在项目cypress/integration文件夹下新建js测试用例文件，示例文件名为：testLogin_guanggoo_data_by_js.js
+示例代码如下：
+// 导入js文件获取测试数据 import { testLoginUserEmail, testLoginUserId, testLoginUserMobilephone } from &#34;./testData/testLogin.data&#34;; // 测试用例 describe(&#34;光谷社区登录验证&#34;, function () { // 执行用例执行用例之前先进入首页 beforeEach(function () { // 访问并登录光谷社区 cy."/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://naod.com.cn/css/dark.css" />
+
+	<script src="https://naod.com.cn/js/feather.min.js"></script>
+	
+		<script src="https://naod.com.cn/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://naod.com.cn/">软件测试同学</a></h1>
+	<div class="site-description"><p>专注于软件测试信息分享</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/waitnoww/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+				<div class="matter">
+					<h1 class="title"></h1>
+				</div>
+			</div>
+
+			
+			
+			<aside class="toc">
+				<header>
+				<h2>Contents</h2>
+				</header>
+				<nav id="TableOfContents">
+  <ol>
+    <li><a href="#测试数据驱动">测试数据驱动</a>
+      <ol>
+        <li><a href="#js格式测试数据驱动">js格式测试数据驱动</a></li>
+        <li><a href="#fixture测试数据驱动介绍">fixture测试数据驱动介绍</a></li>
+      </ol>
+    </li>
+    <li><a href="#方法封装参数化">方法封装参数化</a>
+      <ol>
+        <li><a href="#简介-2">简介</a></li>
+        <li><a href="#使用介绍">使用介绍</a></li>
+      </ol>
+    </li>
+    <li><a href="#测试框架介绍">测试框架介绍</a>
+      <ol>
+        <li><a href="#简介-3">简介</a></li>
+        <li><a href="#语法介绍">语法介绍</a></li>
+        <li><a href="#参考网址">参考网址</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+			</aside>
+			
+					
+			<div class="markdown">
+				<h1 id="cypress-ui自动化测试框架学习4--数据驱动方法封装参数化和测试框架">Cypress UI自动化测试框架学习（4）- 数据驱动，方法封装参数化和测试框架</h1>
+<h2 id="测试数据驱动">测试数据驱动</h2>
+<h3 id="js格式测试数据驱动">js格式测试数据驱动</h3>
+<h4 id="简介">简介</h4>
+<p>数据以js格式存储，使用js的import方法导入使用</p>
+<h4 id="使用方法">使用方法</h4>
+<h5 id="新建测试数据js文件">新建测试数据js文件</h5>
+<ul>
+<li>
+<p>示例：在项目的cypress/integration 文件夹下新建testData目录,然后在该目录下创建一个js文件，示例文件名为：testLogin.data.js</p>
+</li>
+<li>
+<p>testLogin.data.js示例代码如下：</p>
+</li>
+</ul>
+<pre tabindex="0"><code>//账号密码记得换成自己的
+export const testLoginUserEmail = [
+
+    {
+        summary: &#34;正确邮箱账号登录验证&#34;,
+        username:&#34;dengnao.123@163.com&#34;,
+        password:&#34;xxxx&#34;
+    }
+]
+
+export const testLoginUserId = [
+
+    {
+        summary: &#34;正确id账号登录验证&#34;,
+        username:&#34;waitnoww&#34;,
+        password:&#34;xxxx&#34;
+    }
+]
+export const testLoginUserMobilephone = [
+
+    {
+        summary: &#34;正确手机号账号登录验证&#34;,
+        username:&#34;18888139031&#34;,
+        password:&#34;xxxx&#34;
+    }
+]
+</code></pre><h5 id="编写测试用例">编写测试用例</h5>
+<ul>
+<li>
+<p>在项目cypress/integration文件夹下新建js测试用例文件，示例文件名为：testLogin_guanggoo_data_by_js.js</p>
+</li>
+<li>
+<p>示例代码如下：</p>
+</li>
+</ul>
+<pre tabindex="0"><code>// 导入js文件获取测试数据
+import {
+    testLoginUserEmail,
+    testLoginUserId,
+    testLoginUserMobilephone
+} from &#34;./testData/testLogin.data&#34;;
+
+
+// 测试用例
+describe(&#34;光谷社区登录验证&#34;, function () {
+
+    // 执行用例执行用例之前先进入首页
+    beforeEach(function () {
+        // 访问并登录光谷社区
+        cy.visit(&#39;http://www.guanggoo.com/&#39;) //访问url
+        cy.url().should(&#39;include&#39;, &#39;www.guanggoo.com&#39;) //验证目标url 是否正确包含光谷社区正确域名 验证是否正确跳转到光谷社区页面
+        cy.title().should(&#39;contain&#39;, &#39;光谷社区&#39;) //验证页面 title 是否正确
+    })
+
+    //正确邮箱账号登录
+    it(testLoginUserEmail[0].summary, function () {
+        cy.get(&#39;:nth-child(1) &gt; .nav-collapse&#39;).click() //点击登录按钮
+        cy.url().should(&#39;include&#39;, &#39;login&#39;) //验证正确跳转到登录页面
+        cy.get(&#39;#email&#39;) //根据 css 定位用户名输入框
+            .type(testLoginUserEmail[0].username) //输入邮箱用户名
+        cy.get(&#39;#password&#39;) //根据 css 定位密码输入框
+            .type(testLoginUserEmail[0].password) //输入密码
+        cy.get(&#39;.btn-success&#39;).click() //点击登录按钮
+        cy.get(&#39;.ui-header &gt; .username&#39;)
+            .should(&#39;have.text&#39;, &#39;waitnoww&#39;) //验证登录正确返回到首页，登录信息返回正确
+    }),
+
+    //正确ID账号登录
+    it(testLoginUserId[0].summary, function () {
+        cy.get(&#39;:nth-child(1) &gt; .nav-collapse&#39;).click() //点击登录按钮
+        cy.url().should(&#39;include&#39;, &#39;login&#39;) //验证正确跳转到登录页面
+        cy.get(&#39;#email&#39;) //根据 css 定位用户名输入框
+            .type(testLoginUserId[0].username) //输入ID用户名
+        cy.get(&#39;#password&#39;) //根据 css 定位密码输入框
+            .type(testLoginUserId[0].password) //输入密码
+        cy.get(&#39;.btn-success&#39;).click() //点击登录按钮
+        cy.get(&#39;.ui-header &gt; .username&#39;)
+            .should(&#39;have.text&#39;, &#39;waitnoww&#39;) //验证登录正确返回到首页，登录信息返回正确
+    }),
+
+    //正确手机账号登录
+    it(testLoginUserMobilephone[0].summary, function () {
+        cy.get(&#39;:nth-child(1) &gt; .nav-collapse&#39;).click() //点击登录按钮
+        cy.url().should(&#39;include&#39;, &#39;login&#39;) //验证正确跳转到登录页面
+        cy.get(&#39;#email&#39;) //根据 css 定位用户名输入框
+            .type(testLoginUserMobilephone[0].username) //输入手机号用户名
+        cy.get(&#39;#password&#39;) //根据 css 定位密码输入框
+            .type(testLoginUserMobilephone[0].password) //输入密码
+        cy.get(&#39;.btn-success&#39;).click() //点击登录按钮
+        cy.get(&#39;.ui-header &gt; .username&#39;)
+            .should(&#39;have.text&#39;, &#39;waitnoww&#39;) //验证登录正确返回到首页，登录信息返回正确
+    })
+
+        // 执行用例执行用例之后清除登录信息
+        afterEach(function () {
+            // 清除cookies
+            cy.clearCookies()
+        })
+})
+</code></pre><h5 id="运行测试用例">运行测试用例</h5>
+<ul>
+<li>运行脚本：npm run cypress:open</li>
+<li>点击运行testLogin_guanggoo_data_by_js.js用例</li>
+<li>查看运行结果(测试数据能正常获取到)</li>
+</ul>
+<h3 id="fixture测试数据驱动介绍">fixture测试数据驱动介绍</h3>
+<blockquote>
+<p>fixture数据驱动方式是cypress框架推荐的方法，支持的格式也很多，如.json/txt/html/jpg/gif/mp3/zip等，具体可参考：https://docs.cypress.io/api/commands/fixture</p>
+</blockquote>
+<h4 id="简介-1">简介</h4>
+<p>Cypress使用cypress/fixture目录存放json文件数据，cy.fixture() 加载测试数据，如果不指定文件路径，默认从cypress/fixtures文件下去查找，也可以自己设置文件路径</p>
+<h4 id="使用方法-1">使用方法</h4>
+<blockquote>
+<p>以json格式读取举例介绍</p>
+</blockquote>
+<h5 id="新建测试数据json文件">新建测试数据json文件</h5>
+<ul>
+<li>
+<p>示例：在项目的cypress/fixtures 文件夹下新建一个json文件，示例文件名为：testLoginData.json</p>
+</li>
+<li>
+<p>testLoginData.json示例代码如下（账号密码记得换成自己的）：</p>
+</li>
+</ul>
+<pre tabindex="0"><code>{
+    &#34;testLoginUserEmail&#34;: {
+        &#34;summary&#34;: &#34;正确邮箱账号登录验证&#34;,
+        &#34;username&#34;: &#34;dengnao.123@163.com&#34;,
+        &#34;password&#34;: &#34;xxxx&#34;
+    },
+    &#34;testLoginUserId&#34;: {
+        &#34;summary&#34;: &#34;正确id账号登录验证&#34;,
+        &#34;username&#34;: &#34;waitnoww&#34;,
+        &#34;password&#34;: &#34;xxxx&#34;
+    },
+    &#34;testLoginUserMobilephone&#34;: {
+        &#34;summary&#34;: &#34;正确手机号账号登录验证&#34;,
+        &#34;username&#34;: &#34;18888889031&#34;,
+        &#34;password&#34;: &#34;xxxx&#34;
+    }
+}
+</code></pre><h5 id="编写测试用例-1">编写测试用例</h5>
+<ul>
+<li>
+<p>在项目cypress/integration文件夹下新建js测试用例文件，示例文件名为：testLogin_guanggoo_data_by_fixture.js</p>
+</li>
+<li>
+<p>示例代码如下：</p>
+</li>
+</ul>
+<pre tabindex="0"><code>// 测试用例
+describe(&#34;光谷社区登录验证&#34;, function () {
+
+    // 执行用例执行用例之前先进入首页
+    beforeEach(function () {
+        // 访问并登录光谷社区
+        cy.visit(&#39;http://www.guanggoo.com/&#39;) //访问url
+        cy.url().should(&#39;include&#39;, &#39;www.guanggoo.com&#39;) //验证目标url 是否正确包含光谷社区正确域名 验证是否正确跳转到光谷社区页面
+        cy.title().should(&#39;contain&#39;, &#39;光谷社区&#39;) //验证页面 title 是否正确
+        // 获取测试数据
+        cy.fixture(&#39;testLoginData.json&#39;).as(&#39;loginData&#39;)
+    })
+
+    //正确邮箱账号登录
+    it(&#34;正确邮箱账号登录验证&#34;, function () {
+        cy.get(&#39;:nth-child(1) &gt; .nav-collapse&#39;).click() //点击登录按钮
+        cy.url().should(&#39;include&#39;, &#39;login&#39;) //验证正确跳转到登录页面
+        cy.get(&#39;#email&#39;) //根据 css 定位用户名输入框
+            .type(this.loginData.testLoginUserEmail.username) //输入邮箱用户名
+        cy.get(&#39;#password&#39;) //根据 css 定位密码输入框
+            .type(this.loginData.testLoginUserEmail.password) //输入密码
+        cy.get(&#39;.btn-success&#39;).click() //点击登录按钮
+        cy.get(&#39;.ui-header &gt; .username&#39;)
+            .should(&#39;have.text&#39;, &#39;waitnoww&#39;) //验证登录正确返回到首页，登录信息返回正确
+    }),
+
+    //正确ID账号登录
+    it(&#34;正确id账号登录验证&#34;, function () {
+        cy.get(&#39;:nth-child(1) &gt; .nav-collapse&#39;).click() //点击登录按钮
+        cy.url().should(&#39;include&#39;, &#39;login&#39;) //验证正确跳转到登录页面
+        cy.get(&#39;#email&#39;) //根据 css 定位用户名输入框
+            .type(this.loginData.testLoginUserId.username) //输入ID用户名
+        cy.get(&#39;#password&#39;) //根据 css 定位密码输入框
+            .type(this.loginData.testLoginUserId.password) //输入密码
+        cy.get(&#39;.btn-success&#39;).click() //点击登录按钮
+        cy.get(&#39;.ui-header &gt; .username&#39;)
+            .should(&#39;have.text&#39;, &#39;waitnoww&#39;) //验证登录正确返回到首页，登录信息返回正确
+    }),
+
+    //正确手机账号登录
+    it(&#34;正确手机号账号登录验证&#34;, function () {
+        cy.get(&#39;:nth-child(1) &gt; .nav-collapse&#39;).click() //点击登录按钮
+        cy.url().should(&#39;include&#39;, &#39;login&#39;) //验证正确跳转到登录页面
+        cy.get(&#39;#email&#39;) //根据 css 定位用户名输入框
+            .type(this.loginData.testLoginUserMobilephone.username) //输入手机号用户名
+        cy.get(&#39;#password&#39;) //根据 css 定位密码输入框
+            .type(this.loginData.testLoginUserMobilephone.password) //输入密码
+        cy.get(&#39;.btn-success&#39;).click() //点击登录按钮
+        cy.get(&#39;.ui-header &gt; .username&#39;)
+            .should(&#39;have.text&#39;, &#39;waitnoww&#39;) //验证登录正确返回到首页，登录信息返回正确
+    })
+
+        // 执行用例执行用例之后清除登录信息
+        afterEach(function () {
+            // 清除cookies
+            cy.clearCookies()
+        })
+})
+</code></pre><h5 id="运行测试用例-1">运行测试用例</h5>
+<ul>
+<li>运行脚本：npm run cypress:open</li>
+<li>点击运行testLogin_guanggoo_data_by_fixture.js用例</li>
+<li>查看运行结果(测试数据能正常获取到)</li>
+</ul>
+<h2 id="方法封装参数化">方法封装参数化</h2>
+<h3 id="简介-2">简介</h3>
+<p>cypress框架提供了一个commands.js可以自定义各种命令，用来封装各种通用方法，参数化方法，常用脚本等；</p>
+<p>将常用的通用方法如登录方法在cypress/support/commands.js中编写完成之后，与cy.get()/cy.visit()一样，可以直接用cy.xxx()形式调用，非常方便，减少维护成本</p>
+<h3 id="使用介绍">使用介绍</h3>
+<blockquote>
+<p>示例会介绍常用的参数化登录命令和进入首页命令</p>
+</blockquote>
+<h4 id="登录参数化登录封装">登录参数化登录封装</h4>
+<h5 id="代码编写">代码编写</h5>
+<ul>
+<li>打开cypress/support/commands.js文件</li>
+<li>输入如下代码：</li>
+</ul>
+<pre tabindex="0"><code>//将用户名和密码进行登录参数化
+Cypress.Commands.add(&#34;login&#34;,(username,password) =&gt; {
+    cy.clearCookies() //清除cookies,保证页面为未登录状态
+    cy.visit(&#39;http://www.guanggoo.com/&#39;) //访问url
+    cy.url().should(&#39;include&#39;, &#39;www.guanggoo.com&#39;) //验证目标url 是否正确包含光谷社区正确域名 验证是否正确跳转到光谷社区页面
+    cy.title().should(&#39;contain&#39;, &#39;光谷社区&#39;) //验证页面 title 是否正确
+    cy.get(&#39;:nth-child(1) &gt; .nav-collapse&#39;).click() //点击登录按钮
+    cy.url().should(&#39;include&#39;, &#39;login&#39;) //验证正确跳转到登录页面
+    cy.get(&#39;#email&#39;) //根据 css 定位用户名输入框
+    .type(username) //输入参数化的用户名
+    cy.get(&#39;#password&#39;) //根据 css 定位密码输入框
+    .type(password) //输入参数化的密码
+    cy.get(&#39;.btn-success&#39;).click() //点击登录按钮
+    cy.get(&#39;:nth-child(2) &gt; .nav-collapse&#39;).should(&#39;contain&#39;, &#39;设置&#39;) //验证登录成功回到首页，设置按钮展示正确
+    })
+</code></pre><h4 id="代码使用">代码使用</h4>
+<ul>
+<li>在测试用例中可直接进行方法调用cy.login(username,password)换成自己的账号密码进行登录操作了</li>
+</ul>
+<pre tabindex="0"><code>// 账号密码须换成正确可用的
+cy.login(&#34;dengnao.123@163.com&#34;,&#34;xxxx&#34;)
+</code></pre><h4 id="进入首页方法封装">进入首页方法封装</h4>
+<h5 id="代码编写-1">代码编写</h5>
+<ul>
+<li>打开cypress/support/commands.js文件</li>
+<li>输入如下代码：</li>
+</ul>
+<pre tabindex="0"><code>//进入首页
+Cypress.Commands.add(&#34;initHomePage&#34;,() =&gt; {
+    cy.visit(&#39;http://www.guanggoo.com/&#39;) //访问url
+    cy.url().should(&#39;include&#39;, &#39;www.guanggoo.com&#39;) //验证目标url 是否正确包含光谷社区正确域名 验证是否正确跳转到光谷社区页面
+    cy.title().should(&#39;contain&#39;, &#39;光谷社区&#39;) //验证页面 title 是否正确
+})
+</code></pre><h4 id="代码使用-1">代码使用</h4>
+<ul>
+<li>在测试用例中可直接进行方法调用cy.initHomePage()即可进入首页</li>
+</ul>
+<pre tabindex="0"><code>// 进入首页
+cy.initHomePage()
+</code></pre><h2 id="测试框架介绍">测试框架介绍</h2>
+<h3 id="简介-3">简介</h3>
+<p>Cypress框架采用了Mocha框架的语法，故Mocha框架的测试语法可在cypress上直接使用</p>
+<h3 id="语法介绍">语法介绍</h3>
+<h4 id="describe">describe()</h4>
+<p>定义测试套件，里面还可以定义多个context或it</p>
+<h4 id="context">context()</h4>
+<p>定义测试套件，是describe()的别名，可以替代describe</p>
+<h4 id="it">it()</h4>
+<p>定义测试用例</p>
+<h4 id="before">before()</h4>
+<p>在一个测试套件中的所有测试用例之前执行，设置一些运行testcase的前置条件</p>
+<pre tabindex="0"><code>before(function() {
+    // runs once before the first test in this block
+  });
+</code></pre><h4 id="beforeeach">beforeEach()</h4>
+<p>在每个测试用例之前执行</p>
+<pre tabindex="0"><code>    beforeEach(function () {
+        // 访问并登录光谷社区
+        cy.visit(&#39;http://www.guanggoo.com/&#39;) //访问url
+        cy.url().should(&#39;include&#39;, &#39;www.guanggoo.com&#39;) //验证目标url 是否正确包含光谷社区正确域名 验证是否正确跳转到光谷社区页面
+        cy.title().should(&#39;contain&#39;, &#39;光谷社区&#39;) //验证页面 title 是否正确
+    })
+</code></pre><h4 id="aftereach">afterEach()</h4>
+<p>在每个测试用例之后执行，可以执行清除数据等操作</p>
+<pre tabindex="0"><code>afterEach(function () {
+// 清除cookies
+cy.clearCookies()
+})
+</code></pre><h4 id="after">after()</h4>
+<p>在一个测试套件中的所有测试用例之后执行</p>
+<pre tabindex="0"><code>  after(function() {
+    // runs once after the last test in this block
+  });
+</code></pre><h4 id="only">.only()</h4>
+<p>设置只执行某个testcase/testsuite</p>
+<pre tabindex="0"><code>describe(&#39;Array&#39;, function() {
+  describe.only(&#39;#indexOf()&#39;, function() {
+    // ...
+  });
+});
+</code></pre><h4 id="skip">.skip()</h4>
+<p>设置跳过执行某个testcase/testsuite</p>
+<pre tabindex="0"><code>describe(&#39;Array&#39;, function() {
+  describe(&#39;#indexOf()&#39;, function() {
+    it.skip(&#39;should return -1 unless present&#39;, function() {
+      // this test will not be run
+    });
+
+    it(&#39;should return the index when present&#39;, function() {
+      // this test will be run
+    });
+  });
+});
+</code></pre><h3 id="参考网址">参考网址</h3>
+<ul>
+<li><a href="https://docs.cypress.io/guides/references/bundled-tools#Mocha">https://docs.cypress.io/guides/references/bundled-tools#Mocha</a></li>
+</ul>
+
+			</div>
+
+			<div class="tags">
+				
+					
+				
+			</div>
+
+			
+			<div class="back">
+				<a href="https://github.com/waitnoww/blob/master/content/posts/cypress-demo4.md" title="github"><i data-feather="github"></i> Edit this on GitHub</a>
+			</div>
+			
+			
+			<div class="back">
+				<a href="https://naod.com.cn/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+					
+					Next time, we'll talk about <i>"What Tiger King can teach us about x86 Assembly"</i>
+					
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>1  © Copyright 2022 www.naod.com.cn </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

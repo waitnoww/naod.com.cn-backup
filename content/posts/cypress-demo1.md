@@ -1,4 +1,8 @@
-# Cypress UI自动化测试框架学习（1）-上手
+---
+title: "Cypress UI 自动化测试框架学习（1）- 上手"
+date: 2022-07-08T09:49:24+08:00
+draft: true
+---
 
 ## Introduction
 
@@ -8,11 +12,11 @@ Cypress 是自集成的，提供了一套完整的端到端测试，无须借助
 
 不同于其他只能测试 UI 层的前端测试工具，Cypress 允许编写所有类型的测试，覆盖了测试金字塔模型的所有测试类型【界面测试，集成测试，单元测试】
 
-Cypress官网：https://www.cypress.io/
+Cypress 官网：https://www.cypress.io/
 
 ## Getting Started
 
-> 下面以MacOS来进行介绍，其他系统可参考官网信息
+> 下面以 MacOS 来进行介绍，其他系统可参考官网信息
 
 ### Operating System
 
@@ -21,15 +25,15 @@ Cypress官网：https://www.cypress.io/
 
 ### Before Started
 
-- 已安装好node.js和npm
-  
+- 已安装好 node.js 和 npm
+
 ![](https://tva1.sinaimg.cn/large/008i3skNgy1gqvntxlww1j30k406waau.jpg)
 
-- 已安装好vs code或者其他代码编辑器
+- 已安装好 vs code 或者其他代码编辑器
 
 ### Started and Run
 
-- Step1：通过npm新建项目
+- Step1：通过 npm 新建项目
 
 ```
 # 新建项目文件夹
@@ -40,16 +44,16 @@ $ cd cypress-demo
 $ npm init
 ```
 
-- Step2：安装cypress
+- Step2：安装 cypress
 
 ```
 # 项目安装cypress包
 $ npm install cypress --save-dev
 ```
 
-- Step3：运行cypress程序
+- Step3：运行 cypress 程序
 
-> 若提示：npm ERR! missing script: cypress:open，可在项目根目录package.json文件的scripts下新增"cypress:open": "cypress open"，保存后再次运行命令即可
+> 若提示：npm ERR! missing script: cypress:open，可在项目根目录 package.json 文件的 scripts 下新增"cypress:open": "cypress open"，保存后再次运行命令即可
 
 ```
 # 启动demo
@@ -59,10 +63,10 @@ $ npm run cypress:open
 ### Started Screenshot
 
 - 运行截图
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gqvsqw8ytcj323h0u0qp2.jpg)
+  ![](https://tva1.sinaimg.cn/large/008i3skNgy1gqvsqw8ytcj323h0u0qp2.jpg)
 
-- demo用例执行截图
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gqvsshqeflj31gl0u0nbf.jpg)
+- demo 用例执行截图
+  ![](https://tva1.sinaimg.cn/large/008i3skNgy1gqvsshqeflj31gl0u0nbf.jpg)
 
 ## Try First Testscript
 
@@ -79,12 +83,12 @@ $ npm run cypress:open
 
 ### Testscript
 
-- 在项目cypress/integration下新建demo文件夹
+- 在项目 cypress/integration 下新建 demo 文件夹
 
-- 在demo文件夹下新建demo-guanggoo.js
+- 在 demo 文件夹下新建 demo-guanggoo.js
 
-- demo-guanggoo.js编写测试脚本
-  
+- demo-guanggoo.js 编写测试脚本
+
 > 脚本中账号密码需换成自己的账号密码
 
 ```
@@ -109,7 +113,7 @@ describe('first testcase for cypress',function(){
 
 ### Run Screenshot
 
-- 运行cypress程序
+- 运行 cypress 程序
 
 ```
 # 启动
@@ -118,7 +122,7 @@ $ npm run cypress:open
 
 ![](https://tva1.sinaimg.cn/large/008i3skNgy1gqvtcq43csj323f0u0qn9.jpg)
 
-- 页面上选择点击运行demo-guanggoo.js即可
+- 页面上选择点击运行 demo-guanggoo.js 即可
 
 ![](https://tva1.sinaimg.cn/large/008i3skNgy1gqvtjib8jdj31g80u0e81.jpg)
 
