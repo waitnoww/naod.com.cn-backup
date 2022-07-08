@@ -10,10 +10,10 @@
     <lastBuildDate>Sun, 15 Mar 2020 15:25:23 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/%E7%BC%BA%E9%99%B7%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>缺陷平台引入阶段定义解析</title>
-      <link>https://naod.com.cn/bug-manage-1/</link>
+      <link>https://naod.com.cn/2020/03/%E7%BC%BA%E9%99%B7%E5%B9%B3%E5%8F%B0%E5%BC%95%E5%85%A5%E9%98%B6%E6%AE%B5%E5%AE%9A%E4%B9%89%E8%A7%A3%E6%9E%90/</link>
       <pubDate>Sun, 15 Mar 2020 15:25:23 +0000</pubDate>
       
-      <guid>https://naod.com.cn/bug-manage-1/</guid>
+      <guid>https://naod.com.cn/2020/03/%E7%BC%BA%E9%99%B7%E5%B9%B3%E5%8F%B0%E5%BC%95%E5%85%A5%E9%98%B6%E6%AE%B5%E5%AE%9A%E4%B9%89%E8%A7%A3%E6%9E%90/</guid>
       <description>“缺陷引入阶段”分以下几种： 1.历史遗留 2.需求分析 3.产品设计 4.编码实现 5.需求变更 不同阶段含义解释 1.历史遗留
 属于历史版本，继承版本或移植代码中的问题，非新开发引入的问题
 2.需求分析
@@ -28,10 +28,10 @@
     
     <item>
       <title>Mantis BUG管理平台使用手册</title>
-      <link>https://naod.com.cn/mantis-user-1/</link>
+      <link>https://naod.com.cn/2020/03/mantis-bug%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</link>
       <pubDate>Fri, 13 Mar 2020 09:17:57 +0000</pubDate>
       
-      <guid>https://naod.com.cn/mantis-user-1/</guid>
+      <guid>https://naod.com.cn/2020/03/mantis-bug%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</guid>
       <description>Mantis BUG管理平台使用手册 登录 登录地址：https://mantisbt.org/bugs/my_view_page.php 账号密码：自己注册账号密码 首页 首页会展示“等待我解决的问题”数量和“我报告的未解决的问题”数量 同样会展示项目新闻，RSS信息 我的视图 登录之后首先进入“我的视图”页，这里显示5类问题：
 指定给我的：需要由登录者处理的问题 未指定的：已经报告但尚未分配到开发人员的问题 由我报告的：由登录者本人报告的问题 已解决的 最近修改 我正在监视的：用户可以选择需要关注的问题进行监视 注：页面右上角有一个切换项目的下拉菜单，可以选择查看本人需要关注的某个项目的问题。不同状态的问题会有不同的颜色标注。 查看问题 查看问题页面上面一部分为查询条件组合（过滤器），用户可以指定查找问题的条件，点击某项之后将出现下拉菜单供用户选择； 功能点有：
 高级过滤器：全部塞选条件 创建固定链接：给选择好的过滤条件创建一个固定的链接，给其他人访问 重置过滤器：重置所选择的塞选过滤条件 保存当前过滤器：保存当前所选择的塞选过滤条件 查看问题页面下面一部分为所有问题列表，列出了问题的摘要信息，点击问题之后将出现“查看问题详细资料”页，也可以将塞选过滤查询出的问题打印成报告和导出CSV文件

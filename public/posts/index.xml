@@ -6,79 +6,886 @@
     <description>Recent content in Posts on 软件测试同学</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© Copyright www.naod.com.cn</copyright>
-    <lastBuildDate>Fri, 03 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://naod.com.cn/posts/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© Copyright 2022 www.naod.com.cn</copyright>
+    <lastBuildDate>Sun, 24 May 2020 09:40:00 +0000</lastBuildDate><atom:link href="https://naod.com.cn/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://naod.com.cn/2021/09/markdown-syntax-guide/</link>
-      <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
+      <title>在RaspberryPi上安装Jenkins</title>
+      <link>https://naod.com.cn/2020/05/%E5%9C%A8raspberrypi%E4%B8%8A%E5%AE%89%E8%A3%85jenkins/</link>
+      <pubDate>Sun, 24 May 2020 09:40:00 +0000</pubDate>
       
-      <guid>https://naod.com.cn/2021/09/markdown-syntax-guide/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+      <guid>https://naod.com.cn/2020/05/%E5%9C%A8raspberrypi%E4%B8%8A%E5%AE%89%E8%A3%85jenkins/</guid>
+      <description>安装Java pi@raspberrypi:~ $ java -version java version &amp;#34;1.8.0_65&amp;#34; Java(TM) SE Runtime Environment (build 1.8.0_65-b17) Java HotSpot(TM) Client VM (build 25.65-b01, mixed mode) 安装Jenkins pi@raspberrypi:~ $ wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add - OK pi@raspberrypi:~ $ sudo sh -c &amp;#39;echo deb http://pkg.jenkins.io/debian-stable binary/ &amp;gt; /etc/apt/sources.list.d/jenkins.list&amp;#39; pi@raspberrypi:~ $ sudo apt-get update Ign http://pkg.jenkins.io binary/ InRelease Get:1 http://mirrordirector.raspbian.org jessie InRelease [15.0 kB] Get:2 http://pkg.jenkins.io binary/ Release.gpg [181 B] Get:3 http://pkg.jenkins.io binary/ Release [2,042 B] Get:4 http://archive.</description>
     </item>
     
     <item>
-      <title>Hugo shortcodes</title>
-      <link>https://naod.com.cn/2021/07/hugo-shortcodes/</link>
-      <pubDate>Sun, 04 Jul 2021 12:13:36 +0530</pubDate>
+      <title>Git简易上手指南</title>
+      <link>https://naod.com.cn/2020/04/git%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Thu, 16 Apr 2020 11:18:30 +0000</pubDate>
       
-      <guid>https://naod.com.cn/2021/07/hugo-shortcodes/</guid>
-      <description>Images Dave Herring Dave Herring Dave Herring Github Gist Youtube video Tweet Owl bet you&amp;#39;ll lose this staring contest 🦉 pic.twitter.com/eJh4f2zncC
-&amp;mdash; San Diego Zoo Wildlife Alliance (@sandiegozoo) October 26, 2021 Vimeo Instagram </description>
+      <guid>https://naod.com.cn/2020/04/git%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/</guid>
+      <description>[TOC]
+Git安装 推荐官网安装，上链接：https://gitscm.com/downloads/ 默认设置安装即可 配置ssh 打开安装完成git中的git bash 输入ssh-keygen -t rsa -C &amp;lsquo;xxx@xxx.com&amp;rsquo; （xxx@xxx.com是你的邮箱地址） 一路按回车键，等待命令执行完成 然后找到你电脑目录中打开~/.ssh/id_rsa.pub文件 复制id_rsa.pub文件中的内容到github或者gitlab的ssh key中即可完成设置 Git命令 # 在当前目录新建一个Git代码库 $ git init # 新建一个目录，将其初始化为Git代码库 $ git init [project-name] # 下载一个项目和它的整个代码历史 $ git clone [url] # 添加指定文件到暂存区 $ git add [file1] [file2] ... # 添加指定目录到暂存区，包括子目录 $ git add [dir] # 添加当前目录的所有文件到暂存区 $ git add . # 添加每个变化前，都会要求确认 # 对于同一个文件的多处变化，可以实现分次提交 $ git add -p # 删除工作区文件，并且将这次删除放入暂存区 $ git rm [file1] [file2] .</description>
     </item>
     
     <item>
-      <title>Typography</title>
-      <link>https://naod.com.cn/2021/05/typography/</link>
-      <pubDate>Sat, 15 May 2021 12:13:38 +0530</pubDate>
+      <title>使用python的turtle来画图</title>
+      <link>https://naod.com.cn/2020/04/%E4%BD%BF%E7%94%A8python%E7%9A%84turtle%E6%9D%A5%E7%94%BB%E5%9B%BE/</link>
+      <pubDate>Thu, 02 Apr 2020 09:16:06 +0000</pubDate>
       
-      <guid>https://naod.com.cn/2021/05/typography/</guid>
-      <description>Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.
-Heading 1 Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio.</description>
+      <guid>https://naod.com.cn/2020/04/%E4%BD%BF%E7%94%A8python%E7%9A%84turtle%E6%9D%A5%E7%94%BB%E5%9B%BE/</guid>
+      <description>首先是安装turtle包，安装教程在这里
+然后开始画图吧
+默认窗口 源代码如下：
+import turtle import time # 默认窗口 def new(): turtle.dot(10, &amp;#39;red&amp;#39;) turtle.write(&amp;#39;(0, 0), zfont = (8)&amp;#39;) turtle.ht() # 这里sleep是为了让窗口展示时间延长，大家可以自由调整 time.sleep(5) if __name__ == &amp;#34;__main__&amp;#34;: new() 运行结果： 画个简版太阳 源代码如下：
+import turtle import time # 太阳 def sun(): turtle.color(&amp;#39;red&amp;#39;) turtle.penup() turtle.goto(250, 200) turtle.pendown() turtle.begin_fill() turtle.circle(50) turtle.end_fill() turtle.color(&amp;#39;black&amp;#39;, &amp;#39;blue&amp;#39;) turtle.begin_fill() # 这里sleep是为了让窗口展示时间延长，大家可以自由调整 time.sleep(5) if __name__ == &amp;#34;__main__&amp;#34;: sun() 运行结果： 画纸飞机 源代码如下：
+import turtle import time # 飞机 def plane(): turtle.penup() turtle.</description>
     </item>
     
     <item>
-      <title>Getting Started with Traveling Ultralight</title>
-      <link>https://naod.com.cn/2020/12/getting-started-with-traveling-ultralight/</link>
-      <pubDate>Thu, 31 Dec 2020 12:13:35 +0530</pubDate>
+      <title>mac Unable to access Android SDK add-on list</title>
+      <link>https://naod.com.cn/2020/04/mac-unable-to-access-android-sdk-add-on-list/</link>
+      <pubDate>Wed, 01 Apr 2020 14:02:09 +0000</pubDate>
       
-      <guid>https://naod.com.cn/2020/12/getting-started-with-traveling-ultralight/</guid>
-      <description>I’m on a trip at the moment, and a friend who generously let me sleep on his couch looked at my small travel backpack and commented on how little I travel with: “That’s impressive,” he said.
-I was a little surprised, because though I’ve gotten that comment before, it’s become normal for me to travel with just a small bag (10 lbs. or less, usually), and I have friends who travel with even less.</description>
+      <guid>https://naod.com.cn/2020/04/mac-unable-to-access-android-sdk-add-on-list/</guid>
+      <description>当我的Mac搭建好Android Studio环境后，第一次使用Android Studio时，会提示Unable to access Android SDK add-on list，如下图所示： 网上查询到的解决方法也是Windows中的相同：打开bin\idea.properties这个文件，末尾添加一行disable.android.first.run=true就行了。
+那问题来了，刚刚入手mac的我来说，首要的问题是怎么找到bin\idea.properties这个文件
+继续网上检索到最后的答案是：
+打开Finder 在左侧的列表中点击应用程序 然后会在右侧的程序列表中看到已经安装的AndroidStudio 右键AndroidStudio的图标 选择显示包内容 会看到一个Contents文件夹 进入Contents文件夹 就会看到bin文件夹了 进入bin文件夹然后修改idea.properties文件了 末尾添加一行disable.android.first.run=true </description>
     </item>
     
     <item>
-      <title>How I Learned to Stop Procrastinating, &amp; Love Letting Go</title>
-      <link>https://naod.com.cn/2018/03/how-i-learned-to-stop-procrastinating-love-letting-go/</link>
-      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      <title>测试基础-什么是增量模型</title>
+      <link>https://naod.com.cn/2020/04/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AF%E5%A2%9E%E9%87%8F%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Wed, 01 Apr 2020 09:40:22 +0000</pubDate>
       
-      <guid>https://naod.com.cn/2018/03/how-i-learned-to-stop-procrastinating-love-letting-go/</guid>
-      <description>The end of procrastination is the art of letting go.
-I’ve been a lifelong procrastinator, at least until recent years. I would put things off until deadline, because I knew I could come through. I came through on tests after cramming last minute, I turned articles in at the deadline after waiting until the last hour, I got things done.
-Until I didn’t. It turns out procrastinating caused me to miss deadlines, over and over.</description>
+      <guid>https://naod.com.cn/2020/04/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AF%E5%A2%9E%E9%87%8F%E6%A8%A1%E5%9E%8B/</guid>
+      <description>什么是增量模型——优点、缺点以及什么时候使用它 在增量模型中，整个需求被划分为不同的构建。这里发生了多个开发周期，使生命周期成为一个“多瀑布”循环。循环被分成更小、更容易管理的模块。增量模型是一种软件开发模型。
+在此模型中，每个模块都通过了需求，设计，实施和测试阶段。 在第一个模块中生成一个工作版本的软件，因此您可以在软件生命周期的早期使用软件。 模块的每个后续版本都会为先前版本添加功能。 该过程一直持续到完成系统。
+例如： 在上图中，当我们逐步工作时，我们逐个添加组件，并且我们期望每个组件都完全完成，然后继续添加碎片直到完整。 如上图所示，一个人已经想到了应用程序。
+然后，他开始构建它，在第一次迭代中，应用程序或产品的第一个模块已经完全就绪，可以演示给客户。
+同样，在第二次迭代中，另一个模块已经准备好并与第一个模块集成。类似地，在第三次迭代中，整个产品已经准备好并集成了。因此，产品一步地准备就绪。
+增量模型图 增量模式的优点： 在软件生命周期的早期快速生成工作软件。
+该模型更灵活-更改范围和需求的成本更低。
+在较小的迭代过程中，测试和调试更容易。
+在这个模型中，客户可以对每个构建做出响应。
+降低了初始交货成本。
+更容易管理风险，因为风险部分在迭代过程中被识别和处理。
+增量模式的缺点： 需要良好的规划和设计。
+需要对整个系统进行明确和完整的定义，然后才能将其分解并逐步构建。
+总成本高于瀑布.
+何时使用增量模型： 当整个系统的需求得到明确的定义和理解时，可以使用该模型。
+必须定义主要的需求，然而一些细节可能会随着时间的推移而发展。
+有必要尽早将一种产品推向市场。
+项新技术正在使用中。
+没有具备所需技能集的资源。
+有一些高风险的特点和目标。</description>
     </item>
     
     <item>
-      <title>Fearlessness: How to Stop Running from Space</title>
-      <link>https://naod.com.cn/2018/03/fearlessness-how-to-stop-running-from-space/</link>
-      <pubDate>Sun, 18 Mar 2018 12:13:30 +0530</pubDate>
+      <title>测试基础-什么是V模型</title>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AFv%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Thu, 26 Mar 2020 09:51:36 +0000</pubDate>
       
-      <guid>https://naod.com.cn/2018/03/fearlessness-how-to-stop-running-from-space/</guid>
-      <description>We spend our days filling in every available space, cramming in more tasks, responding to messages, checking social media and online sites, watching videos.
-We are afraid of empty space in our lives.
-The result is often a continual busyness, constant distraction and avoidance, lack of focus, lack of satisfaction with our lives.
-We run from silence. We run from the spaces between tasks and appointments. We run from solitude and stillness.</description>
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AFv%E6%A8%A1%E5%9E%8B/</guid>
+      <description>什么是v模型-优点，缺点和什么时候使用它?
+V-模型是指验证和验收模型。就像瀑布模型，V型生命周期是流程执行的路径，每个阶段必须在下一个阶段开始之前完成。V模型是许多软件开发模型。
+在V模型中，产品的测试计划与相应的开发阶段同步进行。
+V-模型的各个阶段如下： 像BRS和SRS一样的需求，生命周期模型就像瀑布模型一样开始。 但是，在此模型中，在开发之前，将创建系统测试计划。 测试计划侧重于满足需求收集中指定的功能。
+高层设计阶段的重点是系统的架构和设计。它概述了解决方案、平台、系统、产品和服务/流程。集成试验计划也是在这个阶段创建的，以测试软件系统的各个部分一起工作的能力。
+低层设计 (LLD)阶段是设计实际软件组件的地方。它定义了系统每个组件的实际逻辑。类图与所有方法和类之间的关系都属于LLD。组件测试也是在这个阶段创建的。
+实施同样，所有的编码都发生在这个阶段。一旦编码完成，执行的路径就会继续在V的右侧继续执行，而之前开发的测试计划现在已经开始使用了。
+编码：这是在V形模型的底部。开发人员将模块设计转换为代码。单元测试由开发人员在他们编写的代码上执行。
+V模型的优点： 简单易用。
+像计划、测试设计这样的测试活动，在编码之前就会发生，这节省了很多时间。因此，在瀑布模型上取得成功的可能性更大。
+主动缺陷跟踪，即在早期发现缺陷。
+避免缺陷的向下流动。
+适用于容易理解需求的小型项目。
+V模型的缺点： 非常僵硬，最不灵活。
+软件是在实现阶段开发的，因此不产生软件的早期原型。
+如果中途发生任何更改，则必须更新测试文档和需求文档。
+何时使用V型： 对于需求明确和固定的中小型项目，应使用V型模型。
+当有足够的技术资源和所需的技术专长时，应选择V型模型。
+选择V型模型需要客户的高度信心.由于没有生产任何原型，因此在满足客户期望方面存在很高的风险。</description>
     </item>
     
     <item>
-      <title>Primer: When You Have Too Much to Do</title>
-      <link>https://naod.com.cn/2018/03/primer-when-you-have-too-much-to-do/</link>
-      <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
+      <title>测试基础-什么是瀑布模型？</title>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AF%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Thu, 26 Mar 2020 09:51:36 +0000</pubDate>
       
-      <guid>https://naod.com.cn/2018/03/primer-when-you-have-too-much-to-do/</guid>
-      <description>You have a to-do list that scrolls on for days. You are managing multiple projects, getting lots of email and messages on different messaging systems, managing finances and personal health habits and so much more.
-It all keeps piling up, and it can feel overwhelming.
-How do you keep up with it all? How do you find focus and peace and get stuff accomplished when you have too much on your plate?</description>
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AF%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B/</guid>
+      <description>什么是瀑布模型-例子，优点，缺点和何时使用它 瀑布模型是第一个引入的过程模型。 它也被称为线性顺序生命周期模型。 理解和使用它非常简单。 在瀑布模型中，每个阶段必须在下一阶段开始之前完全完成。 这种类型的软件开发模型基本上用于项目较小且没有不确定的要求。
+在每个阶段结束时，将进行一次评审，以确定项目是否走上正轨，以及是否继续或放弃该项目。 目录 瀑布模型示意图 软件工程中瀑布模型的各个阶段 需求收集和分析 系统设计 安装启用 功能测试 系统调度 维护维修 瀑布模型的例子 瀑布模型的优点 瀑布模型的缺点 何时使用瀑布模型 瀑布模型与敏捷模型的区别 在此模型中，软件测试仅在开发完成后才开始。 在瀑布模型阶段不重叠。 瀑布模型图 软件工程中瀑布模型的各个阶段： 瀑布模型有几个阶段。下文对此作了简要说明，并用实例（银行应用程序）来理解瀑布模型。
+假设花旗银行正计划开发一个新的银行应用程序
+需求收集与分析 在此阶段，业务分析师会收集需求，并由团队进行分析。本阶段需求会记录成档。
+业务分析师根据与客户的讨论记录需求。
+通过对需求进行分析，会发现项目团队需要回答需求文档中没有提到的以下问题：
+新的银行应用程序会在多个国家使用吗？ 我们必须支持多种语言吗？ 预计有多少用户将使用该应用程序？等 系统设计 架构师和团队的高级成员致力于项目的软件体系结构、高层和低级设计。
+确定银行应用程序需要具有冗余备份和故障转移功能，以便随时可以访问系统。
+架构师创建架构图和高层/低级设计文档。
+实施 开发团队致力于对项目进行编码。
+他们接受设计文档/工件，并确保他们的解决方案遵循由架构师最后确定的设计。
+由于应用程序是银行应用程序，而安全性在应用程序需求中是高度优先的，因此它们在应用程序中实现了多个安全检查、审计日志功能。
+他们还执行其他一些活动，比如高级开发人员检查其他开发人员的代码以解决任何问题。一些开发人员对代码执行静态分析。
+测试 测试小组测试完整的应用程序并确定应用中的任何缺陷。
+这些缺陷由开发人员修复，测试团队对修复进行测试，以确保缺陷得到修复。
+他们也进行回归测试看看是否出现了新的缺陷。
+该项目同时雇用了具有银行领域知识的测试人员，以便他们能够基于域透视图测试应用程序。
+安全测试小组被指派来测试银行应用程序的安全性。
+部署 团队在为银行应用程序采购的服务器上构建和安装应用程序。
+一些高级活动包括在服务器上安装OS、安装安全补丁、加固服务器、安装Web服务器和应用服务器、安装数据库等。
+他们还与网络和IT管理团队等进行协调，最终在生产服务器上启动和运行应用程序。
+维护 在维护阶段，团队确保应用程序在没有任何停机时间的情况下顺利地在服务器上运行。
+运行后报告的问题由团队解决，并由测试小组进行测试。
+瀑布模型实例 在过去，瀑布模型被用于开发企业应用程序，如客户关系管理(CRM)系统、人力资源管理系统(HRMS)、供应链管理系统、库存管理系统、零售链销售点(POS)系统等。
+到2000年为止，瀑布模型在软件开发中得到了广泛的应用。即使在敏捷宣言瀑布模型于2001年出版，也一直被许多组织所采用。
+近阶段大多数项目都遵循敏捷方法论，某种形式的迭代模型或者其他模型之一取决于它们的项目特定需求。
+在过去，瀑布模型开发的应用，如CRM系统、供应链管理系统等，通常需要一年或更长时间才能开发出来。
+随着技术的发展，在一些情况下，大型企业系统是在2至3年的时间内开发出来的，但在完成时却是多余的。这有几个原因。
+当应用程序用C、C+等语言开发时，Java、.NET等新语言(相对地说)将以基于Web的功能取代它们。
+即使应用程序是使用一种新技术开发的，诸如进入市场的竞争对手变得更多、替代品变得更便宜、使用更新技术的功能更好、客户需求的变化等因素增加了开发应用程序的风险。
+然而，在某些领域，瀑布模式仍然是首选的。 考虑一个系统，在这个系统中，人类的生命处于危险之中，系统故障可能导致一个或多个人死亡。 在一些国家，这类事故可能导致对负有责任的人实行监禁。 考虑一种制度，其中时间和金钱是次要的考虑，人的安全是第一。 在这种情况下，瀑布模型是首选方法。 国防部(DOD)、军事和飞机项目的发展遵循了瀑布模式。</description>
+    </item>
+    
+    <item>
+      <title>测试基础-什么是软件开发模型？</title>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Thu, 26 Mar 2020 09:46:55 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B/</guid>
+      <description>软件开发模型是根据项目目的和目标为项目开发选择的各种过程或方法。为了实现不同的目标，有许多开发生命周期模型，这些模型具体说明了过程的每个阶段以及它们的执行顺序。
+模型的选择对所进行的测试有很大的影响。它将确定计划测试的内容、地点和时间，影响回归测试，并在很大程度上决定使用哪种测试技术。
+有各种软件开发模型或方法。它们如下： 瀑布模型 V模型 增量式模型 RAD模型 敏捷模型 迭代模型 螺旋模式 原型模型 为软件产品或应用程序的开发选择合适的模型是非常重要的。系统的开发和测试都是在此基础上进行的。
+不同的公司根据软件应用程序或产品，选择适合其应用程序的开发模式类型。但现在市场上敏捷方法论是最常用的模型。
+&amp;lsquo;瀑布模型&amp;rsquo;是非常古老的模型。 在“瀑布模型”中，测试仅在开发完成后才开始。 因此，最后报告了许多缺陷和故障。 因此，解决这些问题的成本很高。 因此，现在人们更喜欢“敏捷模型”。 在每次冲刺后的“敏捷模型”中，都有一个可演示的功能给客户。 因此，客户可以看到他们是否满足他们需要的功能。
+&amp;lsquo;V型&amp;rsquo;也被许多公司也在他们的产品中使用。“v-模型”只不过是“验证”和“验证”模型。在“V-模型”中，开发人员的生命周期和测试人员的生命周期相互映射。在该模型中，测试是并行进行的。
+同样，“增量模型”、“RAD模型”、“迭代模型”和“螺旋模型”也是根据客户的需求和产品的需求使用的。</description>
+    </item>
+    
+    <item>
+      <title>从0到1搭建接口自动化测试框架-python2&amp;python3共存</title>
+      <link>https://naod.com.cn/2020/03/%E4%BB%8E0%E5%88%B01%E6%90%AD%E5%BB%BA%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6-python2python3%E5%85%B1%E5%AD%98/</link>
+      <pubDate>Sun, 22 Mar 2020 19:13:35 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/%E4%BB%8E0%E5%88%B01%E6%90%AD%E5%BB%BA%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6-python2python3%E5%85%B1%E5%AD%98/</guid>
+      <description>很多同学之前的电脑系统都装过python2，很多老程序也是只兼容python2的，所以不想卸载系统的python2，想要python2和python3共存，我也是一样的想法。
+下面是windows系统python2&amp;amp;python3共存方案步骤：
+1.安装python3
+备注：安装方法参考我上一篇博文
+2.修改python3目录下python.exe为python3.exe，修改python3目录下pythonw.exe为pythonw3.exe
+备注：因为博主我之前都是使用python2，所以修改了python3目录
+3.配置pip3
+python3 -m pip install --upgrade pip --force-reinstall 4.命令行验证
+（1）命令行输入python，正常展示python2的版本且无报错则ok （2）命令行输入python3，正常展示python3的版本且无报错则ok （3）命令行输入pip -v，正常展示python2的pip版本且无报错则ok （4）命令行输入pip3 -v，正常展示python3的pip版本且无报错则ok 5.python包安装
+（1）python2安装，pip2 install XXX （2）python3安装，pip3 install XXX 6.pycharm和python3开发环境设置
+在项目设置中打开project Interpreter选择已有的运行环境，路径选择电脑上的python3安装路径即可</description>
+    </item>
+    
+    <item>
+      <title>从0到1搭建接口自动化测试框架-python环境搭建</title>
+      <link>https://naod.com.cn/2020/03/%E4%BB%8E0%E5%88%B01%E6%90%AD%E5%BB%BA%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6-python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Sat, 21 Mar 2020 20:55:40 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/%E4%BB%8E0%E5%88%B01%E6%90%AD%E5%BB%BA%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6-python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <description>网上搭建python环境的教程很多，我推荐菜鸟教程的Python3 环境搭建.
+下面我列举一下主要步骤，以windows系统为例(苹果电脑python环境搭建有问题的直接评论下留言，我会一一帮你解答）
+python安装包下载 1.进入python官网 2.选择downloads-windows 3.选择最新release的python3版本，我以python3.8.3举例 4.进入页面后，选择下载 Windows x86-64 executable installer 5.等待安装包下载完成 安装python包 1.直接点击运行 2.选择默认安装install now 3.记得勾选Add Python 3.8 to PATH（若不勾选，就需自己设置python的path环境，所以建议勾选） 4.按照安装程序指示，将python安装完成 windows命令行执行python 1.进入windows系统cmd命令行界面 2.输入python，未报错且展示了你安装的python3.8.2版本号,说明python3环境安装成功,若展示的不是你安装的版本号，有可能你系统安装了多个python版本，后面我会单独出文章介绍如何一个系统多个python版本共存 3.输入简单python程序 print(hello_python) 4.按下回车键执行展示hello_python，代表python程序执行成功 python自带IDLE windows系统程序列表搜索python，选择IDLE，就可以展示python的脚本边界页面 python开发工具 推荐PyCharm,好用，推荐pycharm官网安装 windows系统python环境变量配置 右键点击&amp;quot;计算机&amp;quot;，然后点击&amp;quot;属性&amp;quot;，选择&amp;quot;高级系统设置&amp;quot; 然后选择&amp;quot;系统变量&amp;quot;窗口下面的&amp;quot;Path&amp;quot;,在&amp;quot;Path&amp;quot;行，添加python安装路径即可（注意：安装路径直接用分号&amp;quot;；&amp;ldquo;分割开） 保存后，重新打开cmd命令行，输入命令&amp;quot;python&amp;rdquo;，展示python版本号无报错表明环境变量设置成功。 </description>
+    </item>
+    
+    <item>
+      <title>测试人员复现BUG的一些思路</title>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E5%A4%8D%E7%8E%B0bug%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%B7%AF/</link>
+      <pubDate>Fri, 20 Mar 2020 09:55:17 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E5%A4%8D%E7%8E%B0bug%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%B7%AF/</guid>
+      <description>对于测试人员，被开发人员要求复现BUG是家常便饭。特别针对在测试过程中低概率出现的BUG，会让我们觉得难以着手。下面我就谈一谈我的一些思路吧。 我认为一个BUG是由三个要素构成的：环境、数据、操作步骤。那么如何从这三点入手，总结了以下思路：
+1.BUG本地“再现” （1）确定问题发生的环境，比如哪个浏览器的哪个版本发生的此现象。 （2）使用导致问题出现的数据。 （3）按照之前的操作步骤进行操作，使BUG再次出现
+2.分析本地复现BUG需要的环境、数据、步骤，找出根本原因 （1）查看其他浏览器在相同数据，同样操作步骤的情况下是否仍旧会使该BUG出现。明确是否是特定浏览器，还是在其他浏览器都会出现。
+（2）是否是数据的特殊性造成的问题？是单个数据？还是相似的一类数据？还是所有的数据？
+（3）剖析操作步骤，尽量找到最短路径。
+a.分解操作步骤
+b.分析每一步骤的前提条件、期望结果。找到导致BUG产生的可能的必要操作步骤。如果期望结果与实际结果不同，猜测造成的原因，这时，可以通过抓包等一些工具来帮助分析其中的原因。
+c.思考产生问题的可能原因和相关的操作步骤，明确一下产生的步骤，进行尝试，验证自己的想法是否正确。
+3.如何在其他环境复现BUG 为了进一步明确问题的普遍性，确定自己环境的没有特殊的设置，需要在其他电脑上按照总结出来的产生bug的三要素，来重现BUG。对于通过上述步骤没有出现BUG的机器，要进一步追踪原因，查看为什么没有发生问题。 个人经验、之前分析步骤时的一些猜测。对于web端来说，一般可以从浏览器的配置，设置等出发。比较两个环境的不同。
+4.分析、寻找BUG的最短路径 结合2.3两步的结论，同时结合自己的分析和判断寻找到最短路径。找到产生问题的根本原因。当然，如果因为技术限制，可以找其他人员一起查看原因，最终一定要定位到产生问题的根本原因。并要总结和记录。</description>
+    </item>
+    
+    <item>
+      <title>测试基础-什么是软件开发生命周期(SDLC)阶段</title>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9Fsdlc%E9%98%B6%E6%AE%B5/</link>
+      <pubDate>Thu, 19 Mar 2020 09:31:06 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9Fsdlc%E9%98%B6%E6%AE%B5/</guid>
+      <description>什么是软件开发生命周期(SDLC)阶段 在软件开发过程中，定义和设计了各种软件开发方法，这些方法也被称为“软件开发过程模型”。瀑布模型, 增量模型, V型, 迭代模型, RAD模型, 敏捷模型, 螺旋模型, 原型模型等等)每个过程模型遵循特定的生命周期，以确保软件开发过程的成功。
+软件生命周期模型描述了软件周期的各个阶段以及这些阶段的执行顺序。每个阶段产生下一阶段所需的可交付成果。
+需求被转化为设计。代码是根据被称为开发阶段的设计而产生的。
+在编码和开发之后，测试将根据需求验证实现阶段的可交付性。测试小组遵循软件测试生命周期(STLC)，这与开发团队遵循的开发周期相似。
+每个软件开发生命周期模型有以下六个阶段： 1、需求收集与分析 2、设计 3、实现或编码 4、测试 5、部署 6、维护 1、需求收集与分析 在这个阶段会收集业务需求，这阶段是项目经理与和利害关系人的主要重点。管理人员、利益相关者和用户会进行会议，以确定类似的要求：如谁将使用该系统？他们将如何使用该系统？系统应输入哪些数据？系统应该输出哪些数据？这些是在需求收集阶段得到回答的一般问题。在需求收集之后，对这些需求的有效性进行了分析，并研究了将需求整合到系统开发中的可能性。
+最后，一个需求规范文档创建了，并为模型的下一阶段提供指导。测试团队遵循软件测试生命周期，并启动测试计划需求分析完成后的阶段。
+2、设计 在这一阶段，系统和软件设计都是根据第一阶段研究的需求规范进行的。系统设计有助于指定硬件和系统需求，也有助于定义总体系统架构。系统设计规范作为模型下一阶段的输入。
+在此阶段，测试人员提出了测试策略，他们提到要测试什么，如何测试。
+3、实现或编码 在接收系统设计文档时，将工作划分为模块/单元，并开始实际编码。因为在这个阶段，代码要生成，所以它是开发人员的主要关注点。这是软件开发生命周期中最长的阶段。
+4、测试 在开发代码之后，将根据需求进行测试，以确保产品实际上解决了在需求阶段解决和收集的需求。在此阶段，所有类型的功能测试例如单元测试, 集成测试, 系统测试, 验收以及非功能测试也完成了。
+5、部署 测试成功后，产品将交付/部署给客户使用。
+一旦产品被提供给客户，他们将首先做β测试。如果需要进行任何更改，或者发现了任何错误，那么他们将向工程团队报告。一旦进行了这些更改，或者bug修复了，那么最终的部署就会发生。
+6、维护 一旦客户开始使用开发的系统，那么实际的问题就会出现，需要不时地解决。这一过程中对开发产品的注意被称为维护。</description>
+    </item>
+    
+    <item>
+      <title>python3下json串转urlencode</title>
+      <link>https://naod.com.cn/2020/03/python3%E4%B8%8Bjson%E4%B8%B2%E8%BD%ACurlencode/</link>
+      <pubDate>Wed, 18 Mar 2020 09:33:42 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/python3%E4%B8%8Bjson%E4%B8%B2%E8%BD%ACurlencode/</guid>
+      <description>昨天在编写一个python自动化脚本时，其中一个需求是把json串进行urlencode，看起来很简单的操作 想要的结果是：
+{&amp;#34;name&amp;#34;:&amp;#34;dengnao&amp;#34;,&amp;#34;pwd&amp;#34;:&amp;#34;123456&amp;#34;} 转换如下：
+%7B%22name%22%3A%22dengnao%22%2C%22pwd%22%3A%22123456%22%7D 常规首先的代码如下： 运行结果为：
+name=dengnao&amp;amp;pwd=123456 看起来没有满足结果
+尝试使用urllib.parse.quote
+直接报错了
+test = urllib.parse.quote(json_data) File &amp;#34;/Users/waitnoww/opt/anaconda3/lib/python3.7/urllib/parse.py&amp;#34;, line 834, in quote return quote_from_bytes(string, safe) File &amp;#34;/Users/waitnoww/opt/anaconda3/lib/python3.7/urllib/parse.py&amp;#34;, line 859, in quote_from_bytes raise TypeError(&amp;#34;quote_from_bytes() expected bytes&amp;#34;) TypeError: quote_from_bytes() expected bytes 百度一波后，才发现quote必须是字符串
+urllib.quote(s, safe=&amp;#39;/&amp;#39;) 接受参数s为字符串，safe是指定某字符不被urlencode，默认为&amp;#39;/&amp;#39;， 那就把传入的json串转成字符串 运行结果如下：
+%7B%22name%22%3A%20nn%2C%20%22pwd%22%3A%20%22123456%22%7D 确实urlencode了，但是name并没有参数化 再来参数化代码 运行结果如下：
+%7B%22name%22%3A%20dengnao%2C%20%22pwd%22%3A%20%22123456%22%7D 还是对不上,对应的name参数没有加引号，再改一波代码 终于得到正确的运行结果
+%7B%22name%22%3A%22dengnao%22%2C%22pwd%22%3A%22123456%22%7D </description>
+    </item>
+    
+    <item>
+      <title>python3安装turtle时出错解决办法</title>
+      <link>https://naod.com.cn/2020/03/python3%E5%AE%89%E8%A3%85turtle%E6%97%B6%E5%87%BA%E9%94%99%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
+      <pubDate>Mon, 16 Mar 2020 09:43:53 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/python3%E5%AE%89%E8%A3%85turtle%E6%97%B6%E5%87%BA%E9%94%99%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
+      <description>前些天看到有个用python3来画飞机的教程，就想来尝试一下。教程中使用的是turtle包，那么首先我们就要来按照turtle，结果第一步就失败了，当我使用pip3安装的时候，出现如下报错 出现报错，阅读了一下报错信息，先使用搜索引擎查找一下报错信息，发现报错信息搜索不到正确答案。可能是我搜索的关键词不对，然后我去turtle包的介绍页看了一下 https://pypi.org/project/turtle 就想说尝试一下下载包来安装，于是下载了turtle 0.0.2进行安装，结果解压之后又报错了，查看报错信息如下 根据提示 python setup.py egg_info查看详细报错信息 进入turtle下载文件夹下打开setup.py 文件，看看 40 行，发现少了括号 加上括号，还是报错，原来是没有指定修改目录导致,那就指定目录安装，安装成功 总结一下：仔细阅读报错信息，分析根本原因</description>
+    </item>
+    
+    <item>
+      <title>测试基础-什么是软件能力成熟度模型？</title>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E8%83%BD%E5%8A%9B%E6%88%90%E7%86%9F%E5%BA%A6%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Sun, 15 Mar 2020 20:23:05 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E8%83%BD%E5%8A%9B%E6%88%90%E7%86%9F%E5%BA%A6%E6%A8%A1%E5%9E%8B/</guid>
+      <description>什么是软件能力成熟度模型？什么是软件能力成熟度模型等级？ 能力成熟度模型是衡量部门组织软件过程成熟度的一个基准。它是一种用于开发和改进部门组织软件开发过程的方法。软件能力成熟模型可用于根据基于某些关键过程领域(KPA)的五个过程成熟度级别来评估项目。它可以通过基于公司正在处理的项目和客户的方式来描述公司的成熟度。每个级别会根据评估的主体领域的标准化流程来进行排序
+软件能力成熟度模型可以提供: 何处开始 受益于一个部门组织之前的经验 一个共同的语言和一个共同的目标 为行动设置优先级的框架 提供一种定义你的部门组织如何提高某些领域的方法 在具有分段表示的软件能力成熟度模型等级中，有5个成熟度级别，分别由数字1到5制定，如下所示： 1.初始级 2.管理级 3.定义级 4.量化管理级 5.优化级 成熟度级别是由一系列通过预先定义的各个过程模块来组成的。它是通过应用于各个预先确定的过程模块中成功实现的特定的和通用的目标来定义的。下文将详细描述各个软件能力成熟度级别的特征 软件能力成熟度级别1 初始级 ：公司没有制定软件开发的标准流程。它也没有项目跟踪系统，使开发人员无法准确的预测成本和完成日期 我们可以如下详细描述:
+在能力等级1中，项目通常都是临时和杂乱的。 部门组织通常并未提供一个可靠的项目环境。部门组织的成功取决于当中的个人能力和责任当担，而不是依赖于过往的项目经验 能力等级1的部门组织通常生成的产品和服务能使用，但是公司并没有软件开发的标准流程。它也没有项目跟踪系统，使开发人员无法准确的预测成本和完成日期 能力等级1的部门组织具有倾向于过度承诺的特征，在遇到危机时容易放弃项目，并且过去的成功案例无法复用 软件能力成熟度级别2 管理级：公司已具备基本的软件管理程序和控制程序。但是不同的小组之间并没有一致性和协调性 我们可以如下详细描述:
+在能力等级2中，一个部门组织已经实现了能力等级2中所有具体和复用模块中的全部功能。换而言之，部门组织的项目已经保障了需求的管理，进度的计划性、执行性、准确性和可控性。 能力等级2所反映的流程规范有助于保障在整个压力期间，保留现存的经验。当这些经验被使用时，项目可以根据他们的文档来执行计划和进行管理。 在能力等级2中，管控着需求，进度，产出和服务。这种状态下的工作产出和服务交付对于管理层而言是可见的。 承诺是利益相关者之间建立的，并根据需求进行修订。工作产出是利益相关者进行审核，并进行管理。 工作产出和服务提供必需满足其制定的项目需求、标准和目标。 软件能力成熟度级别3 定义级：公司已经推动各个模块的标准化和每个部门组织的管理化，所以开发人员可以在不同的项目之间更好的转换，顾客可以从不同的小组中获得一致性的需求结果。 我们可以如下详细描述:
+在能力等级3中，一个部门组织已经实现了所有具有特殊性和共性的目标。 在能力等级3中。项目具有明显的特征和易于理解，可以定义为标准，规范，工具和方法。 能力等级2和能力等级3之间的明显区别就是对于标准制定、进度管控和流程规范的眼界大小。在能力等级2中，标准制定、进度管控和流程规范在不同的特例中会差异明显（例如在独特的项目中）。在能力等级3中，标准制定、进度管控和流程规范是从部门组织制定的标准中定制的，用以适应特定的项目或单元组织。 部门组织的一套流程标准包括项目在能力级别2和级别3的处理方式。因此，在整个部门组织中所执行的流程具有一致性，除了标准差异中所允许的部分外。 另一个明显的差异是相对于能力等级2，能力等级3的项目流程通常描述得更详细严谨 在能力等级3中， 通过了解项目流程之间的相互关系、其工作产出和服务提供的详细过程，可以更加主动积极的进行项目管理 软件能力成熟度级别4 量化管理层：除了按照标准流程执行外，公司还设置了专门的系统来管理所有项目中的各个模块流程的质量 我们可以如下详细描述:
+在能力等级4中，部门组织已经实现了能力等级2、3和4所制定的具有特性的项目目标，但是对于具有共性的项目目标只达到了能力等级2和3的标准。 在能力等级4中，子项目是依据整个项目进度中的显著贡献所来决定的。所选择的子项目通过使用统计过的和其他定量过的技术来管理。 软件质量和进度掌控的定性目标是建立和使用与管理过程的标准化上。定性目标的制定取决于目标客户，最终用户，部门组织和实现人员的需要。软件质量和项目进度是使用统计学术语来描述，并且在整个软件生命周期进行管理。 对于这些项目进度，它们的具体采取措施都进行了收集和数据分析。识别出过程变化中的特殊原因，并在适当的时候修正特殊情况下问题的来源，以防止其在将来发生。 将项目质量和进度过程的评估整合到部门组织的评估数据库中，以备后续做决定时进行基础参考 在能力等级3和能力等级4之间另外一个明显的区别是对项目整体的预测。在能力等级4中，使用统计学或者其他定量的技术来管理整体项目进度，并且它的定量分析结果是具有可预见性的。在能力等级3中，项目整体仅仅只有质量评估。 软件能力成熟度级别5 优化级：公司已经完成了上述所有事项，并且随着时间推移可以开始规划项目模式，所以它可以通过聚合各种项目来提高工公司整体部门的产品质量和减少软件开发缺陷 我们可以如下详细描述:
+在能力等级5中，部门组织已经实现了能力等级2到5的全部特性项目中的目标，并且实现了能力等级2和能力等级3的具有共性项目的目标。 在定量解析项目过程中常见的转化因数的基础上，项目过程质量可以得到持续的提高。 能力等级5的重点在于通过关注提高与创新技术方案水平来提高项目整体的质量。 为部门组织设立量化的项目管理目标，不断的修订以反馈持续变化的业绩目标，并将其作为管理过程中改进的目标。 通过量化过程改进的目标来评估和衡量项目部署过程改进的效果。项目过程规范和部门组织一系列的标准立案都是以提高重要的事务指标。 优化敏捷型与创新型的流程需要与部门组织价值观和工作目标一致的员工全力参与。 通过探寻快速和分享学习的方法，提高部门组织随机应变的迅速反应能力。改进的过程本质上是每个参与者的一部分，这将会引起一个持续改进的循环。 能力等级4和能力等级5之间的一个明显区分就是处理变更过程的方式。在能力等级4中，项目过程关注于过程变更的特殊原因，并提供统计性的可预测结果。虽然这可能产生可预测结果，但是这结果可能不满足已实现的既定目标。在能力等级5中，项目过程关注的是处理过程变化的常见因素并据此优化流程（即修改项目流程性能的平均值）和改进项目流程的性能（同时保持统计性的可预测性），以实现已定的量化流程来改进目标。 </description>
+    </item>
+    
+    <item>
+      <title>缺陷平台引入阶段定义解析</title>
+      <link>https://naod.com.cn/2020/03/%E7%BC%BA%E9%99%B7%E5%B9%B3%E5%8F%B0%E5%BC%95%E5%85%A5%E9%98%B6%E6%AE%B5%E5%AE%9A%E4%B9%89%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Sun, 15 Mar 2020 15:25:23 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/%E7%BC%BA%E9%99%B7%E5%B9%B3%E5%8F%B0%E5%BC%95%E5%85%A5%E9%98%B6%E6%AE%B5%E5%AE%9A%E4%B9%89%E8%A7%A3%E6%9E%90/</guid>
+      <description>“缺陷引入阶段”分以下几种： 1.历史遗留 2.需求分析 3.产品设计 4.编码实现 5.需求变更 不同阶段含义解释 1.历史遗留
+属于历史版本，继承版本或移植代码中的问题，非新开发引入的问题
+2.需求分析
+缺陷是在产品需求设计阶段引入的，主要包含以下几种情况： 需求不清的问题，需求错误的问题，系统整体设计的问题
+3.产品设计
+缺陷是在产品设计阶段引入的问题，主要包含以下几种情况： 功能与功能之间接口的问题，功能交互的问题，边界值设计方面的问题，流程,逻辑设计相关的问题，算法设计方面的问题。
+4.编码实现
+缺陷是在编码实现阶段引入的问题，主要包含以下几种情况： 流程,逻辑实现相关的问题，算法实现相关的问题，编码规范相关的问题，模块和模块之间接口的问题
+5.需求变更
+缺陷是因为新需求，需求变更或设计变更引入的问题</description>
+    </item>
+    
+    <item>
+      <title>Mantis BUG管理平台使用手册</title>
+      <link>https://naod.com.cn/2020/03/mantis-bug%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Fri, 13 Mar 2020 09:17:57 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/mantis-bug%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</guid>
+      <description>Mantis BUG管理平台使用手册 登录 登录地址：https://mantisbt.org/bugs/my_view_page.php 账号密码：自己注册账号密码 首页 首页会展示“等待我解决的问题”数量和“我报告的未解决的问题”数量 同样会展示项目新闻，RSS信息 我的视图 登录之后首先进入“我的视图”页，这里显示5类问题：
+指定给我的：需要由登录者处理的问题 未指定的：已经报告但尚未分配到开发人员的问题 由我报告的：由登录者本人报告的问题 已解决的 最近修改 我正在监视的：用户可以选择需要关注的问题进行监视 注：页面右上角有一个切换项目的下拉菜单，可以选择查看本人需要关注的某个项目的问题。不同状态的问题会有不同的颜色标注。 查看问题 查看问题页面上面一部分为查询条件组合（过滤器），用户可以指定查找问题的条件，点击某项之后将出现下拉菜单供用户选择； 功能点有：
+高级过滤器：全部塞选条件 创建固定链接：给选择好的过滤条件创建一个固定的链接，给其他人访问 重置过滤器：重置所选择的塞选过滤条件 保存当前过滤器：保存当前所选择的塞选过滤条件 查看问题页面下面一部分为所有问题列表，列出了问题的摘要信息，点击问题之后将出现“查看问题详细资料”页，也可以将塞选过滤查询出的问题打印成报告和导出CSV文件
+查看单个问题详情页 “查看问题详细资料”：各项不详细解释了。其中最下面一行按钮可以对问题进行操作。由于权限的设置不同，各级别用户可使用的按钮个数不同。 “修改问题”：修改问题的各项基本属性，并添加注释。 “分派”：将问题分派给某个开发人员来处理，分派之后系统将自动向被分派人发送邮件通知，被分派人打开mantis之后将在“我的视图”页看到被分派的问题。 “将状态改为”：这里是对问题状态的定性，分为6个层次，具体使用方法见“BUG跟踪流程”。 “监视问题”：点击此按钮后用户就可以对该问题进行监视，也就是说只要该问题有改动，系统就会自动发邮件通知到本人。在“我的视图”页也可以体现出来。 “创建子项问题”：可以创建该问题的子项问题。 “移动问题”：可以将该问题移动到别的项目中（需要相应的权限）。 “删除问题”：删除无用的问题，已处理完毕的问题建议不必删除，关闭即可，以保留问题记录。 “关系”：可以指定问题之间的关联关系，具体关联方式见下拉菜单。 “上传文件”：可以上传与问题相关的文件，大小暂时限制为5M。 “问题历史”：此项为问题处理的历史记录。 修改问题状态：这是mantis比较重要的一个功能，问题的每次改动都要发生状态的改变，以此来标记问题的处理情况。 统计报表 顾名思义，一个项目的BUG统计报表：不同维度的统计报表（管理员用户才能看到） 提供打印报告和报告摘要的功能
+提交BUG 测试人员第一次点击提交BUG链接会首先打开一个选择项目的页面，你可以选择所提交BUG的项目（也可以设为默认值，后面不会多次选择，也可以在个人资料页面进行更改默认值） 提交BUG详情页面字段详细介绍（*为必填项）
+分类：BUG的类型（目前有兼容性，易用性等）此字段也可以作为模块分类来使用，项目管理页面可以进行设置（为必填项） 出现频率：BUG的出现频率 严重性：BUG的严重级别 优先级：BUG的优先级别 选择平台配置：BUG发生的平台（项目管理页面可以配置后进行塞选，也可以自己填写） 分派给：将BUG指派给开发人员（可以通过姓名的姓来进行搜索选择） 摘要：BUG的简单描述（为必填项） 说明：BUG的详细说明，富文本编辑器，功能强大（可以粘贴截图）（为必填项） 上传文件：上传BUG的附件（最大限制为5M） 查看权限：BUG的查看权限（默认为公有） 继续报告:勾选此选项后，点击提交BUG后，会新开一个提交BUG页面 BUG分派 测试人员提交BUG时可以不选指派人，由专门的人来进行问题指派 个人资料
+个人帐号：设置个人信息，包括密码、邮件、姓名。 更改个人设置：设置邮件通知的紧急程度级别等，可根据个人需要和喜好来设置接收邮件通知的级别。 管理平台配置（管理员权限才有）：配置平台，包括硬件平台，操作系统，版本等信息。 mantis管理 Mantis管理功能（管理员权限才能可见和操作）
+用户管理：创建、修改、删除帐号，重设帐号密码，给用户分配项目等。 项目管理：项目管理功能 编辑项目：设置项目的基本属性，上传文件路径不需要设置，因为目前采用数据库的方式存储文件。 子项目：将现有项目添加到本项目的子项目中（必须有相应的权限）。 分类：上面已提到过，为了查找问题的方便而设置的问题类别，可根据项目情况设置。 版本：设置项目的版本号。 添加用户至项目：添加参与本项目的人员，并设置人员权限，注意这里的权限与用户本身的权限不同，需要单独指定。目前指定测试组的成员为“测试人员”，其他程序员都指定为“开发人员”，如果项目查看状态为私有，则只有在这里添加了的人员才可以访问本项目的问题。通过最下面一行的按钮可以快速地从别的项目导入人员，或将本项目的人员导出到别的项目。 自定义字段管理：可以为报告问题添加必要的自定义字段，可以是时间类型，字符串类型，数字类型等。 管理全局配置：添加、编辑、删除平台配置 管理配置：包括权限报表、工作流开始、工作流、邮件提醒四项，可根据实际需要灵活配置，不详述。 BUG搜索 按编号搜索：输入BUG编号，点击【跳转到该问题编号】； 按标题中所含的文字搜索：输入查询文字（支持模糊查询），点击【筛选】； “查询问题”页面：设置查询条件，点击【筛选】 移动BUG BUG详情页面:选择移动，可以将bug移动到某一个项目 查看问题页面：勾选bug，可以将bug移动到某一个项目 BUG状态 新建：新提交的且尚未指派给开发人员的bug。 已分派：项目经理或系统实施顾问将bug指派给开发人员，开发人员尚未接收确认的bug。 公认：开发人员看到指派给自己修改的bug后，将bug状态设置为“公认”，以告知指派人自己收到了分配的bug。 已解决：开发人员修复bug后，将bug状态设置为“已解决”；等待验证测试的bug。 打回：验证测试未通过，需要开发人员重新修改的bug。 已关闭：验证测试通过，关闭的bug。 已确认：即暂时不改的bug，（完成度）“暂停”的bug。 BUG的完成状态：未处理，已修正，重新打开，无法重现，无法修复，重复问题，不是问题，暂停，不做修改 系统角色介绍 系统管理员：主要创建用户，创建项目；维护其他信息。 经理：主要维护项目信息（如：维护测试模块，维护项目组成员，测试版本，发布公告；维护缺陷分类、实施版本）。研发部的项目经理、系统实施顾问、测试部的测试负责人、技服部项目经理有此权限；（各部门经理：不维护信息，监督特殊问题的处理、浏览统计报表数据等功能） 报告人员：主要提交bug。测试工程师执行测试时，提交发现的bug；技术工程师提交客户反馈的软件缺陷。 开发人员：主要修复bug。研发部各项目的bug修改人员有此权限。 - 查看人员：主要浏览bug。 修改人员：目前不用此角色。 Mantis中的经理角色拥有“报告人员”“开发人员”“查看人员”的操作权限。各操作权限限制在所分配的项目范围内。 新建和维护项目信息 管理员在管理-项目管理下可以新建和维护项目信息</description>
+    </item>
+    
+    <item>
+      <title>可测性提升和可恢复性提升方案初稿</title>
+      <link>https://naod.com.cn/2020/03/%E5%8F%AF%E6%B5%8B%E6%80%A7%E6%8F%90%E5%8D%87%E5%92%8C%E5%8F%AF%E6%81%A2%E5%A4%8D%E6%80%A7%E6%8F%90%E5%8D%87%E6%96%B9%E6%A1%88%E5%88%9D%E7%A8%BF/</link>
+      <pubDate>Fri, 13 Mar 2020 09:07:21 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/%E5%8F%AF%E6%B5%8B%E6%80%A7%E6%8F%90%E5%8D%87%E5%92%8C%E5%8F%AF%E6%81%A2%E5%A4%8D%E6%80%A7%E6%8F%90%E5%8D%87%E6%96%B9%E6%A1%88%E5%88%9D%E7%A8%BF/</guid>
+      <description>以下是关于可测性提升和可恢复性提升方案的初版内容，欢迎拍砖。 之前发布在博客园，现在转过来
+可测性提升方案 1.需求 1) 提高需求文档的可读性 业务背景描述要点：基于什么业务要求/规划，什么角色/岗位的人，什么样的情况做这样的业务，什么样的情况不能做这样的业务 梳理业务流程图，从全局到局部，不限一张流程图 业务上的前置条件，容错性规则、边界等加以明确 2) 测试人员介入到需求设计阶段 测试根据历史项目需求，进行分类，如：独立功能需求、低耦合（与核心业务功能耦合程度低，如：添加链接入口）、高耦合（与核心业务功能耦合程度高，如：涉及直播功能）等类别。每种类别进行测试要点整理，拿到需求后可以快速进行要点匹配。 根据业务流程图进行功能结合数据流分析，形成系统流程图 形成测试的分析方法论，如：面向过程（自上向下分解）、信息工程（数据驱动）、面向对象（对象驱动） 历史功能及数据兼容性，如：增加了新的字段，历史数据如果处理，是否给默认值等 3) 提高需求文档业务流程和场景的可分解性 4) 提高需求文档的易理解性 验收标准需要明确，如：功能性、性能、兼容性、可靠性…..有要求写明要求，尽量量化，没有要求直接写无，不允许不写，避免需求盲区 提供实例数据推演或流程推演，便于及与实例化进行分析讨论 列举测试建议或重点覆盖范围 5) 把可测性加入需求文档的设计阶段 需求分析会议上将可测性纳入分析标准 2.开发 1) 开发人员技术文档的可读性，易理解性 设计能够被很好地理解并遵循行业规范 内部、外部和共享构件之间的依赖性能够被很好地理解 设计的改变被通知 可随时获取技术文档 技术文档组织合理 技术文档明确详细 技术文档精确性稳定 相关环境配置说明与操作指导 2) 控制开发人员代码的低耦合 高内聚 3) 提高开发人员所编写代码的可观测性 对于测试因为环境等因素而可能无法测试的功能，提供接口模拟软件实现该功能的过程 出错及异常处理保存记录，记录具有详细的属性，并且格式统一、意义明确 在程序异常时，除了保留日志，还需要提供观察、恢复的外部方法 对全局变量、特殊结构，提供查询的方法 注释需要详尽。特别对于接口，要描述清楚功能、实现及参数 提供查询系统状态的接口。比如内存使用、程序使用进程数等 4) 提高开发人员所编写代码的可控性 代码相对隔离，当某一功能出现问题时，不影响到主流程 5) 提高开发模块的可隔离性 6) 提交测试前，开发人员提供详细功能清单 提测前交付已开发完成功能清单 注明需重点测试功能点 7) 开发模块代码的可分解性 8) 开发人员编码的日志覆盖 测试环境下日志齐全，且便于查看 线上较复杂业务日志开启，便于定位问题 部署相关日志系统 不同级别的任务开启不同的日志级别 9) 开发人员提交测试前提供自测报告 开发人员提供自测报告 开发人员执行自测冒烟测试用例，并附带测试结果截图，同提测邮件一起发送 3.项目 1) 控制需求的变更，减少需求的变更次数 项目维度需要通过系统化记录变更、延期（需求、开发、测试）、测试打回、日平均BUG量等数据，分析项目问题所在，制定持续改进方案与落地措施 组织项目回溯（阶段性、总结、问题分析），如：为什么基于变更之前没考虑到，后没有引导客户提出需求等 2) 提高项目的环境可控性 在测试设计阶段识别测试环境、数据方面的需求，提前准备好相关的造数据脚本、接口调用方法、系统环境等 需要用到额外的测试技能，如：nosql查询、接口测试工具等 3) 提供项目的沙盒环境 部分第三方接口接入时，有可测的沙盒环境提供 4) 提供足够的项目时间 5) 提高需求变更信息的同步力度 通过多渠道将需求变更消息同步到项目所有人 必要时组织需求信息同步会议 6) 提高项目环境的可用性 专人维护环境，并负责修复相关环境问题 控制开发人员提交代码到测试环境的间隔 7) 测试人员提前介入测试 测试人员介入的项目的各个阶段 8) 足够的测试资源来支持项目 不同的项目配备不同的测试人员 可恢复性提升方案 基于技术支持，编写线上问题的可恢复性提示方案</description>
+    </item>
+    
+    <item>
+      <title>软件测试读书列表转载</title>
+      <link>https://naod.com.cn/2020/03/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E8%AF%BB%E4%B9%A6%E5%88%97%E8%A1%A8%E8%BD%AC%E8%BD%BD/</link>
+      <pubDate>Thu, 12 Mar 2020 09:48:56 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E8%AF%BB%E4%B9%A6%E5%88%97%E8%A1%A8%E8%BD%AC%E8%BD%BD/</guid>
+      <description>之前收藏的一部分软件测试书籍清单，自己也阅读了部分数据，有一些收获和思考，故推荐给大家。
+测试入门 软件测试（第2版） Software Testing (2e), Ron Patton 一本测试入门的好书，较全面地介绍了各种测试领域和方法，为测试新手提供了正确的观念和宽泛的基础。
+软件测试的艺术（第2版） The Art of Software Testing (2e), Glenford J. Myers, Corey Sandler, Tom Badgett, Todd M. Thomas 一本“久经考验”的测试经典：1979年，第一版面试；25年后，第二版登场。平心而论，有些观点已经不能直接应用在测试实践中，但是仔细品味仍有所收获。毕竟，这是一本需要思考的书，而不是操作手册。
+软件测试实战&amp;ndash;测试Web MSN 蔡为东 以Web MSN为测试对象，形象生动地介绍了针对图形界面的黑盒测试技术，有很强的实践性。围绕一个实例，全面地的介绍各种测试方法，是此书区别于其他测试书籍的一大特色。附文《胶着》是作者一段开发经历的回顾与小结，有笑有泪，仅凭此文便值回书资。
+软件测试工程师面试指导 蔡为东 面 向初学者，介绍了软件测试行业、测试工程师素质要求、基本测试技术、求职策略、面试技巧、典型试题，对于测试新手或迈向测试行业的朋友有较高的参考价值。 此书还收录了一些对读者来信的回复，内容涉及职业规划、大学生就业、测试学习、测试实践等，针对当前常见的困惑，做出了谨慎且深思熟虑的回答。附文《我在 微软做软件测试外包》对于了解微软中国的流程与文化很有参考价值。
+Essential Software Test Design Torbjrn Ryber 该 书专注于测试设计，深入浅出讲解了所有测试人员都需要掌握的基本测试技术。全书言简意赅、条理清晰、案例翔实，为测试实践打下了坚实基础。测试专家 James Bach受邀编写了第6章“探索式测试解析”（Exploratory Testing Explained），对于理解探索式测试的思想和方法很有帮助。
+通用测试技术 计算机软件测试（第2版） Testing Computer Software (2e), Cem Kaner, Jack Falk, Hung Quo Nguyen 一 本值得反复参考的好书，&amp;ldquo;The bestselling software testing book of all time&amp;rdquo; 的美誉绝非浪得虚名。作者将多年的实践经验用平实的语言娓娓道来，内容涉及测试技术、测试管理、开发流程、思考方法、实践模式，可谓是一本测试典籍。部分 内容看似有些过时，但是其思想和方法仍旧有很高的借鉴价值。</description>
+    </item>
+    
+    <item>
+      <title>测试基础-什么是验收</title>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AF%E9%AA%8C%E6%94%B6/</link>
+      <pubDate>Wed, 11 Mar 2020 15:05:12 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AF%E9%AA%8C%E6%94%B6/</guid>
+      <description>软件测试中什么是验收？或者说什么是软件验收
+软件验收决定着系统是否满足需求设计和功能预计，以及其是否满足预期的目标和客户的需求
+软件验收是在项目开发结束完成后，以及功能验证完成后。 软件验收可以告诉你，正在运行的项目是否正确。 正在访问的数据是否正确(正确的位置，正确的方式) 这是一个高等级的事务。 按照既定的流程规范进行项目开发，确保项目正确地集成到环境中。 软件产品开发最终的正确性是由项目是否满足客户的需求预期来决定的。 根据能力成熟度模型(Capability Maturity Model, CMM)，我们可将软件验收定义为在开发过程中或开发结束时对软件进行评估的过程，以确定它是否满足预期的需求。
+一个项目可以在验收过程中进行发布，因为它可以通过理论，而不通过实际操作或者功能模块来证实。但是，当那些在项目计划上提出并被审核后的功能开发完成时，在整个项目或产品运行的时候，仍然可能会无法通过验收。这可能发生的原因是当产品或应用程序按照文档规范来进行开发时，但是这些文档规范并不符合标准，因此得到的结果就会无法满足使用者的需求。
+软件验收的优势: 1、如果在验收过程中遗漏了一些缺陷，那么整个验收过程就会被认为是失败的 2、如果在验收过程中误解了某些规范，但是项目已经在开始了，那么会导致在对该项目的验收执行过程中发生对实际结果和预期结果的理解差异 3、验收可以在测试过程中完成，例如在专项测试、集成测试、系统测试、负载测试、兼容性测试、压力测试等等。 4、验收有助于根据客户的需求构建正确的产品，并有助于满足他们的需求。 在整个测试期间，验收测试主要是测试人员来完成的。在验收产品时，如果发现实际结果与预期结果存在偏差，就需要上报错误或者标注风险。并不是所有的风险都是代码错误，但是所有的代码错误都是风险。 如果这个功能点并未告知测试人员，那么这种风险也可以定义为一种问题。
+因此，验收有助于明确产品的所有功能，并帮助测试人员更好地理解产品。它有助于提高产品的用户友好性。</description>
+    </item>
+    
+    <item>
+      <title>测试基础-什么是验证</title>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AF%E9%AA%8C%E8%AF%81/</link>
+      <pubDate>Wed, 11 Mar 2020 11:45:44 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80-%E4%BB%80%E4%B9%88%E6%98%AF%E9%AA%8C%E8%AF%81/</guid>
+      <description>软件测试中什么是验证？或者说什么是软件验证
+软件验证用来保证软件产品中所设计的全部功能满足客户的需求 软件验证是在整个软件项目开始时就需要跟进。它包含审查、讨论、执行和校对等等。用来评估文档、项目排期、编码实现、项目需求和整体规范。
+假设你正在搭一个桌子。这里的软件验证就是检查桌子所有部分，四个腿是否都是正确的大小。如果桌子的一条腿大小不对，就会导致桌子失去平衡。这种相似的行为也被软件开发和应用程序开发者们所注意到。如果软件产品和应用程序的任何性能都达不到标准，或者说暴露出任何缺陷，那么就会导致最终产品的失败。因此，软件验证是十分重要的，它需要在整个项目开始前就着手进行准备。
+软件验证可以告诉你，正在运行的项目是否正确。
+正在访问的数据是否正确(正确的位置，正确的方式)
+这是一个低级别的行为
+在整个项目关键环节中保持执行，如提前介入、评审检查、请教反馈、技能培训、标准清单。
+演示软件在整个开发生命周期的每个阶段以及每个阶段之间的一致性、完整性和正确性。
+根据能力成熟度模型(Capability Maturity Model, CMM)，我们同样可以将软件验证定义为评估软件的过程，用来保障当前阶段的项目进度是否满足当前的项目规划要求。
+软件验证的优势： 1、在项目开发的后期，有助于减少缺陷的数量 2、 在项目开发的初始阶段，有助于更好地理解产品。 3、减少软件应用程序或产品中出现故障的概率。 4、 有助于根据客户的规格和需求来构建产品。 [What is Verification in software testing? or What is software verification?]
+源链接：http://tryqa.com/what-is-verification-in-software-testing-or-what-is-software-verification
+Verification makes sure that the product is designed to deliver all functionality to the customer. Verification is done at the starting of the development process. It includes reviews and meetings, walk-throughs, inspection, etc. to evaluate documents, plans, code, requirements and specifications.</description>
+    </item>
+    
+    <item>
+      <title>python操作redis</title>
+      <link>https://naod.com.cn/2020/03/python%E6%93%8D%E4%BD%9Credis/</link>
+      <pubDate>Tue, 10 Mar 2020 10:02:30 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/python%E6%93%8D%E4%BD%9Credis/</guid>
+      <description>安装redis 模块 pip3 install redis 连接redis # -*- coding: UTF-8 -*- # 引入redis模块 import redis # 连接redis r = redis.Redis(host=&amp;#39;redis_host&amp;#39;, port=&amp;#39;redis_host&amp;#39;,&amp;#39;password&amp;#39;: &amp;#39;redis_password&amp;#39;, decode_responses=True) 不同redis数据类型操作 string类型操作 string类型在redis中存储格式为按照一个name对应一个value来存储的
+# 插入key为python，value为helloworld的 r.set(&amp;#39;python&amp;#39;,&amp;#39;helloworld&amp;#39;) # 查询刚才插入的key值 print(r.get(&amp;#39;python&amp;#39;)) # 修改key为python的value为helloworld1 r.set(&amp;#39;python&amp;#39;,&amp;#39;helloworld1&amp;#39;) # 删除插入的key值 r.delete(&amp;#39;python&amp;#39;) hash类型操作 hash类型在redis中存储格式为(name,key,value)
+hget(name,key)：获取hash中的value
+hset(name,key,value)：在name对应的hash中设置一个键值对，不存在则创建否则修改
+hmset(name,mapping)：在name对应的hash中批量设置键值对
+hmget(name,keys,*args)：获取过个hash的key的值
+hgetall(name)：获取hash的所有键值对
+hlen(name)：获取hash中键值对的个数
+hkeys(name)：获取hash中所有keys的值
+hvals(name):获取hash中所有value的值
+hexists(name,key)：检查hash中是否存在key
+hdel(name,*key)：删除hash中的key
+# 插入name为python，key为3.8，value为3.8.1的hash值 r.hset(&amp;#39;python&amp;#39;,&amp;#39;3.8&amp;#39;,&amp;#39;3.8.1&amp;#39;) # 查询刚才插入的key值 print(r.hgetall(&amp;#39;python&amp;#39;)) # 修改name为python key为3.8的value为3.8.2 r.hset(&amp;#39;python&amp;#39;,&amp;#39;3.8&amp;#39;,&amp;#39;3.8.2&amp;#39;) # 删除插入的key值 r.hdel(&amp;#39;python&amp;#39;,&amp;#39;3.8&amp;#39;) list类型操作 待补充
+set类型操作 待补充</description>
+    </item>
+    
+    <item>
+      <title>python使用163邮箱发邮件</title>
+      <link>https://naod.com.cn/2020/03/python%E4%BD%BF%E7%94%A8163%E9%82%AE%E7%AE%B1%E5%8F%91%E9%82%AE%E4%BB%B6/</link>
+      <pubDate>Mon, 09 Mar 2020 16:14:11 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/python%E4%BD%BF%E7%94%A8163%E9%82%AE%E7%AE%B1%E5%8F%91%E9%82%AE%E4%BB%B6/</guid>
+      <description># -*- coding: UTF-8 -*- # 引入邮件对象 import smtplib from email.header import Header from email.mime.text import MIMEText # 设置163邮箱的smtp服务 # 邮箱发送地址 sender = &amp;#39;python@163.com&amp;#39; # 设置发送邮箱密码(163为授权码) password = &amp;#39;python&amp;#39; # 设置邮件接收地址 receivers = &amp;#39;python@qq.com&amp;#39; # 设置163服务器地址 server_host = &amp;#39;smtp.163.com&amp;#39; # 邮件正文 msg = MIMEText(&amp;#39;hello, send from Python...&amp;#39;, &amp;#39;plain&amp;#39;, &amp;#39;utf-8&amp;#39;) msg[&amp;#39;From&amp;#39;] = sender msg[&amp;#39;To&amp;#39;] = receivers # 邮件标题 msg[&amp;#39;Subject&amp;#39;] = Header(&amp;#39;python脚本邮件&amp;#39;, &amp;#39;utf-8&amp;#39;).encode() try: server = smtplib.SMTP_SSL(server_host, 465) # 开启邮件服务操作日志 1为开启 0为关闭 server.</description>
+    </item>
+    
+    <item>
+      <title>python操作数据库</title>
+      <link>https://naod.com.cn/2020/03/python%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <pubDate>Mon, 09 Mar 2020 16:05:50 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/python%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <description># -*- coding: UTF-8 -*- import MySQLdb # 连接数据库 db = MySQLdb.connect(&amp;#34;db_ip&amp;#34;, &amp;#34;db_username&amp;#34;, &amp;#34;db_password&amp;#34;, &amp;#34;db_name&amp;#34;, charset=&amp;#39;utf8&amp;#39; ) # 使用cursor()方法获取操作游标 cursor = db.cursor() # SQL查询语句(可输入增删改查sql语句) sql = &amp;#34;SELECT * FROM python&amp;#34; # noinspection PyBroadException try: cursor.execute(sql) # 执行SQL语句 results = cursor.fetchall() # 获取所有记录列表 for row in results: comments = row[1] ip = row[3] print (&amp;#34;python1=%s,python2=%s&amp;#34; % \ (&amp;#34;python1&amp;#34;, &amp;#34;python2&amp;#34;)) except: print &amp;#34;Error: 没查询到数据&amp;#34; # 关闭数据库连接 db.close() </description>
+    </item>
+    
+    <item>
+      <title>hexo同时托管在github和coding</title>
+      <link>https://naod.com.cn/2020/03/hexo%E5%90%8C%E6%97%B6%E6%89%98%E7%AE%A1%E5%9C%A8github%E5%92%8Ccoding/</link>
+      <pubDate>Sun, 08 Mar 2020 13:55:16 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/hexo%E5%90%8C%E6%97%B6%E6%89%98%E7%AE%A1%E5%9C%A8github%E5%92%8Ccoding/</guid>
+      <description>前提： 已拥有hexo博客 已拥有github仓库 已拥有coding page仓库 1。修改配置文件 找到hexo目录下站点配置文件 _config.yml
+deploy: type: git repo: github: https://github.com/waitnoww/waitnoww.github.com.git,master coding: https://git.coding.net/waitnoww/www.dengnao.com.cn.git,coding-pages 2.hexo安装部署插件： npm install hexo-deployer-git --save 3.尝试一下 hexo clean hexo g hexo d </description>
+    </item>
+    
+    <item>
+      <title>测试建模：Google ACC</title>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%BB%BA%E6%A8%A1google-acc/</link>
+      <pubDate>Fri, 06 Mar 2020 14:00:50 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%BB%BA%E6%A8%A1google-acc/</guid>
+      <description>ACC（Attributes Components Capability）是Google测试团队使用的一种建模方法，用来快速地建立产品的模型，以指导下一步的测试计划和设计。 在Google内部，ACC得到较普遍的应用，一些工程师还开发了支持ACC模型的Web应用，并将其开源。本文将介绍ACC的内容，所引用的Google+的例子摘录自《How Google Tests Software》一书。此外，本文还将使用启发式测试策略模型（Heuristic Test Strategy Model，简称HTSM）来分析ACC。
+运用ACC建模的第一步是确定产品的Attributes（属性）。 按照谷歌的定义，Attributes是产品的形容词（adjectives），是与竞争对手相区别的关键特征。按照敏捷开发的观点，Attributes是产品所交付的核心价值（values）。从HTSM的角度，Attributes位于HTSM-&amp;gt;Quality Criteria-&amp;gt;Operation Criteria，隶属于面向用户的质量标准。
+Google+的Attributes如下：
+○ Social（社交）：鼓励用户去分享信息和他们的状态 ○ Expressive（表现力）：用户可以运用各种功能去表达自我 ○ Easy（容易）：让用户以直观的方式做他们想做的事 ○ Relevant（相关）：只显示用户感兴趣的内容 ○ Extensible（可扩展）：能够与Google的已有功能、第三方网站和应用（Application）集成 ○ Private（隐私）：用户数据不会泄漏 ACC以Attribute开始，是产品竞争的自然选择，也符合Google的开发实践。
+在Google的项目中，开发人员和测试人员的比例通常是10：1或更高。开发人员会编写大量的自动化测试用例，对产品实施周密的测试，因此测试人员主要关注用户价值和系统级测试。即便如此，测试人员也没有足够的资源测试所有用户行为。所以，测试人员需要通过确定Attributes来明确产品的核心价值，从而区分出测试对象的轻重缓急（priorities）。
+获取Attributes的信息源可以是产品经理、市场营销人员、技术布道者、商业宣传材料、产品广告等。测试人员也可以使用“卖点漫游”（The Money Tour）来发掘和检验产品的卖点。
+第二步是确定产品的Components（部件）。 Components是产品的名词（nouns），可以理解为产品的主要模块、组件、子系统。
+从HTSM的角度，Components位于HTSM-&amp;gt;Product Elements-&amp;gt;Structure和HTSM-&amp;gt;Product Elements-&amp;gt;Function，即同时具备代码结构和产品功能的特征。
+Google+的Components如下：
+○ Profile（个人资料）：用户的帐户信息和兴趣爱好 ○ People（人脉）：用户已经连接的好友 ○ Stream（信息流）：由帖子、评论、通知、照片等组成的有序的信息流 ○ Circles（圈子）：将好友分组，如把不同的好友归于“朋友”、“同事”等小组 ○ Notifications（通知）：当用户被帖子提到时，向他显示提示信息 ○ Hangouts（视频群聊）：视频对话的小组 ○ Posts（帖子）：用户和好友所发表的信息 ○ Comments（评论）：对帖子、照片、视频等的评论 ○ Photos（照片）：用户和好友所上传的照片 Components可以看作功能列表（Function List）的顶层元素，是产品核心功能的清单。
+《How Google Tests Software》建议Components列表要尽可能简单，10个Components很好，20个就太多了。其目的是重点考虑对产品、对用户最重要的功能与代码，并避免漫长的Components列表所导致的分析瘫痪。
+第三步是确定产品的Capabilities（能力）。 Capabilities是产品的动词（verbs），描述了一个Component提供了何种能力来实现一个Attribute。
+在HTSM的角度，Capabilities位于HTSM-&amp;gt;Product Elements-&amp;gt;Function和HTSM-&amp;gt;Quality Criteria-&amp;gt;Operation Criteria-&amp;gt;Capability，刻画了产品实现其核心价值的手段。
+Capabilities通常是面向用户的（user-oriented），反映了用户视角的产品行为。测试人员也应该保持Capabilities矩阵的简洁，他们应该关注对用户而言最有价值、最有吸引力的能力，并在合适的抽象层次（right level of abstraction）记录Capabilities。</description>
+    </item>
+    
+    <item>
+      <title>参加QCON2019北京大会不完全见闻</title>
+      <link>https://naod.com.cn/2020/03/%E5%8F%82%E5%8A%A0qcon2019%E5%8C%97%E4%BA%AC%E5%A4%A7%E4%BC%9A%E4%B8%8D%E5%AE%8C%E5%85%A8%E8%A7%81%E9%97%BB/</link>
+      <pubDate>Wed, 04 Mar 2020 11:14:00 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/%E5%8F%82%E5%8A%A0qcon2019%E5%8C%97%E4%BA%AC%E5%A4%A7%E4%BC%9A%E4%B8%8D%E5%AE%8C%E5%85%A8%E8%A7%81%E9%97%BB/</guid>
+      <description>前言 首先非常感谢公司提供这么好的学习机会，可以去北京参与2019年QCON全球开发者大会。以前都是在网上观看各种峰会的演讲视频或是参加一些小规模的技术会议，参加QCON这种大型的技术峰会还是第一次。
+通过这一次参会经历，才知道走出去看看是多么的必要：闭门造车，埋头苦干，才发现外面已然前行甚远。
+开会回来之后我一直在想，怎么去写这个分享的博文。感觉从QCON会议上收获了一些东西，又感觉什么都没学到，觉得真正能在工作中实践的部分不够多。很难说通过参加一次会议就能给工作带来多大改变，更多的是对业界新技术，技术新方向，行业新动态等方面有了一些认知，下面我会分享我参会的一些想法和思考。
+关于QCON QCON简介 国际和国内技术峰会的老大哥，目前看来是国内举办最成功和最长久的技术探讨会议
+QCon是由InfoQ主办的综合性技术盛会，每年在伦敦、北京、纽约、圣保罗、上海、旧金山召开。自2007年3月份开始举办以来，已经有超万名有多年从业经验的技术人员参加过QCon大会。QCon内容源于实践并面向社区，演讲嘉宾依据热点话题，面向5年以上工作经验的技术团队负责人、架构师、工程总监、开发人员分享技术创新和实践。
+QCON2019介绍 官网：https://2019.qconbeijing.com/
+QCON2019北京站共有100+国内外技术专家，30+演讲专题，180+会议演讲，涵盖了编程语言实战,业务架构,机器学习，实时计算，前端前沿技术,技术团队管理,技术创业,混沌工程,高可用架构等软件开发的方方面面，会议议题比较全面
+下面为会议日程和演讲专题信息一览：
+我参与的QCON 图中标红心的部分是个人比较推荐的分享(广告部分少一些)
+这一次部门去北京参与QCON有四个人，在议题较多的情况下，大家商议尽量去每个人听不同的议题，回去可以分享更多东西给部门的小伙伴。
+通过参会前翻阅各种专题介绍，确认了自己要听的一些专题。我参会三天听过的演讲如下：
+红心议题视频链接如下：
+QCon十年回顾：软件正在定义世界：暂缺 蚂蚁金服十五年技术演进之路：暂缺 面向 AI 的基础架构建设：暂缺 基于协程的编程方式在移动端研发的思考及最佳实践：https://time.geekbang.org/course/detail/177-93876 支付宝端性能体验优化实践：https://time.geekbang.org/course/detail/177-94041 从 0 到 1 搭建机器学习系统：基于小红书的个性化推荐应用为例：https://time.geekbang.org/course/detail/177-94299 腾讯实时流计算平台演进之路：暂缺 云原生架构下的混沌工程实践：https://time.geekbang.org/course/detail/177-94665 大型产品开发中的逻辑推理：https://time.geekbang.org/course/detail/177-94761 从无到 6 亿用户，网易云音乐的产品迭代策略：https://time.geekbang.org/course/detail/177-94760 一些分享 QCON我总共听过22个技术话题演讲，涵盖5个专题和一个主题演讲。虽然不少话题演讲带有广告嫌疑，但还是存在不少精品演讲可以去学习的，下面我会选择部分个人觉得可以拿出来分享的话题来给大家做分享，欢迎大家一起来探讨学习。
+分享一：《支付宝端性能体验优化实践》参会分享 支付宝端性能体验优化实践，是一场难得的移动客户端分享（在移动端至上的今天，会议关于移动端分享较少，是我比较困惑的），给了我不一样的视角和收获。
+会议视频地址：https://time.geekbang.org/course/detail/177-94041
+关于移动客户端性能优化，各个公司都有自己不同的优化方向和性能技术指标。大部分公司都是以性能指标来作为优化方向的，但支付宝是以业务价值为体验优化点，通过梳理用户核心使用流程，将核心流程单独拿出来作为用户体验模型，然后进行深挖，一点一点提升全路径的用户使用体验。
+会议主要内容：
+深度解读用户体验 快速启动的优化实践 扫一扫极致优化 持续优化的性能体系 关于深度解读用户体验
+从业务场景和用户构成两方面的分析，由此带来用户体验优化需要面临的多方面挑战。在满足业务高速发展的同时，如何去提升用户体验，一直是一个比较难的话题。支付宝通过冷启动，高并发和长尾多等方面深度解读性能问题，找出解决问题的关键策略。其中技术提升和产品优化是我们可以借鉴的部分。
+关于快速启动的优化实践
+核心思路是找到启动的真正关键路径，使用各种方法，不只是技术也包括产品配合，避免阻塞。其实这个思路也适用于其他功能优化。
+关于扫一扫极致优化
+比较详细介绍了支付宝关于扫一扫极致优化的前后历程。斗鱼app也有扫一扫这个功能，虽然非核心功能点，但也可以参考优化方案进行优化
+关于持续优化的性能体系
+分享了构建体系化的客户端性能持续优化的架构，我认为比较重要是建设性能优化基础设施。现在我们移动端真机机房，每天在跑的稳定性测试和兼容性测试，APM监控等方面持续优化，与产品运营用户协调配合，慢慢去构建我们斗鱼的客户端性能优化体系。支付宝的性能优化体系，我们有很多可以借鉴的部分。
+分享二：《从 0 到 1 搭建机器学习系统：基于小红书的个性化推荐应用为例》参会分享 要问最近几年讨论最火的几个话题，肯定会包括人工智能和机器学习。机器学习已经在很多公司进行了业务应用，我之前只是看过机器学习的一些专题文章和新闻，对机器学习了解不算太多。
+刚好小红书关于机器学习的演讲从标题和介绍上吸引了我，就选择去听一下这个专题，会前我也查阅了一些资料，结果听了会议之后，才发现自己还是太年轻。会议内容对于机器学习领域的人来说可能比较好理解，对于我这种菜鸟还是太硬核了一点。虽然演讲内容从0到1的介绍了小红书搭建机器学习系统的流程，但是太多机器学习的相关词汇对于我来说，比较难理解，从而无法流畅和深入的理解演讲内容。这是比较遗憾的部分，
+通过参会学习，我知道了对于机器学习如何去技术选型，如何从数据流到特征，再到模型，怎么从0到1去搭建机器学习模型有了一个初步的认知。
+会议主要内容：
+从 0 到 1 搭建机器学习系统：技术选型，从数据流，特征到模型； 机器学习的世界里技术产品应该没有边界：从产品角度入手选取合适的学习目标以及Value Model； 没有数据就没有机器学习：机器学习不是黑盒，人人都要能用和会用数据。 讲师在会议提到了三个比较有意思的点，我觉得比较有意思，在这里可以给大家分享一下：</description>
+    </item>
+    
+    <item>
+      <title>测试小工具一期-录屏工具</title>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%B0%8F%E5%B7%A5%E5%85%B7%E4%B8%80%E6%9C%9F-%E5%BD%95%E5%B1%8F%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Tue, 03 Mar 2020 20:03:27 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%B0%8F%E5%B7%A5%E5%85%B7%E4%B8%80%E6%9C%9F-%E5%BD%95%E5%B1%8F%E5%B7%A5%E5%85%B7/</guid>
+      <description>前言 工欲善其事必先利其器，这将是一个工具介绍合集，此文只是其一。
+在实际测试工作过程中，我们经常需要很清晰的描述BUG的复现步骤，除了详细的文字描述外，bug复现步骤的录制GIF图更能接地气的直接反应发现bug的过程。
+下面会介绍几个录屏工具，供大家选取使用。
+1.LICEcap 这一款录屏软件我用的最多，后台常驻软件之一
+介绍： 软件很小，只有 432KB，不要看它小，录制动图绝对够用。这一款，需要安装，界面是英文的，不过也好理解。安装好，软件打开后，中间是空的，也就是录制的地方。尺寸，你可以自己设定，也可随意的拖。当你固定好要录制的位置时，就可以点击 Record，它就开始录制了。需要提醒的是，首次录制它需要让你选择保存位置。还有就是，保存位置的路径里面，一定不要有中文，否则保存会失败。
+下载地址： https://www.cockos.com/licecap/
+2.Gif CAM 介绍 这一款稍微大一点，有 1.54MB，但不用安装，功能和上面的那款差不多。中间也是空的，也就是录制区域。右边是功能键，很简单，你点一下就可以看。它好在录完了，可以直接编辑所录的 GIF 图。比如录多了，就可以删除录多的那一部分。再保存就好了。值得提醒的是，这一款每录一次图，需要关掉，再重开。否则它会把你录制的内容全连到一起，认成一个文件。
+下载地址： http://www.gif-cam.com/
+3.ScreenToGif 非常强大的gif录制/剪辑工具
+介绍 可以自定义热键以及设置文件存放目录、设置 gif 质量、编辑 gif 文件等等，官网也有很多动画演示。
+但是世界上没有完美的东西，相较于其他几款 Gif 录制工具，ScreenToGif 也是有不少不足之处，文件达到了9MB，而其他几款均只有几百KB
+下载地址： http://pan.baidu.com/s/17Ey78?utm_source=www.appinn.com
+4.Recordit 介绍 Recordit 一共就一个按钮，开始 或者 结束。简单简洁。
+点击 Record，选取录制区域，点击开始，点击结束，分享。
+视频会自动上传到 Recordit 网站并得到一个 url，你可以直接分享这个 url 或者打开后下载 GIF 再分享。
+下载地址： http://recordit.co/
+后话 录屏工具很多，够用好用就行，可不要贪杯。
+下一期会介绍markdown软件和相关语法介绍，让你专注于文字内容本身，而不被格式样式所束缚。</description>
+    </item>
+    
+    <item>
+      <title>如何用Django搭建一个博客[一]</title>
+      <link>https://naod.com.cn/2019/07/%E5%A6%82%E4%BD%95%E7%94%A8django%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E4%B8%80/</link>
+      <pubDate>Mon, 08 Jul 2019 13:55:16 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2019/07/%E5%A6%82%E4%BD%95%E7%94%A8django%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E4%B8%80/</guid>
+      <description>克隆项目到本地 https://github.com/waitnoww/www.dengnao.com.cn 创建并激活虚拟环境
+在命令行进入到保存虚拟环境的文件夹，输入如下命令创建并激活虚拟环境：
+virtualenv blogproject_env # windows blogproject_env\Scripts\activate # linux source blogproject_env/bin/activate 安装项目依赖
+如果使用了虚拟环境，确保激活并进入了虚拟环境，在命令行进入项目所在的 django-blog-tutorial 文件夹，运行如下命令：
+pip install -r requirements.txt 迁移数据库
+在上一步所在的位置运行如下命令迁移数据库：
+python manage.py migrate 创建后台管理员账户
+在上一步所在的位置运行如下命令创建后台管理员账户
+python manage.py createsuperuser 运行开发服务器
+在上一步所在的位置运行如下命令开启开发服务器：
+python manage.py runserver 在浏览器输入：127.0.0.1:8000
+进入后台发布文章
+在浏览器输入：127.0.0.1:8000/admin
+使用第 5 步创建的后台管理员账户登录
+enjoy it！</description>
+    </item>
+    
+    <item>
+      <title>不闹而语-测试用例设计方法-错误猜测法</title>
+      <link>https://naod.com.cn/2018/05/%E4%B8%8D%E9%97%B9%E8%80%8C%E8%AF%AD-%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E9%94%99%E8%AF%AF%E7%8C%9C%E6%B5%8B%E6%B3%95/</link>
+      <pubDate>Mon, 21 May 2018 13:34:41 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2018/05/%E4%B8%8D%E9%97%B9%E8%80%8C%E8%AF%AD-%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E9%94%99%E8%AF%AF%E7%8C%9C%E6%B5%8B%E6%B3%95/</guid>
+      <description>错误猜测是一种技术，鼓励经验丰富的测试人员考虑软件可能无法应对的情况。有些人似乎天生擅长测试而其他人都是优秀的测试人员，因为他们作为测试人员或使用特定系统有很多经验，因此能够发现其缺点。
+这就是为什么在一定程度上应用更正式的技术之后使用的错误猜测方法可能非常有效。它还节省了大量时间，因为经验丰富的测试人员做出了假设和猜测，以找出原本无法找到的缺陷。
+错误猜测的成功在很大程度上取决于测试人员的技能，因为优秀的测试人员知道缺陷最有可能存在的位置。什么是错误猜测 这就是为什么在一定程度上应用更正式的技术之后使用的错误猜测方法可能非常有效。在使用更正式的技术时，测试人员可能会更好地了解系统，它的作用以及它的工作原理。通过这种更好的理解，他或她可能更好地猜测系统可能无法正常工作的方式。
+要尝试的典型条件包括除以零，空白（或无）输入，空文件和错误类型的数据（例如，需要数字的字母字符）。如果有人曾经说过一个系统或它所运行的环境“这种情况永远不会发生”，那么测试这种情况可能是一个好主意，因为关于在现场环境中将会发生什么和不会发生什么的这种假设往往是失败的原因。
+错误猜测技术的结构化方法是列出可能的缺陷或故障，并设计试图产生它们的测试。这些缺陷和故障列表可以根据测试人员自己或其他人的经验，可用的缺陷和故障数据以及软件失效原因的常识来构建。</description>
+    </item>
+    
+    <item>
+      <title>测试用例设计方法-场景图法</title>
+      <link>https://naod.com.cn/2018/04/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%9C%BA%E6%99%AF%E5%9B%BE%E6%B3%95/</link>
+      <pubDate>Thu, 12 Apr 2018 13:34:41 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2018/04/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%9C%BA%E6%99%AF%E5%9B%BE%E6%B3%95/</guid>
+      <description>定义 现在的软件几乎都是用事件触发来控制流程的，事件触发时的情景便形成了场景，而同一事件不同的触发顺序和处理结果就形成事件流。这种在软件设计方面的思想也可以引入到软件测试中，可以比较生动地描绘出事件触发时的情景，有利于测试设计者设计测试用例，同时使测试用例更容易理解和执行。
+应用 基本流和备选流：如下图所示，图中经过用例的每条路径都用基本流和备选流来表示，直黑线表示基本流，是经过用例的最简单的路径。备选流用不同的色彩表示，一个备选流可能从基本流开始，在某个特定条件下执行，然后重新加入基本流中（如备选流1和3）；也可能起源于另一个备选流（如备选流2），或者终止用例而不再重新加入到某个流（如备选流2和4）。</description>
+    </item>
+    
+    <item>
+      <title>测试用例设计方法-基于经验的测试</title>
+      <link>https://naod.com.cn/2018/04/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%9F%BA%E4%BA%8E%E7%BB%8F%E9%AA%8C%E7%9A%84%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Thu, 12 Apr 2018 13:34:41 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2018/04/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%9F%BA%E4%BA%8E%E7%BB%8F%E9%AA%8C%E7%9A%84%E6%B5%8B%E8%AF%95/</guid>
+      <description>在基于经验的技术中，人们的知识，技能和背景对测试条件和测试用例至关重要。
+需要技术人员和业务人员的经验，因为他们为测试分析和设计过程带来了不同的观点。由于之前对类似系统的经验，他们可能有一个可能出错的想法，这对测试非常有用。什么是基于经验的测试 基于经验的技术与基于规范和基于结构的技术相结合，并且在没有规范或者规范不充分或过时时也使用。 这可能是用于低风险系统的唯一技术类型，但这种方法在极端时间压力下可能特别有用 - 实际上这是导致探索性测试的因素之一。</description>
+    </item>
+    
+    <item>
+      <title>测试用例设计方法-边界值分析</title>
+      <link>https://naod.com.cn/2018/04/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E8%BE%B9%E7%95%8C%E5%80%BC%E5%88%86%E6%9E%90/</link>
+      <pubDate>Thu, 12 Apr 2018 13:34:41 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2018/04/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E8%BE%B9%E7%95%8C%E5%80%BC%E5%88%86%E6%9E%90/</guid>
+      <description>边界值分析（BVA）基于在分区之间的边界处进行测试。这里我们有两个有效边界（在有效分区中）和无效边界（在无效分区中）。
+例如，考虑一台打印机，它具有从1到99的副本数量的输入选项。要应用边界值分析，我们将从有效分区中获取最小和最大（边界）值（1和在这种情况下，99分别与在有效分区（在这种情况下为0和100）相邻的每个无效分区中的第一个或最后一个值一起。在这个例子中，我们将有三个等价分区测试（三个分区中的每一个）和四个边界值测试。考虑上一节中描述的等价划分中的银行系统。 什么是边界值分析BVA因为边界值被定义为分区边缘上的那些值，所以我们确定了以下边界值： - $ 0.01（无效边界值，因为它位于无效分区的边缘），$ 0.00，$ 100.00，$ 100.01，$ 999.99和$ 1000.00，所有有效的边界值。因此，通过应用边界值分析，我们将对边界值进行六次测试。
+比较我们天真的测试员Robbin所做的事情：他确实达到了一个边界值（100美元），尽管它比设计更偶然。因此，除了仅测试一半分区外，Robbin仅测试了六分之一的边界（因此他在查找任何边界缺陷方面效率较低）。
+如果我们考虑所有我们对等效划分和边界值分析的测试，这些技术总共给我们9次测试，而罗比的测试只有16次，所以我们仍然效率更高，效率也高出三倍以上（测试四个分区和六个边界，因此总共10个条件与三个相比）。
+通过显示表中的值，我们可以看到没有为7％的利率指定最大值。我们现在想知道帐户余额的最大值是什么，以便我们可以测试该边界。这被称为“开放边界”，因为分区的一侧保持打开，即未定义。但这并不意味着我们可以忽略它，我们仍应该尝试测试它，但问题是如何？
+开放边界很难测试，但有不同的方法来处理它们。实际上，问题的最佳解决方案是找出应该指定的边界！一种方法是返回到规范，以查看是否已在其他地方为余额金额说明了最大值。如果是这样，那么我们知道我们的边界值是什么。另一种方法可能是调查系统的其他相关领域。
+例如，持有账户余额数字的字段可能只有六位数加上两位小数。这将使最大账户余额为9999999.99美元，因此我们可以将其作为我们的最大边界值。如果我们仍然无法找到关于这个边界应该是什么的任何东西，那么我们可能需要使用直观或基于经验的方法通过输入试图使其失败的各种大值来检查它。
+我们可以考虑边界值分析的另一个例子，我们可以将它应用于整个字符串（例如名称或地址）。字符串中的字符数是一个分区，例如，1到30个字符之间是有效边界为1和30的有效分区。无效边界将是0个字符（null，只需按Return键）和31个字符。这两个都应该产生错误消息。</description>
+    </item>
+    
+    <item>
+      <title>测试用例设计方法-因果图法</title>
+      <link>https://naod.com.cn/2018/03/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%9B%A0%E6%9E%9C%E5%9B%BE%E6%B3%95/</link>
+      <pubDate>Sun, 11 Mar 2018 13:34:41 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2018/03/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%9B%A0%E6%9E%9C%E5%9B%BE%E6%B3%95/</guid>
+      <description>定义 因果图法是一种利用图解法分析输入的各种组合情况，从而设计测试用例的方法，它适合于检查程序输入条件的各种组合情况。
+应用 等价类划分法和边界值分析方法都是着重考虑输入条件，但没有考虑输入条件的各种组合、输入条件之间的相互制约关系。这样虽然各种输入条件可能出错的情况已经测试到了，但多个输入条件组合起来可能出错的情况却被忽视了。
+如果在测试时必须考虑输入条件的各种组合，则可能的组合数目将是天文数字，因此必须考虑采用一种适合于描述多种条件的组合、相应产生多个动作的形式来进行测试用例的设计，这就需要利用因果图（逻辑模型）。
+1. 因果图介绍 1) 4种符号分别表示了规格说明中向4种因果关系。 2) 因果图中使用了简单的逻辑符号，以直线联接左右结点。左结点表示输入状态（或称原因），右结点表示输出状态（或称结果）。 3) C1表示原因，通常置于图的左部；e1表示结果，通常在图的右部。C1和e1均可取值0或1，0表示某状态不出现，1表示某状态出现。 2.因果图涉及的概念 1) 关系 Ø 恒等：若c1是1，则e1也是1；否则e1为0。
+Ø 非：若c1是1，则e1是0；否则e1是1。
+Ø 或：若c1或c2或c3是1，则e1是1；否则e1为0。“或”可有任意个输入。
+Ø 与：若c1和c2都是1，则e1为1；否则e1为0。“与”也可有任意个输入。
+2) 约束 输入状态相互之间还可能存在某些依赖关系，称为约束。例如,某些输入条件本身不可能同时出现。输出状态之间也往往存在约束。在因果图中,用特定的符号标明这些约束。
+Ø 输入条件的约束有以下4类：
+· E约束（异）：a和b中至多有一个可能为1，即a和b不能同时为1。
+· I约束（或）：a、b和c中至少有一个必须是1，即 a、b 和c不能同时为0。
+· O约束（唯一）；a和b必须有一个，且仅有1个为1。
+· R约束（要求）：a是1时，b必须是1，即不可能a是1时b是0。
+Ø 输出条件约束类型 输出条件的约束只有M约束（强制）：若结果a是1，则结果b强制为0。
+3.采用因果图法设计测试用例的步骤： 分析软件规格说明描述中,那些是原因(即输入条件或输入条件的等价类),那些是结果(即输出条件),并给每个原因和结果赋予一个标识符。 分析软件规格说明描述中的语义，找出原因与结果之间,原因与原因之间对应的关系，根据这些关系,画出因果图。 由于语法或环境限制,有些原因与原因之间,原因与结果之间的组合情况不可能出现，为表明这些特殊情况,在因果图上用一些记号表明约束或限制条件。 把因果图转换为判定表。 把判定表的每一列拿出来作为依据,设计测试用例。 </description>
+    </item>
+    
+    <item>
+      <title>测试用例设计方法-功能图法</title>
+      <link>https://naod.com.cn/2018/02/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%8A%9F%E8%83%BD%E5%9B%BE%E6%B3%95/</link>
+      <pubDate>Thu, 01 Feb 2018 13:34:41 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2018/02/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%8A%9F%E8%83%BD%E5%9B%BE%E6%B3%95/</guid>
+      <description>定义 功能图由状态迁移图和布尔函数组成.状态迁移图用状态和迁移来描述.一个状态指出数据输入的位置（或时间）,而迁移则指明状态的改变.同时要依靠判定表或因果图表示的逻辑功能.例,一个简化的自动出纳机ATM的功能图。
+应用 1. 功能图介绍 一个程序的功能说明通常由动态说明和静态说明组成.动态说明描述了输入数据的次序或转移的次序.
+静态说明描述了输入条件与输出条件之间的对应关系.对于较复杂的程序,由于存在大量的组合情况,因此,仅用静态说明组成的规格说明对于测试来说往往是不够的.必须用动态说明来补充功能说明.功能图方法是用功能图FD形式化地表示程序的功能说明,并机械地生成功能图的测试用例.
+功能图模型由状态迁移图和逻辑功能模型构成.状态迁移图用于表示输入数据序列以及相应的输出数据.在状态迁移图中,由输入数据和当前状态决定输出数据和后续状态.逻辑功能模型用于表示在状态中输入条件和输出条件之间的对应关系.逻辑功能模型只适合于描述静态说明,输出数据仅由输入数据决定.测试用例则是由测试中经过的一系列状态和在每个状态中必须依靠输入/输出数据满足的一对条件组成.功能图方法其实是是一种黑盒白盒混合用例设计方法。
+（功能图方法中,要用到逻辑覆盖和路径测试的概念和方法,其属白盒测试方法中 的内容.逻辑覆盖是以程序内部的逻辑结构为基础的测试用例设计方法.该方法要求测试人员对程序的逻辑结构有清楚的了解.由于覆盖测试的目标不同,逻辑覆盖可分为:语句覆盖,判定覆盖,判定-条件覆盖,条件组合覆盖及路径覆盖.下面我们指的逻辑覆盖和路径是功能或系统水平上的,以区别与白盒测试中的程序内部的.）
+2. 测试用例生成方法 从功能图生成测试用例,得到的测试用例数是可接受的. 问题的关键的是如何从状态迁移图中选取测试用例. 若用节点代替状态,用弧线代替迁移,则状态迁移图就可转化成一个程序的控制流程图形式.问题就转化为程序的路径测试问题（如白盒测试）问题了.
+3. 测试用例生成规则 为了把状态迁移（测试路径）的测试用例与逻辑模型（局部测试用例）的测试用例组合起来,从功能图生成实用的测试用例,须定义下面的规则.在一个结构化的状态迁移（SST）中,定义三种形式的循环:顺序,选择和重复.但分辨一个状态迁移中的所有循环是有困难的.（其表示图形省略）。
+4. 从功能图生成测试用例的过程 生成局部测试用例:在每个状态中,从因果图生成局部测试用例.局部测试用例由原因值（输入数据）组合与对应的结果值（输出数据或状态）构成。 测试路径生成:利用上面的规则（三种）生成从初始状态到最后状态的测试路径。 测试用例合成:合成测试路径与功能图中每个状态中的局部测试用例.结果是初始状态到最后状态的一个状态序列,以及每个状态中输入数据与对应输出数据的组合。 5. 测试用例的合成算法 采用条件构造树.</description>
+    </item>
+    
+    <item>
+      <title>测试用例设计方法-决策表</title>
+      <link>https://naod.com.cn/2018/01/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%86%B3%E7%AD%96%E8%A1%A8/</link>
+      <pubDate>Thu, 04 Jan 2018 13:34:41 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2018/01/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%86%B3%E7%AD%96%E8%A1%A8/</guid>
+      <description>等价划分和边界值分析技术通常应用于特定情况或输入。但是，如果输入的不同组合导致采取不同的操作，则使用等效分区和边界值分析可能更难以显示，这往往更侧重于用户界面。
+另外两种基于规范的软件测试技术，决策表和状态转换测试更侧重于业务逻辑或业务规则。
+一个决策表的处理（例如输入）的东西组合的好方法。该技术有时也称为“因果”表。
+tryqa 其原因在于存在一种称为“因果图形”的相关逻辑图表技术，它有时用于帮助推导决策表（迈尔斯将其描述为组合逻辑网络[Myers，1979]）。但是，大多数人发现使用[Copeland，2003]中描述的表更有用。
+决策表提供了一种表明复杂业务规则的系统方法，这对开发人员和测试人员都很有用。 决策表可用于测试设计，无论它们是否在规范中使用，因为它们有助于测试人员探索必须正确实现业务规则的不同输入和其他软件状态组合的影响。 它有助于开发人员做得更好，也可以带来更好的关系。测试组合可能是一个挑战，因为组合的数量通常很大。如果不是不可能，测试所有组合可能是不切实际的。我们必须对仅测试一小部分组合感到满意，但是要选择要测试哪些组合以及哪些组合要省略也很重要。如果您没有系统的方法来选择组合，则将使用任意子集，这可能导致无效的测试工作。 如何使用决策表进行测试设计？ 第一项任务是确定一个合适的功能或子系统，它根据输入或事件的组合作出反应。系统不应包含太多输入，否则组合的数量将变得难以管理。
+最好通过将它们分成子集并一次处理一个子集来处理大量条件。
+一旦确定了需要组合的方面，然后将它们放入一个表中，列出了每个方面的所有True和False组合。
+让我们考虑贷款申请的一个例子，您可以在其中输入每月还款金额或您想要支付的年数（贷款期限）。
+如果同时输入两者，系统将在两者冲突时进行折衷。这两个条件是贷款金额和期限，因此我们将它们放在一个表格中（见表4.2）。
+表4.2空决策表：
+接下来，我们将确定True和False的所有组合（参见表4.3）。有两个条件，每个条件可以是真或假，我们将有四个组合（两个组合的事物数量的功率）。
+请注意，如果我们有三个要结合的东西，我们将有八个组合，有四个东西，有16个，等等。
+这就是为什么一次处理小组合很好的原因。为了跟踪我们有哪些组合，我们将在底行交替使用True和False，在底行上方的行上放置两个Trues然后两个Falses，等等，
+所以最上面的行将包含所有的Trues，然后是所有的Falses（这个原则适用于所有这些表）。
+表4.3带有输入组合的决策表： 在下一步中，我们现在将确定每种组合的正确结果（见表4.4）。在此示例中，我们可以输入两个字段中的一个或两个。每种组合有时被称为规则。
+表4.4包含组合和结果的决策表： 在这一点上，我们可能会意识到，如果客户没有在两个字段中的任何一个字段中输入任何内容，我们就没有想过会发生什么。
+该表突出显示了此示例的规范中未提及的组合。我们可以假设这种组合应该导致错误消息，因此我们需要添加另一个操作（参见表4.5）。
+这凸显了该技术的优势，可以发现规范中的遗漏和含糊之处。某些组合从规范中省略是很常见的; 因此，在审查测试基础时，这也是一种有价值的技术。
+表4。5具有附加结果的决策表： 现在，我们在此示例中稍作更改，以便不允许客户同时输入还款和期限。现在我们表的结果将会改变，因为如果输入两者，也应该有一条错误消息，所以它看起来像表4.6。
+表4。6变更结果的决策表： 您现在可能会注意到每列中只有一个“是”，即我们的操作是互斥的 - 每个条件组合只会发生一个操作。
+我们可以通过列出一行单元格中的操作以不同的方式表示这一点，如表4.7所示。请注意，如果任何组合产生多个操作，那么最好将它们显示为单独的行，而不是将它们组合成一行。
+表4.7一行结果的决策表： 这种技术的最后一步是编写测试用例来练习表中的四个规则。
+信用卡示例： 让我们再举一个例子。如果您是新客户，并且想要开设信用卡账户，那么有三个条件，首先您将获得今天所有购买的15％折扣，第二个如果您是现有客户并且持有会员卡，则获得10％的折扣和第三，如果你有优惠券，你今天可以获得20％的折扣（但它不能与&amp;rsquo;新客户&amp;rsquo;折扣一起使用）。
+如果适用，则添加折扣金额。如表4.8所示。
+表4.8信用卡示例的决策表
+在表4.8中，条件和操作列在左侧列中。决策表中的所有其他列均表示单独的规则，每个条件对应一个条件。
+我们可能会选择测试每个规则/组合，如果只有少数，那么通常就是这种情况。但是，如果规则/组合的数量很大，我们更有可能通过选择一个富子集进行测试来对它们进行抽样。
+现在让我们看看上面显示的信用卡决策表：
+请注意，我们已将X作为两个列（规则1和2）的折扣 - 这意味着不应发生此组合。根据上述条件，您既不能成为新客户，也不能持有会员卡。因此，应该有一条错误消息说明这一点。 我们在规则3中做出了假设。由于优惠券的折扣大于新客户折扣，我们假设客户将选择20％而不是15％。我们无法添加它们，因为优惠券不能与上述条件中所述的“新客户”折扣一起使用。20％的行动是我们的假设，我们应该通过询问编写规范的人或用户来检查这个假设（以及我们做出的任何其他假设）是否正确。 但是，对于规则5，我们可以添加折扣; 因为优惠券和会员卡折扣都应该适用（这是我们的假设）。 规则4,6和7只有一种折扣，规则8没有折扣，所以0％。 如果我们彻底应用这种技术，我们将对决策表的每个列或规则进行一次测试。这样做的好处是，我们可能会测试一些我们可能没有测试过但可能发现缺陷的组合。
+但是，如果我们有很多组合，那么测试每种组合可能是不可能或不明智的。如果我们有时间限制，我们可能没有时间测试所有组合。不要只是假设需要测试所有组合。
+优先考虑和测试最重要的组合总是更好。拥有全表有助于我们决定哪些组合应该测试，哪些组合不要测试。
+在上面的示例中，所有条件都是二进制的，即它们只有两个可能的值：True或False（或者我们可以说是或否）。</description>
+    </item>
+    
+    <item>
+      <title>测试工程师的左膀右臂</title>
+      <link>https://naod.com.cn/2017/08/%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E5%B7%A6%E8%86%80%E5%8F%B3%E8%87%82/</link>
+      <pubDate>Thu, 10 Aug 2017 11:10:21 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2017/08/%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E5%B7%A6%E8%86%80%E5%8F%B3%E8%87%82/</guid>
+      <description>以下是根据实际工作对测试基础的理解和总结：
+测试体系中最基本最常用到的就是 用例管理 和 缺陷管理 两大系统，看似简单确承载整个测试，它们是测试的根基，是测试工程师的左膀右臂。
+一、用例管理 用例，或者叫case，是对测试点的描述，是测试思想的体现。它来自我们的测试内容，可以是某个功能某块、某段代码、具体业务、整个系统、不同端的产品等；它由测试人员通过不同的测试类型或测试方法来编写；它可以是文字描述或执行脚本。
+重要性：
+它是经过测试工程师对 测试对象 的转化（翻译或者加工）而得到的“测试语言”，是 测试对象 的另一种存在形式，测试对象 可以通过这种方式传承或者保留下去； 测试工程师的“记账本”，可以有据可循； 保证测试覆盖率、不会遗漏测试点、可以进行系统和全面的测试； 掌控测试进度； 特 点：
+分优先级，分类，分阶段； 要求简明易懂易执行； 要求对垂直领域有所了解； 及时维护。 常用系统：网上开源工具、office文档；
+二、缺陷管理 缺陷，或者叫bug，是对问题的描述，考验测试工程师对测试对象的理解，和对测试类型和测试方法的掌握。
+重要性：
+评估产品质量和开发自测程度； 根据剩余问题的数量和严重级别，把控项目风险； 留作备忘和记录； 可以按照不同维度进行数据统计和分析； 特 点：
+要求问题描述明确，步骤详尽准确，有相关截图或log； 体现了测试和开发间的沟通和交流； 定期跟踪； 勿以bug小而不报。 常用系统：网上开源工具。不可使用文档、邮件等进行缺陷管理。</description>
+    </item>
+    
+    <item>
+      <title>测试工程师所需技能</title>
+      <link>https://naod.com.cn/2017/02/%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%89%80%E9%9C%80%E6%8A%80%E8%83%BD/</link>
+      <pubDate>Mon, 06 Feb 2017 15:10:00 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2017/02/%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%89%80%E9%9C%80%E6%8A%80%E8%83%BD/</guid>
+      <description>&lt;h1 id=&#34;测试工程师所需技能&#34;&gt;测试工程师所需技能&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对公司的软件产品进行测试（功能，性能等）,保证产品质量；对公司的软件开发过程中的不合理的地方进行建议&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;1需求分析&#34;&gt;1.需求分析&lt;/h2&gt;
+&lt;h2 id=&#34;获取&#34;&gt;获取&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt; 1.理解
+
+ 2.发现需求本身的问题
+
+ 3.发现需求本身及相关业务的问题
+
+ 4.挖掘隐含需求
+
+ 5.根据自己经验提出需求建议
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;分析归纳&#34;&gt;分析、归纳&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt; 1.在指导下作功能测试点分析
+
+ 2.独立完成项目功能测试点分析
+
+ 3.指导其他同事完成功能测试点分析
+
+ 4.完成系统级回归点测试点
+
+ 5.完成系统级性能测试点分析
+
+ 6.完成平台级、跨系统的接口测试点分析
+
+ 7.完成平台级、跨系统的接口性能测试点的分析
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;2基础测试能力&#34;&gt;2.基础测试能力&lt;/h2&gt;
+&lt;h2 id=&#34;缺陷平台使用&#34;&gt;缺陷平台使用&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt; 1.简单缺陷平台使用（提交bug等）
+
+ 2.熟练掌握缺陷平台使用（出报表等）
+
+ 3.结合实际测试流程对缺陷平台进行优化
+
+ 4.精通缺陷平台使用
+
+ 5.给其他同事提供指导
+
+ 6.具备缺陷平台二次开发能力
+
+ 7.熟练的对缺陷平台进行二次开发
+
+ 8.将二次开发内容与自动化测试体系融合
+
+ 9.业界主流缺陷平台的熟练掌握
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;测试设计&#34;&gt;测试设计&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt; 1.具备测试设计能力，符合规范
+
+ 2.指导其他同事完成测试设计
+
+ 3.优化已有的测试设计
+
+ 4.把握整个测试团队测试设计风格和规范方向
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>《软件测试实践-微软技术专家经验总结》读书笔记-3</title>
+      <link>https://naod.com.cn/2016/10/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-%E5%BE%AE%E8%BD%AF%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-3/</link>
+      <pubDate>Sun, 02 Oct 2016 18:20:23 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2016/10/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-%E5%BE%AE%E8%BD%AF%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-3/</guid>
+      <description>测试技术分类系统： Cem Kaner-测试技术分类系统。测试技术会从7个方面对测试过程进行指导：范围-测试的对象；覆盖-测试的程度；测试者-由谁来执行测试；风险-测试要去发现的潜在问题；活动-测试如何执行；评估和测试先知-如何评价测试是否通过；结果导向-测试的目标。
+六要素测试分类系统： 一、基于覆盖的测试技术关注测试的范围和覆盖。 典型的测试技术如下：
+功能测试 &amp;ndash;覆盖产品的功能
+功能或特性的集成测试 &amp;ndash;覆盖功能之间的交互
+漫游测试 &amp;ndash;覆盖指定的一组测试对象
+等价类分析 &amp;ndash;覆盖所有的等价类
+边界测试 &amp;ndash;覆盖边界值和邻近区域
+最佳代表测试 &amp;ndash;要求从众多测试用例中选择最有代表性的测试用例，常见的例子包括用户最可 能使用的数据、给产品最大挑战的数据、最能暴露风险的数据等。
+域测试 &amp;ndash;从一个数值集合中选择测试输入数据（如等价类、边界值&amp;hellip;）,选择典型数据
+测试想法目录 &amp;ndash;包括测试想法列表、质量特性列表、缺陷目录等启发式想法集合。测试人员要依次检查每个想法，选择合适的想法来设计具体的测试。
+逻辑表达式 &amp;ndash;覆盖逻辑表达式的所有可能输入
+多变量测试 &amp;ndash;测试多个变量的取值组合，组合测试时一种多变量测试
+状态变迁测试 &amp;ndash;覆盖状态机中所有的变迁
+用户界面测试 &amp;ndash;覆盖所有用户可访问的页面元素
+基于规格说明的测试 &amp;ndash;检查规格说明的所有陈述得到正确的实现
+基于需求的测试 &amp;ndash;检查所有需求被正确的实现
+依从性测试 &amp;ndash;检查软件符合所有需要满足的法律和约定
+配置测试 &amp;ndash;覆盖所有或典型的软硬件配置组合
+本地化测试 &amp;ndash;覆盖所有被本地化的元素，包括界面字符串、日期格式、货币格式、字符集等。
+二、基于测试者的测试技术关注谁来执行测试。 用户测试 &amp;ndash;让实际用户测试产品。
+Alpha测试 &amp;ndash;让产品的早期用户（公司同事等）试用产品。
+Beta测试 &amp;ndash;让一批实际用户测试产品
+缺陷大扫除 &amp;ndash;邀请项目团队的所有人员参与测试。
+专家测试 &amp;ndash;邀请领域专家和测试人员结对测试
+结对测试 &amp;ndash;让测试人员和测试人员结对、测试人员和程序员结对，从而产生更多差异化的测试想法。
+内部试用 &amp;ndash;让项目团队在日常工作中使用自己开发的产品，从而尽早发现实际用户会遇到的问题。
+本地化测试 &amp;ndash;让熟悉目标市场文化的人来测试软件。
+三、基于风险的测试技术关注潜在问题。 边界测试 &amp;ndash;关注软件在处理边界值时很可能出错的风险
+快速测试 &amp;ndash;针对一组典型的软件错误实施攻击
+结束测试 &amp;ndash;利用输入约束、输出约束、计算约束和数据约束对软件进行测试。这些约束往往涉及软件能力的边界，会暴露软件的不足。
+逻辑表达式 &amp;ndash;关注多个条件变量的组合，以检查软件能否处理一些罕见的情况。
+压力测试 &amp;ndash;关注软件如何应对远远超出正常工作量的负荷，此时一些隐藏的缺陷很可能会暴露。
+负载测试 &amp;ndash;关注软件能否有效地利用资源去处理工作负荷。其针对的风险是软件不能合理地使用资源，当工作负荷还没有到达预期上限时，它已经占用了太多的资源，且处理速度变得很慢。</description>
+    </item>
+    
+    <item>
+      <title>《软件测试实践-微软技术专家经验总结》读书笔记-2</title>
+      <link>https://naod.com.cn/2016/10/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-%E5%BE%AE%E8%BD%AF%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-2/</link>
+      <pubDate>Sun, 02 Oct 2016 09:37:23 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2016/10/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-%E5%BE%AE%E8%BD%AF%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-2/</guid>
+      <description>测试文档 移交文档 测试人员离开项目时，需要移交的测试文档
+被测对象概述 文档链接（需求文档，实际文档，测试设计规约等文档的链接） 基本测试想法(列举10条最重要的测试想法) 经验和技巧（阐述测试人员在测试实战中积累的经验与技巧，包括好用的工具，未公开的设置，快速的调试手段） 已知局限（介绍被测试对象的局限和缺陷） 测试自动化（介绍可用的自动化工具和测试用例） 测试数据（介绍可用的测试数据文件，测试数据库） 何处可以增加测试设计的深度 - 最可能发生错误的区域 如果测试人员知道哪些区域可能存在大量缺陷，就在那里仔细的测试。缺陷往往聚集在一起，应该尽早测试这些高危区域
+- 错误最明显的区域 从用户的角度看待产品，尝试去发现那些用户最容易发现的错误。这让测试人员专注于对用户最重要的情景和功能。
+- 最常使用的程序区域 测试用户最常使用的功能，以提高软件的稳定性
+- 最有差别的测试区域 产品想要赢得用户需要提供独一无二的特性，这些特性被称为软件的“卖点”。测试人员需要仔细测试这些区域，因为在卖点上失败将导致竞争失利。
+- 最难修正的区域 许多软件缺陷没有被修正是因为没有时间完成高难度的修复。应该尽早测试难以修正的区域。以便程序员有更多的时间去修复缺陷
+- 测试人员最理解的区域 通过测试一个熟悉的区域和它的周边区域，测试人员能够快速的测完一个局部，并更好的理解产品。这有助于它更有效的进入下一个区域
+测试技术 测试是为了发现错误而执行程序的过程，那么测试技术就是运行程序并判断其对错的具体方法
+测试技术会从7个方面对测试过程进行指导 - 范围 测试的对象。例如功能测试的测试对象通常是一个具体的功能或特性
+- 覆盖 测试的程度。例如如果测试时间有限，测试人员通常只能测试一个功能的主要场景；如果测试时间充裕，他会测试更多的场景和操作方式，以扩大测试覆盖。通常，测试人员会统一考虑测试的范围和覆盖。
+- 测试者 是谁来执行测试
+- 风险 测试要去发现的潜在问题，例如Google ACC所重点侦测的风险是产品的功能不能提供有竞争力的特性。
+- 活动 测试如何执行。例如两因素组合测试规定测试用例要覆盖任意两个因素的取值组合。
+- 评估和测试先知 如歌评价测试是否通过。例如测试人员会使用软件的先前版本来判断软件的行为是否向后兼容。
+- 结果导向 测试的目标。例如BVT(Build verification testing)的目标是检查构建是否足够稳定可用于更大范围的测试</description>
+    </item>
+    
+    <item>
+      <title>《软件测试实践-微软技术专家经验总结》读书笔记-1</title>
+      <link>https://naod.com.cn/2016/10/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-%E5%BE%AE%E8%BD%AF%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-1/</link>
+      <pubDate>Sat, 01 Oct 2016 09:37:23 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2016/10/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-%E5%BE%AE%E8%BD%AF%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-1/</guid>
+      <description>坚持阅读缺陷报告 在项目过程中，测试人员应持续阅读他人或自己提交的缺陷报告，才能更好的理解项目进展，并激发测试灵感和想法
+了解当前有哪些活跃的缺陷 学习测试技巧，完善测试设计 获得测试灵感（想法） 追踪软件设计 总结缺陷模式和类型 测试文档 项目所需文档 测试计划 测试设计规约 测试总结报告 测试进度报告 缺陷报告 其他文档 操作文档 测试笔记 测试资料 移交文档 测试知识库 测试文档演化 测试设计过程 测试执行过程 测试评估过程 测试学习过程 如何实效的设计测试文档 它建立了被测试对象的整体模型 它提供了可扩展的测试设计框架 它提供了测试覆盖的目标 它用简洁的形式提供丰富的信息 它格式灵活，允许用多种方式记录信息 测试文档维护策略 在项目早期，编写测试设计规约，概述测试策略（邀请项目相关人员进行评审） 在测试设计规约的指导下，为测试活动收集，复用，编写，改成测试文档 将文档集中管理，并周期性地备份 请同事评阅文档 在项目的重要里程碑完成时，整理已有文档 测试设计规约 测试设计规约是一个容器，可以容纳各种测试模型和资料 测试人员需要建立测试设计的框架 测试想法优于测试用例 合理地使用文档模板 测试灵感和测试想法 单个功能 该功能与当前测试任务相关吗？ 该功能存在什么风险？可能会有什么缺陷？ 通过什么测试可以发现这些缺陷？ 在上次测试中，该功能表现如何？已有的测试想法，哪些值得再次尝试？哪些不必要再测？ 依据当前的进度和资源。如何实施这些测试？ 功能列表是否充分？有没有漏掉一些功能？ 组合功能 该功能与哪些功能相关？ 功能的组合有没有揭示出新的风险？可能会有哪些缺陷？ 哪些功能访问同一批数据？哪些是生产者？哪些是消费者？ 如何设计测试来同时测试这些功能？ 如何构造一个有意义的业务流程，让它能够访问尽可能多的功能与数据？ 对于相互依赖的功能，某个功能的失败是否对其他功能造成恶劣影响？ 测试想法的来源 关系人 质量标准 产品恐惧 使用情景 领域信息 用户 业务 目标 业务对象 产品愿景 业务知识 法律因素 团队 创意想法 内部资料 你自己 外部 标准 参考资料 搜索 项目 项目背景 信息对象 项目风险 测试资料 债务 交流 语境分析 交付品 工具 产品 能力 失败模式 模型 数据 白盒 产品历史 小道信息 实际软件 技术 竞争者 软件质量特性集 能力 （完整性 准确性 高效性 可交互性 并发 可扩展性） 可靠性 可用性 魅力 安全性 性能 （容量 响应度 可达性 反馈 可伸缩性） IT能力 兼容性 可支持性 可测性 可维护性 可移植性 </description>
+    </item>
+    
+    <item>
+      <title>测试工具合集</title>
+      <link>https://naod.com.cn/2016/09/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/</link>
+      <pubDate>Sun, 04 Sep 2016 13:34:41 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2016/09/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/</guid>
+      <description>测试相关 测试论坛 谷歌测试博客：http://googletesting.blogspot.com/
+testerhome：https://testerhome.com/
+51testing：http://bbs.51testing.com/forum.php
+淘测试：http://test.taobao.com/index.htm
+测试之道：http://www.testtao.com/forum.php
+腾讯移动品质中心：http://tmq.qq.com/
+&amp;hellip;其他社区如CSDN,博客园,SegmentFault下的测试话题
+测试小工具 Unix时间戳转换：http://unixtime.51240.com/
+Unicode编码转换：http://tool.chinaz.com/Tools/Unicode.aspx
+Redis客户端工具：https://github.com/uglide/RedisDesktopManager
+其他在线工具：http://tool.oschina.net/
+测试之外： 谷歌host：https://laod.org/hosts/2016-google-hosts.html
+shadowsocks工具：https://github.com/shadowsocks/shadowsocks-windows/tree/master
+Hexo博客相关 免费博客服务 Github Page：https://pages.github.com/
+Coding Pages https://coding.net/help/doc/pages/index.html?utm_source=baidusem&amp;amp;utm_medium=ppc&amp;amp;utm_term=jekyll&amp;amp;utm_campaign=Coding-BD-SEM
+hexo博客搭建教程 hexo官网：https://hexo.io/
+教程：https://getpocket.com/a/read/497254555
+博客图床服务 七牛：https://portal.qiniu.com/signup?code=3lqitro65gz0y
+Dropbox：https://www.dropbox.com</description>
+    </item>
+    
+    <item>
+      <title>如何参与一个新项目</title>
+      <link>https://naod.com.cn/2016/08/%E5%A6%82%E4%BD%95%E5%8F%82%E4%B8%8E%E4%B8%80%E4%B8%AA%E6%96%B0%E9%A1%B9%E7%9B%AE/</link>
+      <pubDate>Sun, 28 Aug 2016 15:47:33 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2016/08/%E5%A6%82%E4%BD%95%E5%8F%82%E4%B8%8E%E4%B8%80%E4%B8%AA%E6%96%B0%E9%A1%B9%E7%9B%AE/</guid>
+      <description>如何参与一个新项目（提出疑问（Question），要做的事（Todo）） 一个软件测试人员如何参与一个新项目（提出疑问（Question），要做的事（Todo））
+1.完全站在用户的角度去了解和熟悉产品需求
+2.彻底的理解产品需求（阅读设计文档，需求文档，技术文档或其他文档）
+3.和开发人员，项目管理人员，产品人员进行沟通
+4.关注自动化测试和性能测试
+5.关注项目状态和进度</description>
+    </item>
+    
+    <item>
+      <title>如何去做需求评审和需求分析</title>
+      <link>https://naod.com.cn/2016/08/%E5%A6%82%E4%BD%95%E5%8E%BB%E5%81%9A%E9%9C%80%E6%B1%82%E8%AF%84%E5%AE%A1%E5%92%8C%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/</link>
+      <pubDate>Sun, 28 Aug 2016 14:26:21 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2016/08/%E5%A6%82%E4%BD%95%E5%8E%BB%E5%81%9A%E9%9C%80%E6%B1%82%E8%AF%84%E5%AE%A1%E5%92%8C%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/</guid>
+      <description>需求评审和需求分析是作为软件测试工程师工作中常见的工作内容 如何做好软件需求分析和需求评审，我常用的一些评审点如下：
+设计方案正确性、先进性、可行性；
+系统组成、系统要求及接口协调的合理性；
+软件实现的功能是否覆盖了产品需求文档中要求的功能；
+功能的实现中，是否考虑到了所有可能的分支情况，以及这些分支情况的处理是 否合理，和PD要求是否一致；
+对于功能模块的输入参数、输出参数的定义是否明确；
+系统性能、可靠性、安全性要求是否合理；
+文档的描述是否清晰、明确。</description>
+    </item>
+    
+    <item>
+      <title>如何做一个好测试</title>
+      <link>https://naod.com.cn/2016/04/%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%80%E4%B8%AA%E5%A5%BD%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Fri, 01 Apr 2016 11:28:45 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/2016/04/%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%80%E4%B8%AA%E5%A5%BD%E6%B5%8B%E8%AF%95/</guid>
+      <description>我觉得想做好一个测试也许没有想象中的那么难： 了解测试理论，但不要死记硬背，在工作中理论和实际相互印证。
+了解基本的开发流程，但不要死记硬背，不同的项目，不同的公司，不同的阶段，不同的同事，要因地制宜。而且流程也是不断迭代的过程，多想想为什么这么做
+尽量和开发平等沟通，发现bug的时候多想想为什么，并把自己的想法告诉开发。改好bug后别着急回测，聊聊哪里出错，如何修改的。
+互联网测试有一定流程推进的责任，能区别你和普通测试的最大一点就是你能否承担这部分的工作，能否跳出测试看项目。
+技术方面，论坛中多有提及。我觉得至少精通一门高级语言，其他的工具，框架什么的了解即可。人的精力是有限的，等对框架了解的多了，就会发现好多其实比较相似。
+自动化测试无非是为了改进手工测试，所以核心就是手工测试，是对业务的理解，是对测试能力的考核，应该将地基搭好。
+以前我也会吐槽上司有问题，后来想想但凡职位比你高的人，总会有强过自己的地方，而且实力也是运气的一部分。放平心态。
+的确有不懂测试的同事，但人家有自己的追求，人家也是混口饭吃，所以放平心态。
+我现在觉得所谓的瓶颈，其实不在于外界。在于自己能力的不上不下，所以还是认准方向，好好努力吧</description>
     </item>
     
   </channel>

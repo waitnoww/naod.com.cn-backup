@@ -10,10 +10,10 @@
     <lastBuildDate>Thu, 12 Mar 2020 09:48:56 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E4%B9%A6%E7%B1%8D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>软件测试读书列表转载</title>
-      <link>https://naod.com.cn/read-test-book/</link>
+      <link>https://naod.com.cn/2020/03/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E8%AF%BB%E4%B9%A6%E5%88%97%E8%A1%A8%E8%BD%AC%E8%BD%BD/</link>
       <pubDate>Thu, 12 Mar 2020 09:48:56 +0000</pubDate>
       
-      <guid>https://naod.com.cn/read-test-book/</guid>
+      <guid>https://naod.com.cn/2020/03/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E8%AF%BB%E4%B9%A6%E5%88%97%E8%A1%A8%E8%BD%AC%E8%BD%BD/</guid>
       <description>之前收藏的一部分软件测试书籍清单，自己也阅读了部分数据，有一些收获和思考，故推荐给大家。
 测试入门 软件测试（第2版） Software Testing (2e), Ron Patton 一本测试入门的好书，较全面地介绍了各种测试领域和方法，为测试新手提供了正确的观念和宽泛的基础。
 软件测试的艺术（第2版） The Art of Software Testing (2e), Glenford J. Myers, Corey Sandler, Tom Badgett, Todd M. Thomas 一本“久经考验”的测试经典：1979年，第一版面试；25年后，第二版登场。平心而论，有些观点已经不能直接应用在测试实践中，但是仔细品味仍有所收获。毕竟，这是一本需要思考的书，而不是操作手册。
@@ -25,10 +25,10 @@ Essential Software Test Design Torbjrn Ryber 该 书专注于测试设计，深�
     
     <item>
       <title>《软件测试实践-微软技术专家经验总结》读书笔记-3</title>
-      <link>https://naod.com.cn/read-book-microsoft-3/</link>
+      <link>https://naod.com.cn/2016/10/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-%E5%BE%AE%E8%BD%AF%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-3/</link>
       <pubDate>Sun, 02 Oct 2016 18:20:23 +0000</pubDate>
       
-      <guid>https://naod.com.cn/read-book-microsoft-3/</guid>
+      <guid>https://naod.com.cn/2016/10/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-%E5%BE%AE%E8%BD%AF%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-3/</guid>
       <description>测试技术分类系统： Cem Kaner-测试技术分类系统。测试技术会从7个方面对测试过程进行指导：范围-测试的对象；覆盖-测试的程度；测试者-由谁来执行测试；风险-测试要去发现的潜在问题；活动-测试如何执行；评估和测试先知-如何评价测试是否通过；结果导向-测试的目标。
 六要素测试分类系统： 一、基于覆盖的测试技术关注测试的范围和覆盖。 典型的测试技术如下：
 功能测试 &amp;ndash;覆盖产品的功能
@@ -66,10 +66,10 @@ Beta测试 &amp;ndash;让一批实际用户测试产品
     
     <item>
       <title>《软件测试实践-微软技术专家经验总结》读书笔记-2</title>
-      <link>https://naod.com.cn/read-book-microsoft-2/</link>
+      <link>https://naod.com.cn/2016/10/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-%E5%BE%AE%E8%BD%AF%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-2/</link>
       <pubDate>Sun, 02 Oct 2016 09:37:23 +0000</pubDate>
       
-      <guid>https://naod.com.cn/read-book-microsoft-2/</guid>
+      <guid>https://naod.com.cn/2016/10/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-%E5%BE%AE%E8%BD%AF%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-2/</guid>
       <description>测试文档 移交文档 测试人员离开项目时，需要移交的测试文档
 被测对象概述 文档链接（需求文档，实际文档，测试设计规约等文档的链接） 基本测试想法(列举10条最重要的测试想法) 经验和技巧（阐述测试人员在测试实战中积累的经验与技巧，包括好用的工具，未公开的设置，快速的调试手段） 已知局限（介绍被测试对象的局限和缺陷） 测试自动化（介绍可用的自动化工具和测试用例） 测试数据（介绍可用的测试数据文件，测试数据库） 何处可以增加测试设计的深度 - 最可能发生错误的区域 如果测试人员知道哪些区域可能存在大量缺陷，就在那里仔细的测试。缺陷往往聚集在一起，应该尽早测试这些高危区域
 - 错误最明显的区域 从用户的角度看待产品，尝试去发现那些用户最容易发现的错误。这让测试人员专注于对用户最重要的情景和功能。
@@ -89,10 +89,10 @@ Beta测试 &amp;ndash;让一批实际用户测试产品
     
     <item>
       <title>《软件测试实践-微软技术专家经验总结》读书笔记-1</title>
-      <link>https://naod.com.cn/read-book-microsoft-1/</link>
+      <link>https://naod.com.cn/2016/10/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-%E5%BE%AE%E8%BD%AF%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-1/</link>
       <pubDate>Sat, 01 Oct 2016 09:37:23 +0000</pubDate>
       
-      <guid>https://naod.com.cn/read-book-microsoft-1/</guid>
+      <guid>https://naod.com.cn/2016/10/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-%E5%BE%AE%E8%BD%AF%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-1/</guid>
       <description>坚持阅读缺陷报告 在项目过程中，测试人员应持续阅读他人或自己提交的缺陷报告，才能更好的理解项目进展，并激发测试灵感和想法
 了解当前有哪些活跃的缺陷 学习测试技巧，完善测试设计 获得测试灵感（想法） 追踪软件设计 总结缺陷模式和类型 测试文档 项目所需文档 测试计划 测试设计规约 测试总结报告 测试进度报告 缺陷报告 其他文档 操作文档 测试笔记 测试资料 移交文档 测试知识库 测试文档演化 测试设计过程 测试执行过程 测试评估过程 测试学习过程 如何实效的设计测试文档 它建立了被测试对象的整体模型 它提供了可扩展的测试设计框架 它提供了测试覆盖的目标 它用简洁的形式提供丰富的信息 它格式灵活，允许用多种方式记录信息 测试文档维护策略 在项目早期，编写测试设计规约，概述测试策略（邀请项目相关人员进行评审） 在测试设计规约的指导下，为测试活动收集，复用，编写，改成测试文档 将文档集中管理，并周期性地备份 请同事评阅文档 在项目的重要里程碑完成时，整理已有文档 测试设计规约 测试设计规约是一个容器，可以容纳各种测试模型和资料 测试人员需要建立测试设计的框架 测试想法优于测试用例 合理地使用文档模板 测试灵感和测试想法 单个功能 该功能与当前测试任务相关吗？ 该功能存在什么风险？可能会有什么缺陷？ 通过什么测试可以发现这些缺陷？ 在上次测试中，该功能表现如何？已有的测试想法，哪些值得再次尝试？哪些不必要再测？ 依据当前的进度和资源。如何实施这些测试？ 功能列表是否充分？有没有漏掉一些功能？ 组合功能 该功能与哪些功能相关？ 功能的组合有没有揭示出新的风险？可能会有哪些缺陷？ 哪些功能访问同一批数据？哪些是生产者？哪些是消费者？ 如何设计测试来同时测试这些功能？ 如何构造一个有意义的业务流程，让它能够访问尽可能多的功能与数据？ 对于相互依赖的功能，某个功能的失败是否对其他功能造成恶劣影响？ 测试想法的来源 关系人 质量标准 产品恐惧 使用情景 领域信息 用户 业务 目标 业务对象 产品愿景 业务知识 法律因素 团队 创意想法 内部资料 你自己 外部 标准 参考资料 搜索 项目 项目背景 信息对象 项目风险 测试资料 债务 交流 语境分析 交付品 工具 产品 能力 失败模式 模型 数据 白盒 产品历史 小道信息 实际软件 技术 竞争者 软件质量特性集 能力 （完整性 准确性 高效性 可交互性 并发 可扩展性） 可靠性 可用性 魅力 安全性 性能 （容量 响应度 可达性 反馈 可伸缩性） IT能力 兼容性 可支持性 可测性 可维护性 可移植性 </description>
     </item>

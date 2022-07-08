@@ -10,20 +10,20 @@
     <lastBuildDate>Sun, 08 Mar 2020 13:55:16 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/%E5%85%B6%E4%BB%96/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hexo同时托管在github和coding</title>
-      <link>https://naod.com.cn/hexo-in-github-coding/</link>
+      <link>https://naod.com.cn/2020/03/hexo%E5%90%8C%E6%97%B6%E6%89%98%E7%AE%A1%E5%9C%A8github%E5%92%8Ccoding/</link>
       <pubDate>Sun, 08 Mar 2020 13:55:16 +0000</pubDate>
       
-      <guid>https://naod.com.cn/hexo-in-github-coding/</guid>
+      <guid>https://naod.com.cn/2020/03/hexo%E5%90%8C%E6%97%B6%E6%89%98%E7%AE%A1%E5%9C%A8github%E5%92%8Ccoding/</guid>
       <description>前提： 已拥有hexo博客 已拥有github仓库 已拥有coding page仓库 1。修改配置文件 找到hexo目录下站点配置文件 _config.yml
 deploy: type: git repo: github: https://github.com/waitnoww/waitnoww.github.com.git,master coding: https://git.coding.net/waitnoww/www.dengnao.com.cn.git,coding-pages 2.hexo安装部署插件： npm install hexo-deployer-git --save 3.尝试一下 hexo clean hexo g hexo d </description>
     </item>
     
     <item>
       <title>如何用Django搭建一个博客[一]</title>
-      <link>https://naod.com.cn/django-blog-1/</link>
+      <link>https://naod.com.cn/2019/07/%E5%A6%82%E4%BD%95%E7%94%A8django%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E4%B8%80/</link>
       <pubDate>Mon, 08 Jul 2019 13:55:16 +0000</pubDate>
       
-      <guid>https://naod.com.cn/django-blog-1/</guid>
+      <guid>https://naod.com.cn/2019/07/%E5%A6%82%E4%BD%95%E7%94%A8django%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E4%B8%80/</guid>
       <description>克隆项目到本地 https://github.com/waitnoww/www.dengnao.com.cn 创建并激活虚拟环境
 在命令行进入到保存虚拟环境的文件夹，输入如下命令创建并激活虚拟环境：
 virtualenv blogproject_env # windows blogproject_env\Scripts\activate # linux source blogproject_env/bin/activate 安装项目依赖

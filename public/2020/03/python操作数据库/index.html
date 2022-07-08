@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>python操作数据库 - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="python操作数据库">
+<meta itemprop="description" content="测试开发用python-python操作数据库"><meta itemprop="datePublished" content="2020-03-09T16:05:50+00:00" />
+<meta itemprop="dateModified" content="2020-03-09T16:05:50+00:00" />
+<meta itemprop="wordCount" content="65">
+<meta itemprop="keywords" content="测试开发,python,测试工具开发," /><meta property="og:title" content="python操作数据库" />
+<meta property="og:description" content="测试开发用python-python操作数据库" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naod.com.cn/2020/03/python%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-03-09T16:05:50+00:00" />
+<meta property="article:modified_time" content="2020-03-09T16:05:50+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="python操作数据库"/>
+<meta name="twitter:description" content="测试开发用python-python操作数据库"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://naod.com.cn/css/dark.css" />
+
+	<script src="https://naod.com.cn/js/feather.min.js"></script>
+	
+		<script src="https://naod.com.cn/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://naod.com.cn/">软件测试同学</a></h1>
+	<div class="site-description"><p>专注于软件测试信息分享</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/waitnoww/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">09</span>
+							<span class="rest">Mar 2020</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">python操作数据库</h1>
+				</div>
+			</div>
+
+			
+			
+					
+			<div class="markdown">
+				<pre tabindex="0"><code># -*- coding: UTF-8 -*-
+
+import MySQLdb
+
+# 连接数据库
+db = MySQLdb.connect(&#34;db_ip&#34;, &#34;db_username&#34;, &#34;db_password&#34;, &#34;db_name&#34;, charset=&#39;utf8&#39; )
+
+# 使用cursor()方法获取操作游标
+cursor = db.cursor()
+
+# SQL查询语句(可输入增删改查sql语句)
+sql = &#34;SELECT * FROM python&#34;
+# noinspection PyBroadException
+try:
+    cursor.execute(sql)  # 执行SQL语句
+    results = cursor.fetchall()  # 获取所有记录列表
+    for row in results:
+        comments = row[1]
+        ip = row[3]
+    print (&#34;python1=%s,python2=%s&#34; % \
+            (&#34;python1&#34;, &#34;python2&#34;))
+except:
+    print &#34;Error: 没查询到数据&#34;
+
+
+# 关闭数据库连接
+db.close()
+</code></pre>
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li class="tag-li"><a href="/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91">测试开发</a></li>
+							
+							<li class="tag-li"><a href="/tags/python">python</a></li>
+							
+							<li class="tag-li"><a href="/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E5%BC%80%E5%8F%91">测试工具开发</a></li>
+							
+						</ul>
+					
+				
+			</div>
+
+			
+			<div class="back">
+				<a href="https://github.com/waitnoww/blob/master/content/posts/test-with-python-1.md" title="github"><i data-feather="github"></i> Edit this on GitHub</a>
+			</div>
+			
+			
+			<div class="back">
+				<a href="https://naod.com.cn/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+					
+					Next time, we'll talk about <i>"10 Reasons why gcc SHOULD be re-written in JavaScript - You won&#39;t believe #8!"</i>
+					
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2020  © Copyright 2022 www.naod.com.cn </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

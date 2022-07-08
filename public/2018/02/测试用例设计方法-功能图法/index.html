@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>测试用例设计方法-功能图法 - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="测试用例设计方法-功能图法">
+<meta itemprop="description" content="软件测试教程-如何用功能图法去设计测试用例"><meta itemprop="datePublished" content="2018-02-01T13:34:41+00:00" />
+<meta itemprop="dateModified" content="2018-02-01T13:34:41+00:00" />
+<meta itemprop="wordCount" content="26">
+<meta itemprop="keywords" content="测试设计,测试相关,测试用例," /><meta property="og:title" content="测试用例设计方法-功能图法" />
+<meta property="og:description" content="软件测试教程-如何用功能图法去设计测试用例" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naod.com.cn/2018/02/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%8A%9F%E8%83%BD%E5%9B%BE%E6%B3%95/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-02-01T13:34:41+00:00" />
+<meta property="article:modified_time" content="2018-02-01T13:34:41+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="测试用例设计方法-功能图法"/>
+<meta name="twitter:description" content="软件测试教程-如何用功能图法去设计测试用例"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://naod.com.cn/css/dark.css" />
+
+	<script src="https://naod.com.cn/js/feather.min.js"></script>
+	
+		<script src="https://naod.com.cn/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://naod.com.cn/">软件测试同学</a></h1>
+	<div class="site-description"><p>专注于软件测试信息分享</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/waitnoww/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">01</span>
+							<span class="rest">Feb 2018</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">测试用例设计方法-功能图法</h1>
+				</div>
+			</div>
+
+			
+			
+					
+			<div class="markdown">
+				<h2 id="定义">定义</h2>
+<p>功能图由状态迁移图和布尔函数组成.状态迁移图用状态和迁移来描述.一个状态指出数据输入的位置（或时间）,而迁移则指明状态的改变.同时要依靠判定表或因果图表示的逻辑功能.例,一个简化的自动出纳机ATM的功能图。</p>
+<h2 id="应用">应用</h2>
+<h3 id="1-功能图介绍">1. 功能图介绍</h3>
+<p>一个程序的功能说明通常由动态说明和静态说明组成.动态说明描述了输入数据的次序或转移的次序.</p>
+<p>静态说明描述了输入条件与输出条件之间的对应关系.对于较复杂的程序,由于存在大量的组合情况,因此,仅用静态说明组成的规格说明对于测试来说往往是不够的.必须用动态说明来补充功能说明.功能图方法是用功能图FD形式化地表示程序的功能说明,并机械地生成功能图的测试用例.</p>
+<p>功能图模型由状态迁移图和逻辑功能模型构成.状态迁移图用于表示输入数据序列以及相应的输出数据.在状态迁移图中,由输入数据和当前状态决定输出数据和后续状态.逻辑功能模型用于表示在状态中输入条件和输出条件之间的对应关系.逻辑功能模型只适合于描述静态说明,输出数据仅由输入数据决定.测试用例则是由测试中经过的一系列状态和在每个状态中必须依靠输入/输出数据满足的一对条件组成.功能图方法其实是是一种黑盒白盒混合用例设计方法。</p>
+<p>（功能图方法中,要用到逻辑覆盖和路径测试的概念和方法,其属白盒测试方法中 的内容.逻辑覆盖是以程序内部的逻辑结构为基础的测试用例设计方法.该方法要求测试人员对程序的逻辑结构有清楚的了解.由于覆盖测试的目标不同,逻辑覆盖可分为:语句覆盖,判定覆盖,判定-条件覆盖,条件组合覆盖及路径覆盖.下面我们指的逻辑覆盖和路径是功能或系统水平上的,以区别与白盒测试中的程序内部的.）</p>
+<h3 id="2-测试用例生成方法">2. 测试用例生成方法</h3>
+<p>从功能图生成测试用例,得到的测试用例数是可接受的. 问题的关键的是如何从状态迁移图中选取测试用例. 若用节点代替状态,用弧线代替迁移,则状态迁移图就可转化成一个程序的控制流程图形式.问题就转化为程序的路径测试问题（如白盒测试）问题了.</p>
+<h3 id="3--测试用例生成规则">3.  测试用例生成规则</h3>
+<p>为了把状态迁移（测试路径）的测试用例与逻辑模型（局部测试用例）的测试用例组合起来,从功能图生成实用的测试用例,须定义下面的规则.在一个结构化的状态迁移（SST）中,定义三种形式的循环:顺序,选择和重复.但分辨一个状态迁移中的所有循环是有困难的.（其表示图形省略）。</p>
+<h3 id="4--从功能图生成测试用例的过程">4.  从功能图生成测试用例的过程</h3>
+<ul>
+<li>
+<ol>
+<li>生成局部测试用例:在每个状态中,从因果图生成局部测试用例.局部测试用例由原因值（输入数据）组合与对应的结果值（输出数据或状态）构成。</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>测试路径生成:利用上面的规则（三种）生成从初始状态到最后状态的测试路径。</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>测试用例合成:合成测试路径与功能图中每个状态中的局部测试用例.结果是初始状态到最后状态的一个状态序列,以及每个状态中输入数据与对应输出数据的组合。</li>
+</ol>
+</li>
+</ul>
+<h3 id="5--测试用例的合成算法">5.  测试用例的合成算法</h3>
+<p>采用条件构造树.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li class="tag-li"><a href="/tags/%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1">测试设计</a></li>
+							
+							<li class="tag-li"><a href="/tags/%E6%B5%8B%E8%AF%95%E7%9B%B8%E5%85%B3">测试相关</a></li>
+							
+							<li class="tag-li"><a href="/tags/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B">测试用例</a></li>
+							
+						</ul>
+					
+				
+			</div>
+
+			
+			<div class="back">
+				<a href="https://github.com/waitnoww/blob/master/content/posts/test-FunctionChart.md" title="github"><i data-feather="github"></i> Edit this on GitHub</a>
+			</div>
+			
+			
+			<div class="back">
+				<a href="https://naod.com.cn/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+					
+					Next time, we'll talk about <i>"10 Reasons why gcc SHOULD be re-written in JavaScript - You won&#39;t believe #8!"</i>
+					
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2018  © Copyright 2022 www.naod.com.cn </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

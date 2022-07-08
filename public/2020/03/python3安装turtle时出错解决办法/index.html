@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>python3安装turtle时出错解决办法 - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="python3安装turtle时出错解决办法">
+<meta itemprop="description" content="测试开发用python-python3安装turtle时出错解决办法"><meta itemprop="datePublished" content="2020-03-16T09:43:53+00:00" />
+<meta itemprop="dateModified" content="2020-03-16T09:43:53+00:00" />
+<meta itemprop="wordCount" content="15">
+<meta itemprop="keywords" content="测试开发,python,测试工具开发," /><meta property="og:title" content="python3安装turtle时出错解决办法" />
+<meta property="og:description" content="测试开发用python-python3安装turtle时出错解决办法" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naod.com.cn/2020/03/python3%E5%AE%89%E8%A3%85turtle%E6%97%B6%E5%87%BA%E9%94%99%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-03-16T09:43:53+00:00" />
+<meta property="article:modified_time" content="2020-03-16T09:43:53+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="python3安装turtle时出错解决办法"/>
+<meta name="twitter:description" content="测试开发用python-python3安装turtle时出错解决办法"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://naod.com.cn/css/dark.css" />
+
+	<script src="https://naod.com.cn/js/feather.min.js"></script>
+	
+		<script src="https://naod.com.cn/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://naod.com.cn/">软件测试同学</a></h1>
+	<div class="site-description"><p>专注于软件测试信息分享</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/waitnoww/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">16</span>
+							<span class="rest">Mar 2020</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">python3安装turtle时出错解决办法</h1>
+				</div>
+			</div>
+
+			
+			
+					
+			<div class="markdown">
+				<p>前些天看到有个用python3来画飞机的教程，就想来尝试一下。教程中使用的是turtle包，那么首先我们就要来按照turtle，结果第一步就失败了，当我使用pip3安装的时候，出现如下报错
+
+  <img src="https://tva1.sinaimg.cn/large/00831rSTgy1gcvjrh4atxj322y0tidos.jpg" alt="报错截图1">
+
+</p>
+<p>出现报错，阅读了一下报错信息，先使用搜索引擎查找一下报错信息，发现报错信息搜索不到正确答案。可能是我搜索的关键词不对，然后我去turtle包的介绍页看了一下 <a href="https://pypi.org/project/turtle">https://pypi.org/project/turtle</a>
+就想说尝试一下下载包来安装，于是下载了turtle 0.0.2进行安装，结果解压之后又报错了，查看报错信息如下
+
+  <img src="https://tva1.sinaimg.cn/large/00831rSTgy1gcvkcockxfj30xi0k4k02.jpg" alt="报错截图2">
+
+</p>
+<p>根据提示 python setup.py egg_info查看详细报错信息
+
+  <img src="https://tva1.sinaimg.cn/large/00831rSTgy1gcvkf9brszj30u004aq3o.jpg" alt="报错截图3">
+
+
+进入turtle下载文件夹下打开setup.py 文件，看看 40 行，发现少了括号
+
+  <img src="https://tva1.sinaimg.cn/large/00831rSTgy1gcvkgvc0r9j31620tkwkm.jpg" alt="报错截图4">
+
+
+加上括号，还是报错，原来是没有指定修改目录导致,那就指定目录安装，安装成功
+
+  <img src="https://tva1.sinaimg.cn/large/00831rSTgy1gcvkizcd0pj30w60jc45s.jpg" alt="报错截图5">
+
+</p>
+<p>总结一下：仔细阅读报错信息，分析根本原因</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li class="tag-li"><a href="/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91">测试开发</a></li>
+							
+							<li class="tag-li"><a href="/tags/python">python</a></li>
+							
+							<li class="tag-li"><a href="/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E5%BC%80%E5%8F%91">测试工具开发</a></li>
+							
+						</ul>
+					
+				
+			</div>
+
+			
+			<div class="back">
+				<a href="https://github.com/waitnoww/blob/master/content/posts/python-install-turtle-error.md" title="github"><i data-feather="github"></i> Edit this on GitHub</a>
+			</div>
+			
+			
+			<div class="back">
+				<a href="https://naod.com.cn/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+					
+					Next time, we'll talk about <i>"What Tiger King can teach us about x86 Assembly"</i>
+					
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2020  © Copyright 2022 www.naod.com.cn </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

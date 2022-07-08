@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>测试建模：Google ACC - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="测试建模：Google ACC">
+<meta itemprop="description" content="软件测试教程-测试建模Google ACC。"><meta itemprop="datePublished" content="2020-03-06T14:00:50+00:00" />
+<meta itemprop="dateModified" content="2020-03-06T14:00:50+00:00" />
+<meta itemprop="wordCount" content="100">
+<meta itemprop="keywords" content="测试设计,测试建模,测试相关,测试用例," /><meta property="og:title" content="测试建模：Google ACC" />
+<meta property="og:description" content="软件测试教程-测试建模Google ACC。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%BB%BA%E6%A8%A1google-acc/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-03-06T14:00:50+00:00" />
+<meta property="article:modified_time" content="2020-03-06T14:00:50+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="测试建模：Google ACC"/>
+<meta name="twitter:description" content="软件测试教程-测试建模Google ACC。"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://naod.com.cn/css/dark.css" />
+
+	<script src="https://naod.com.cn/js/feather.min.js"></script>
+	
+		<script src="https://naod.com.cn/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://naod.com.cn/">软件测试同学</a></h1>
+	<div class="site-description"><p>专注于软件测试信息分享</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/waitnoww/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">06</span>
+							<span class="rest">Mar 2020</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">测试建模：Google ACC</h1>
+				</div>
+			</div>
+
+			
+			
+					
+			<div class="markdown">
+				<p>ACC（Attributes Components Capability）是Google测试团队使用的一种建模方法，用来快速地建立产品的模型，以指导下一步的测试计划和设计。
+在Google内部，ACC得到较普遍的应用，一些工程师还开发了支持ACC模型的Web应用，并将其开源。本文将介绍ACC的内容，所引用的Google+的例子摘录自《How Google Tests Software》一书。此外，本文还将使用启发式测试策略模型（Heuristic Test Strategy Model，简称HTSM）来分析ACC。</p>
+<h2 id="运用acc建模的第一步是确定产品的attributes属性">运用ACC建模的第一步是确定产品的Attributes（属性）。</h2>
+<p>按照谷歌的定义，Attributes是产品的形容词（adjectives），是与竞争对手相区别的关键特征。按照敏捷开发的观点，Attributes是产品所交付的核心价值（values）。从HTSM的角度，Attributes位于HTSM-&gt;Quality Criteria-&gt;Operation Criteria，隶属于面向用户的质量标准。</p>
+<p>Google+的Attributes如下：</p>
+<pre><code> ○ Social（社交）：鼓励用户去分享信息和他们的状态
+○ Expressive（表现力）：用户可以运用各种功能去表达自我
+○ Easy（容易）：让用户以直观的方式做他们想做的事
+○ Relevant（相关）：只显示用户感兴趣的内容
+○ Extensible（可扩展）：能够与Google的已有功能、第三方网站和应用（Application）集成
+○ Private（隐私）：用户数据不会泄漏
+</code></pre>
+<p>ACC以Attribute开始，是产品竞争的自然选择，也符合Google的开发实践。</p>
+<p>在Google的项目中，开发人员和测试人员的比例通常是10：1或更高。开发人员会编写大量的自动化测试用例，对产品实施周密的测试，因此测试人员主要关注用户价值和系统级测试。即便如此，测试人员也没有足够的资源测试所有用户行为。所以，测试人员需要通过确定Attributes来明确产品的核心价值，从而区分出测试对象的轻重缓急（priorities）。</p>
+<p>获取Attributes的信息源可以是产品经理、市场营销人员、技术布道者、商业宣传材料、产品广告等。测试人员也可以使用“卖点漫游”（The Money Tour）来发掘和检验产品的卖点。</p>
+<h2 id="第二步是确定产品的components部件">第二步是确定产品的Components（部件）。</h2>
+<p>Components是产品的名词（nouns），可以理解为产品的主要模块、组件、子系统。</p>
+<p>从HTSM的角度，Components位于HTSM-&gt;Product Elements-&gt;Structure和HTSM-&gt;Product Elements-&gt;Function，即同时具备代码结构和产品功能的特征。</p>
+<p>Google+的Components如下：</p>
+<pre><code>○ Profile（个人资料）：用户的帐户信息和兴趣爱好
+○ People（人脉）：用户已经连接的好友
+○ Stream（信息流）：由帖子、评论、通知、照片等组成的有序的信息流
+○ Circles（圈子）：将好友分组，如把不同的好友归于“朋友”、“同事”等小组
+○ Notifications（通知）：当用户被帖子提到时，向他显示提示信息
+○ Hangouts（视频群聊）：视频对话的小组
+○ Posts（帖子）：用户和好友所发表的信息
+○ Comments（评论）：对帖子、照片、视频等的评论
+○ Photos（照片）：用户和好友所上传的照片
+</code></pre>
+<p>Components可以看作功能列表（Function List）的顶层元素，是产品核心功能的清单。</p>
+<p>《How Google Tests Software》建议Components列表要尽可能简单，10个Components很好，20个就太多了。其目的是重点考虑对产品、对用户最重要的功能与代码，并避免漫长的Components列表所导致的分析瘫痪。</p>
+<h2 id="第三步是确定产品的capabilities能力">第三步是确定产品的Capabilities（能力）。</h2>
+<p>Capabilities是产品的动词（verbs），描述了一个Component提供了何种能力来实现一个Attribute。</p>
+<p>在HTSM的角度，Capabilities位于HTSM-&gt;Product Elements-&gt;Function和HTSM-&gt;Quality Criteria-&gt;Operation Criteria-&gt;Capability，刻画了产品实现其核心价值的手段。</p>
+<p>Capabilities通常是面向用户的（user-oriented），反映了用户视角的产品行为。测试人员也应该保持Capabilities矩阵的简洁，他们应该关注对用户而言最有价值、最有吸引力的能力，并在合适的抽象层次（right level of abstraction）记录Capabilities。</p>
+<p>最重要的是，Capabilities应该是可测的（testable），测试人员能够设计测试来检查产品实现了预期的Capabilities。</p>
+<p>有了Capabilities矩阵，测试团队就完成初始的测试计划。这就是前Google测试总监James Whittaker所说的10分钟测试计划（The Ten Minutes Test Plan）。其基本思路是专注于核心属性、核心功能和核心能力，而省略一切不必要的细节。之后，测试团队会利用矩阵去指导测试设计，通常矩阵中的一条Capability就是一个测试对象、测试策略或测试情景，而复杂的Capability会演化出更多的测试设计。</p>
+<p>Google所提供的开源Web应用可以分析项目信息，包括测试用例、代码变更、产品缺陷等，以确定Capabilities矩阵中的高风险区域。下图引用自James Whittaker在GTAC 2010的闭幕演讲的幻灯片，是Chrome OS的Capabilities矩阵的热点图（heap map）。图中绿色表示低风险区域，红色表示高风险区域，粉红色和橙色则表示风险居于前两者之间。测试人员可以根据热点图，更好地确定测试优先级，将有限的资源运用在最需要的地方。</p>
+<p>许多团队的风险分析依赖于测试人员的经验和猜测，Google的ACC工具则通过分析项目元素（测试用例、代码变更、产品缺陷等）来识别风险。这些被分析的元素位于HTSM-&gt;Project Environment，是项目环境的一部分。即便不使用Google的工具，测试人员也可以利用电子表格记录Capabilities矩阵，并自行计算各个条目的风险（一些Google的测试人员也是这么做的）。</p>
+<p>在评估风险时，他可以考虑如下因素：</p>
+<pre><code>● 自动化测试用例：该区域有自动化测试用例吗？测试在定期运行吗？测试通过率是多少？测试用例覆盖了哪些方面，没有覆盖哪些方面？
+
+● 手动测试：有人手动测试该区域吗？经过测试，他们对该区域有信心吗？如果满分是10分，他们会打几分？
+● 代码变更：该区域近期存在代码变更吗？变更频繁吗？变更是新增功能、代码重构、还是缺陷修复？
+● 代码复杂度：代码的规模是多少？代码是否复杂？如果复杂度的满分是10分，该区域的代码能得几分？
+● 产品缺陷：该区域的缺陷多吗？有哪些典型缺陷？哪些缺陷已经被修复？哪些缺陷还没有被修复？活跃的缺陷是在快速增加还是稳步下降？
+</code></pre>
+<p>在计算此类风险因素时，测试人员可以采用尽可能简单的度量方法。</p>
+<p>一方面，简单的方法更容易解释度量值的含义，从而有助于针对度量值采取相应的行动。<br>
+另一方面，复杂的方法增大了分析的难度，却往往不能提供更多的收益。通过测试去获得直接的反馈，并定期重新度量风险因素，是更注重实效的方法。</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li class="tag-li"><a href="/tags/%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1">测试设计</a></li>
+							
+							<li class="tag-li"><a href="/tags/%E6%B5%8B%E8%AF%95%E5%BB%BA%E6%A8%A1">测试建模</a></li>
+							
+							<li class="tag-li"><a href="/tags/%E6%B5%8B%E8%AF%95%E7%9B%B8%E5%85%B3">测试相关</a></li>
+							
+							<li class="tag-li"><a href="/tags/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B">测试用例</a></li>
+							
+						</ul>
+					
+				
+			</div>
+
+			
+			<div class="back">
+				<a href="https://github.com/waitnoww/blob/master/content/posts/google-ACC-for-test.md" title="github"><i data-feather="github"></i> Edit this on GitHub</a>
+			</div>
+			
+			
+			<div class="back">
+				<a href="https://naod.com.cn/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+					
+					Next time, we'll talk about <i>"What Tiger King can teach us about x86 Assembly"</i>
+					
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2020  © Copyright 2022 www.naod.com.cn </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

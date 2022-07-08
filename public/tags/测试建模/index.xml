@@ -10,10 +10,10 @@
     <lastBuildDate>Fri, 06 Mar 2020 14:00:50 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%BB%BA%E6%A8%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>测试建模：Google ACC</title>
-      <link>https://naod.com.cn/google-acc-for-test/</link>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%BB%BA%E6%A8%A1google-acc/</link>
       <pubDate>Fri, 06 Mar 2020 14:00:50 +0000</pubDate>
       
-      <guid>https://naod.com.cn/google-acc-for-test/</guid>
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%BB%BA%E6%A8%A1google-acc/</guid>
       <description>ACC（Attributes Components Capability）是Google测试团队使用的一种建模方法，用来快速地建立产品的模型，以指导下一步的测试计划和设计。 在Google内部，ACC得到较普遍的应用，一些工程师还开发了支持ACC模型的Web应用，并将其开源。本文将介绍ACC的内容，所引用的Google+的例子摘录自《How Google Tests Software》一书。此外，本文还将使用启发式测试策略模型（Heuristic Test Strategy Model，简称HTSM）来分析ACC。
 运用ACC建模的第一步是确定产品的Attributes（属性）。 按照谷歌的定义，Attributes是产品的形容词（adjectives），是与竞争对手相区别的关键特征。按照敏捷开发的观点，Attributes是产品所交付的核心价值（values）。从HTSM的角度，Attributes位于HTSM-&amp;gt;Quality Criteria-&amp;gt;Operation Criteria，隶属于面向用户的质量标准。
 Google+的Attributes如下：

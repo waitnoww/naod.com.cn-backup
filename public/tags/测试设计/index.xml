@@ -10,10 +10,10 @@
     <lastBuildDate>Fri, 20 Mar 2020 09:55:17 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>测试人员复现BUG的一些思路</title>
-      <link>https://naod.com.cn/some-skill-for-bug/</link>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E5%A4%8D%E7%8E%B0bug%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%B7%AF/</link>
       <pubDate>Fri, 20 Mar 2020 09:55:17 +0000</pubDate>
       
-      <guid>https://naod.com.cn/some-skill-for-bug/</guid>
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E5%A4%8D%E7%8E%B0bug%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%B7%AF/</guid>
       <description>对于测试人员，被开发人员要求复现BUG是家常便饭。特别针对在测试过程中低概率出现的BUG，会让我们觉得难以着手。下面我就谈一谈我的一些思路吧。 我认为一个BUG是由三个要素构成的：环境、数据、操作步骤。那么如何从这三点入手，总结了以下思路：
 1.BUG本地“再现” （1）确定问题发生的环境，比如哪个浏览器的哪个版本发生的此现象。 （2）使用导致问题出现的数据。 （3）按照之前的操作步骤进行操作，使BUG再次出现
 2.分析本地复现BUG需要的环境、数据、步骤，找出根本原因 （1）查看其他浏览器在相同数据，同样操作步骤的情况下是否仍旧会使该BUG出现。明确是否是特定浏览器，还是在其他浏览器都会出现。
@@ -28,10 +28,10 @@ c.思考产生问题的可能原因和相关的操作步骤，明确一下产生
     
     <item>
       <title>测试建模：Google ACC</title>
-      <link>https://naod.com.cn/google-acc-for-test/</link>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%BB%BA%E6%A8%A1google-acc/</link>
       <pubDate>Fri, 06 Mar 2020 14:00:50 +0000</pubDate>
       
-      <guid>https://naod.com.cn/google-acc-for-test/</guid>
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%BB%BA%E6%A8%A1google-acc/</guid>
       <description>ACC（Attributes Components Capability）是Google测试团队使用的一种建模方法，用来快速地建立产品的模型，以指导下一步的测试计划和设计。 在Google内部，ACC得到较普遍的应用，一些工程师还开发了支持ACC模型的Web应用，并将其开源。本文将介绍ACC的内容，所引用的Google+的例子摘录自《How Google Tests Software》一书。此外，本文还将使用启发式测试策略模型（Heuristic Test Strategy Model，简称HTSM）来分析ACC。
 运用ACC建模的第一步是确定产品的Attributes（属性）。 按照谷歌的定义，Attributes是产品的形容词（adjectives），是与竞争对手相区别的关键特征。按照敏捷开发的观点，Attributes是产品所交付的核心价值（values）。从HTSM的角度，Attributes位于HTSM-&amp;gt;Quality Criteria-&amp;gt;Operation Criteria，隶属于面向用户的质量标准。
 Google+的Attributes如下：
@@ -50,10 +50,10 @@ Capabilities通常是面向用户的（user-oriented），反映了用户视角�
     
     <item>
       <title>不闹而语-测试用例设计方法-错误猜测法</title>
-      <link>https://naod.com.cn/test-if-wrong/</link>
+      <link>https://naod.com.cn/2018/05/%E4%B8%8D%E9%97%B9%E8%80%8C%E8%AF%AD-%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E9%94%99%E8%AF%AF%E7%8C%9C%E6%B5%8B%E6%B3%95/</link>
       <pubDate>Mon, 21 May 2018 13:34:41 +0000</pubDate>
       
-      <guid>https://naod.com.cn/test-if-wrong/</guid>
+      <guid>https://naod.com.cn/2018/05/%E4%B8%8D%E9%97%B9%E8%80%8C%E8%AF%AD-%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E9%94%99%E8%AF%AF%E7%8C%9C%E6%B5%8B%E6%B3%95/</guid>
       <description>错误猜测是一种技术，鼓励经验丰富的测试人员考虑软件可能无法应对的情况。有些人似乎天生擅长测试而其他人都是优秀的测试人员，因为他们作为测试人员或使用特定系统有很多经验，因此能够发现其缺点。
 这就是为什么在一定程度上应用更正式的技术之后使用的错误猜测方法可能非常有效。它还节省了大量时间，因为经验丰富的测试人员做出了假设和猜测，以找出原本无法找到的缺陷。
 错误猜测的成功在很大程度上取决于测试人员的技能，因为优秀的测试人员知道缺陷最有可能存在的位置。什么是错误猜测 这就是为什么在一定程度上应用更正式的技术之后使用的错误猜测方法可能非常有效。在使用更正式的技术时，测试人员可能会更好地了解系统，它的作用以及它的工作原理。通过这种更好的理解，他或她可能更好地猜测系统可能无法正常工作的方式。
@@ -63,30 +63,30 @@ Capabilities通常是面向用户的（user-oriented），反映了用户视角�
     
     <item>
       <title>测试用例设计方法-场景图法</title>
-      <link>https://naod.com.cn/test-scenario-method/</link>
+      <link>https://naod.com.cn/2018/04/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%9C%BA%E6%99%AF%E5%9B%BE%E6%B3%95/</link>
       <pubDate>Thu, 12 Apr 2018 13:34:41 +0000</pubDate>
       
-      <guid>https://naod.com.cn/test-scenario-method/</guid>
+      <guid>https://naod.com.cn/2018/04/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%9C%BA%E6%99%AF%E5%9B%BE%E6%B3%95/</guid>
       <description>定义 现在的软件几乎都是用事件触发来控制流程的，事件触发时的情景便形成了场景，而同一事件不同的触发顺序和处理结果就形成事件流。这种在软件设计方面的思想也可以引入到软件测试中，可以比较生动地描绘出事件触发时的情景，有利于测试设计者设计测试用例，同时使测试用例更容易理解和执行。
 应用 基本流和备选流：如下图所示，图中经过用例的每条路径都用基本流和备选流来表示，直黑线表示基本流，是经过用例的最简单的路径。备选流用不同的色彩表示，一个备选流可能从基本流开始，在某个特定条件下执行，然后重新加入基本流中（如备选流1和3）；也可能起源于另一个备选流（如备选流2），或者终止用例而不再重新加入到某个流（如备选流2和4）。</description>
     </item>
     
     <item>
       <title>测试用例设计方法-基于经验的测试</title>
-      <link>https://naod.com.cn/test-base-from-experience/</link>
+      <link>https://naod.com.cn/2018/04/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%9F%BA%E4%BA%8E%E7%BB%8F%E9%AA%8C%E7%9A%84%E6%B5%8B%E8%AF%95/</link>
       <pubDate>Thu, 12 Apr 2018 13:34:41 +0000</pubDate>
       
-      <guid>https://naod.com.cn/test-base-from-experience/</guid>
+      <guid>https://naod.com.cn/2018/04/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%9F%BA%E4%BA%8E%E7%BB%8F%E9%AA%8C%E7%9A%84%E6%B5%8B%E8%AF%95/</guid>
       <description>在基于经验的技术中，人们的知识，技能和背景对测试条件和测试用例至关重要。
 需要技术人员和业务人员的经验，因为他们为测试分析和设计过程带来了不同的观点。由于之前对类似系统的经验，他们可能有一个可能出错的想法，这对测试非常有用。什么是基于经验的测试 基于经验的技术与基于规范和基于结构的技术相结合，并且在没有规范或者规范不充分或过时时也使用。 这可能是用于低风险系统的唯一技术类型，但这种方法在极端时间压力下可能特别有用 - 实际上这是导致探索性测试的因素之一。</description>
     </item>
     
     <item>
       <title>测试用例设计方法-边界值分析</title>
-      <link>https://naod.com.cn/test-bva/</link>
+      <link>https://naod.com.cn/2018/04/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E8%BE%B9%E7%95%8C%E5%80%BC%E5%88%86%E6%9E%90/</link>
       <pubDate>Thu, 12 Apr 2018 13:34:41 +0000</pubDate>
       
-      <guid>https://naod.com.cn/test-bva/</guid>
+      <guid>https://naod.com.cn/2018/04/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E8%BE%B9%E7%95%8C%E5%80%BC%E5%88%86%E6%9E%90/</guid>
       <description>边界值分析（BVA）基于在分区之间的边界处进行测试。这里我们有两个有效边界（在有效分区中）和无效边界（在无效分区中）。
 例如，考虑一台打印机，它具有从1到99的副本数量的输入选项。要应用边界值分析，我们将从有效分区中获取最小和最大（边界）值（1和在这种情况下，99分别与在有效分区（在这种情况下为0和100）相邻的每个无效分区中的第一个或最后一个值一起。在这个例子中，我们将有三个等价分区测试（三个分区中的每一个）和四个边界值测试。考虑上一节中描述的等价划分中的银行系统。 什么是边界值分析BVA因为边界值被定义为分区边缘上的那些值，所以我们确定了以下边界值： - $ 0.01（无效边界值，因为它位于无效分区的边缘），$ 0.00，$ 100.00，$ 100.01，$ 999.99和$ 1000.00，所有有效的边界值。因此，通过应用边界值分析，我们将对边界值进行六次测试。
 比较我们天真的测试员Robbin所做的事情：他确实达到了一个边界值（100美元），尽管它比设计更偶然。因此，除了仅测试一半分区外，Robbin仅测试了六分之一的边界（因此他在查找任何边界缺陷方面效率较低）。
@@ -99,10 +99,10 @@ Capabilities通常是面向用户的（user-oriented），反映了用户视角�
     
     <item>
       <title>测试用例设计方法-因果图法</title>
-      <link>https://naod.com.cn/test-cause-effectgraphing/</link>
+      <link>https://naod.com.cn/2018/03/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%9B%A0%E6%9E%9C%E5%9B%BE%E6%B3%95/</link>
       <pubDate>Sun, 11 Mar 2018 13:34:41 +0000</pubDate>
       
-      <guid>https://naod.com.cn/test-cause-effectgraphing/</guid>
+      <guid>https://naod.com.cn/2018/03/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%9B%A0%E6%9E%9C%E5%9B%BE%E6%B3%95/</guid>
       <description>定义 因果图法是一种利用图解法分析输入的各种组合情况，从而设计测试用例的方法，它适合于检查程序输入条件的各种组合情况。
 应用 等价类划分法和边界值分析方法都是着重考虑输入条件，但没有考虑输入条件的各种组合、输入条件之间的相互制约关系。这样虽然各种输入条件可能出错的情况已经测试到了，但多个输入条件组合起来可能出错的情况却被忽视了。
 如果在测试时必须考虑输入条件的各种组合，则可能的组合数目将是天文数字，因此必须考虑采用一种适合于描述多种条件的组合、相应产生多个动作的形式来进行测试用例的设计，这就需要利用因果图（逻辑模型）。
@@ -122,10 +122,10 @@ Capabilities通常是面向用户的（user-oriented），反映了用户视角�
     
     <item>
       <title>测试用例设计方法-功能图法</title>
-      <link>https://naod.com.cn/test-functionchart/</link>
+      <link>https://naod.com.cn/2018/02/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%8A%9F%E8%83%BD%E5%9B%BE%E6%B3%95/</link>
       <pubDate>Thu, 01 Feb 2018 13:34:41 +0000</pubDate>
       
-      <guid>https://naod.com.cn/test-functionchart/</guid>
+      <guid>https://naod.com.cn/2018/02/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%8A%9F%E8%83%BD%E5%9B%BE%E6%B3%95/</guid>
       <description>定义 功能图由状态迁移图和布尔函数组成.状态迁移图用状态和迁移来描述.一个状态指出数据输入的位置（或时间）,而迁移则指明状态的改变.同时要依靠判定表或因果图表示的逻辑功能.例,一个简化的自动出纳机ATM的功能图。
 应用 1. 功能图介绍 一个程序的功能说明通常由动态说明和静态说明组成.动态说明描述了输入数据的次序或转移的次序.
 静态说明描述了输入条件与输出条件之间的对应关系.对于较复杂的程序,由于存在大量的组合情况,因此,仅用静态说明组成的规格说明对于测试来说往往是不够的.必须用动态说明来补充功能说明.功能图方法是用功能图FD形式化地表示程序的功能说明,并机械地生成功能图的测试用例.
@@ -138,10 +138,10 @@ Capabilities通常是面向用户的（user-oriented），反映了用户视角�
     
     <item>
       <title>测试用例设计方法-决策表</title>
-      <link>https://naod.com.cn/test-decision-table/</link>
+      <link>https://naod.com.cn/2018/01/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%86%B3%E7%AD%96%E8%A1%A8/</link>
       <pubDate>Thu, 04 Jan 2018 13:34:41 +0000</pubDate>
       
-      <guid>https://naod.com.cn/test-decision-table/</guid>
+      <guid>https://naod.com.cn/2018/01/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95-%E5%86%B3%E7%AD%96%E8%A1%A8/</guid>
       <description>等价划分和边界值分析技术通常应用于特定情况或输入。但是，如果输入的不同组合导致采取不同的操作，则使用等效分区和边界值分析可能更难以显示，这往往更侧重于用户界面。
 另外两种基于规范的软件测试技术，决策表和状态转换测试更侧重于业务逻辑或业务规则。
 一个决策表的处理（例如输入）的东西组合的好方法。该技术有时也称为“因果”表。
@@ -178,10 +178,10 @@ tryqa 其原因在于存在一种称为“因果图形”的相关逻辑图表�
     
     <item>
       <title>如何去做需求评审和需求分析</title>
-      <link>https://naod.com.cn/how-to-do-test1/</link>
+      <link>https://naod.com.cn/2016/08/%E5%A6%82%E4%BD%95%E5%8E%BB%E5%81%9A%E9%9C%80%E6%B1%82%E8%AF%84%E5%AE%A1%E5%92%8C%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/</link>
       <pubDate>Sun, 28 Aug 2016 14:26:21 +0000</pubDate>
       
-      <guid>https://naod.com.cn/how-to-do-test1/</guid>
+      <guid>https://naod.com.cn/2016/08/%E5%A6%82%E4%BD%95%E5%8E%BB%E5%81%9A%E9%9C%80%E6%B1%82%E8%AF%84%E5%AE%A1%E5%92%8C%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/</guid>
       <description>需求评审和需求分析是作为软件测试工程师工作中常见的工作内容 如何做好软件需求分析和需求评审，我常用的一些评审点如下：
 设计方案正确性、先进性、可行性；
 系统组成、系统要求及接口协调的合理性；

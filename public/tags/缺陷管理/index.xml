@@ -10,10 +10,10 @@
     <lastBuildDate>Fri, 20 Mar 2020 09:55:17 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/%E7%BC%BA%E9%99%B7%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>测试人员复现BUG的一些思路</title>
-      <link>https://naod.com.cn/some-skill-for-bug/</link>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E5%A4%8D%E7%8E%B0bug%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%B7%AF/</link>
       <pubDate>Fri, 20 Mar 2020 09:55:17 +0000</pubDate>
       
-      <guid>https://naod.com.cn/some-skill-for-bug/</guid>
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E5%A4%8D%E7%8E%B0bug%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%B7%AF/</guid>
       <description>对于测试人员，被开发人员要求复现BUG是家常便饭。特别针对在测试过程中低概率出现的BUG，会让我们觉得难以着手。下面我就谈一谈我的一些思路吧。 我认为一个BUG是由三个要素构成的：环境、数据、操作步骤。那么如何从这三点入手，总结了以下思路：
 1.BUG本地“再现” （1）确定问题发生的环境，比如哪个浏览器的哪个版本发生的此现象。 （2）使用导致问题出现的数据。 （3）按照之前的操作步骤进行操作，使BUG再次出现
 2.分析本地复现BUG需要的环境、数据、步骤，找出根本原因 （1）查看其他浏览器在相同数据，同样操作步骤的情况下是否仍旧会使该BUG出现。明确是否是特定浏览器，还是在其他浏览器都会出现。

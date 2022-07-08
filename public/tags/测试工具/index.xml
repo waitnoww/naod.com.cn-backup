@@ -10,29 +10,29 @@
     <lastBuildDate>Sun, 24 May 2020 09:40:00 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在RaspberryPi上安装Jenkins</title>
-      <link>https://naod.com.cn/raspberrypi-jenkins/</link>
+      <link>https://naod.com.cn/2020/05/%E5%9C%A8raspberrypi%E4%B8%8A%E5%AE%89%E8%A3%85jenkins/</link>
       <pubDate>Sun, 24 May 2020 09:40:00 +0000</pubDate>
       
-      <guid>https://naod.com.cn/raspberrypi-jenkins/</guid>
+      <guid>https://naod.com.cn/2020/05/%E5%9C%A8raspberrypi%E4%B8%8A%E5%AE%89%E8%A3%85jenkins/</guid>
       <description>安装Java pi@raspberrypi:~ $ java -version java version &amp;#34;1.8.0_65&amp;#34; Java(TM) SE Runtime Environment (build 1.8.0_65-b17) Java HotSpot(TM) Client VM (build 25.65-b01, mixed mode) 安装Jenkins pi@raspberrypi:~ $ wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add - OK pi@raspberrypi:~ $ sudo sh -c &amp;#39;echo deb http://pkg.jenkins.io/debian-stable binary/ &amp;gt; /etc/apt/sources.list.d/jenkins.list&amp;#39; pi@raspberrypi:~ $ sudo apt-get update Ign http://pkg.jenkins.io binary/ InRelease Get:1 http://mirrordirector.raspbian.org jessie InRelease [15.0 kB] Get:2 http://pkg.jenkins.io binary/ Release.gpg [181 B] Get:3 http://pkg.jenkins.io binary/ Release [2,042 B] Get:4 http://archive.</description>
     </item>
     
     <item>
       <title>Git简易上手指南</title>
-      <link>https://naod.com.cn/git-awsome-1/</link>
+      <link>https://naod.com.cn/2020/04/git%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/</link>
       <pubDate>Thu, 16 Apr 2020 11:18:30 +0000</pubDate>
       
-      <guid>https://naod.com.cn/git-awsome-1/</guid>
+      <guid>https://naod.com.cn/2020/04/git%E7%AE%80%E6%98%93%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/</guid>
       <description>[TOC]
 Git安装 推荐官网安装，上链接：https://gitscm.com/downloads/ 默认设置安装即可 配置ssh 打开安装完成git中的git bash 输入ssh-keygen -t rsa -C &amp;lsquo;xxx@xxx.com&amp;rsquo; （xxx@xxx.com是你的邮箱地址） 一路按回车键，等待命令执行完成 然后找到你电脑目录中打开~/.ssh/id_rsa.pub文件 复制id_rsa.pub文件中的内容到github或者gitlab的ssh key中即可完成设置 Git命令 # 在当前目录新建一个Git代码库 $ git init # 新建一个目录，将其初始化为Git代码库 $ git init [project-name] # 下载一个项目和它的整个代码历史 $ git clone [url] # 添加指定文件到暂存区 $ git add [file1] [file2] ... # 添加指定目录到暂存区，包括子目录 $ git add [dir] # 添加当前目录的所有文件到暂存区 $ git add . # 添加每个变化前，都会要求确认 # 对于同一个文件的多处变化，可以实现分次提交 $ git add -p # 删除工作区文件，并且将这次删除放入暂存区 $ git rm [file1] [file2] .</description>
     </item>
     
     <item>
       <title>mac Unable to access Android SDK add-on list</title>
-      <link>https://naod.com.cn/mac-android-studio-unable/</link>
+      <link>https://naod.com.cn/2020/04/mac-unable-to-access-android-sdk-add-on-list/</link>
       <pubDate>Wed, 01 Apr 2020 14:02:09 +0000</pubDate>
       
-      <guid>https://naod.com.cn/mac-android-studio-unable/</guid>
+      <guid>https://naod.com.cn/2020/04/mac-unable-to-access-android-sdk-add-on-list/</guid>
       <description>当我的Mac搭建好Android Studio环境后，第一次使用Android Studio时，会提示Unable to access Android SDK add-on list，如下图所示： 网上查询到的解决方法也是Windows中的相同：打开bin\idea.properties这个文件，末尾添加一行disable.android.first.run=true就行了。
 那问题来了，刚刚入手mac的我来说，首要的问题是怎么找到bin\idea.properties这个文件
 继续网上检索到最后的答案是：
@@ -41,10 +41,10 @@ Git安装 推荐官网安装，上链接：https://gitscm.com/downloads/ 默认�
     
     <item>
       <title>缺陷平台引入阶段定义解析</title>
-      <link>https://naod.com.cn/bug-manage-1/</link>
+      <link>https://naod.com.cn/2020/03/%E7%BC%BA%E9%99%B7%E5%B9%B3%E5%8F%B0%E5%BC%95%E5%85%A5%E9%98%B6%E6%AE%B5%E5%AE%9A%E4%B9%89%E8%A7%A3%E6%9E%90/</link>
       <pubDate>Sun, 15 Mar 2020 15:25:23 +0000</pubDate>
       
-      <guid>https://naod.com.cn/bug-manage-1/</guid>
+      <guid>https://naod.com.cn/2020/03/%E7%BC%BA%E9%99%B7%E5%B9%B3%E5%8F%B0%E5%BC%95%E5%85%A5%E9%98%B6%E6%AE%B5%E5%AE%9A%E4%B9%89%E8%A7%A3%E6%9E%90/</guid>
       <description>“缺陷引入阶段”分以下几种： 1.历史遗留 2.需求分析 3.产品设计 4.编码实现 5.需求变更 不同阶段含义解释 1.历史遗留
 属于历史版本，继承版本或移植代码中的问题，非新开发引入的问题
 2.需求分析
@@ -59,10 +59,10 @@ Git安装 推荐官网安装，上链接：https://gitscm.com/downloads/ 默认�
     
     <item>
       <title>Mantis BUG管理平台使用手册</title>
-      <link>https://naod.com.cn/mantis-user-1/</link>
+      <link>https://naod.com.cn/2020/03/mantis-bug%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</link>
       <pubDate>Fri, 13 Mar 2020 09:17:57 +0000</pubDate>
       
-      <guid>https://naod.com.cn/mantis-user-1/</guid>
+      <guid>https://naod.com.cn/2020/03/mantis-bug%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</guid>
       <description>Mantis BUG管理平台使用手册 登录 登录地址：https://mantisbt.org/bugs/my_view_page.php 账号密码：自己注册账号密码 首页 首页会展示“等待我解决的问题”数量和“我报告的未解决的问题”数量 同样会展示项目新闻，RSS信息 我的视图 登录之后首先进入“我的视图”页，这里显示5类问题：
 指定给我的：需要由登录者处理的问题 未指定的：已经报告但尚未分配到开发人员的问题 由我报告的：由登录者本人报告的问题 已解决的 最近修改 我正在监视的：用户可以选择需要关注的问题进行监视 注：页面右上角有一个切换项目的下拉菜单，可以选择查看本人需要关注的某个项目的问题。不同状态的问题会有不同的颜色标注。 查看问题 查看问题页面上面一部分为查询条件组合（过滤器），用户可以指定查找问题的条件，点击某项之后将出现下拉菜单供用户选择； 功能点有：
 高级过滤器：全部塞选条件 创建固定链接：给选择好的过滤条件创建一个固定的链接，给其他人访问 重置过滤器：重置所选择的塞选过滤条件 保存当前过滤器：保存当前所选择的塞选过滤条件 查看问题页面下面一部分为所有问题列表，列出了问题的摘要信息，点击问题之后将出现“查看问题详细资料”页，也可以将塞选过滤查询出的问题打印成报告和导出CSV文件
@@ -75,10 +75,10 @@ Git安装 推荐官网安装，上链接：https://gitscm.com/downloads/ 默认�
     
     <item>
       <title>测试小工具一期-录屏工具</title>
-      <link>https://naod.com.cn/some-test-tool-01/</link>
+      <link>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%B0%8F%E5%B7%A5%E5%85%B7%E4%B8%80%E6%9C%9F-%E5%BD%95%E5%B1%8F%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Tue, 03 Mar 2020 20:03:27 +0000</pubDate>
       
-      <guid>https://naod.com.cn/some-test-tool-01/</guid>
+      <guid>https://naod.com.cn/2020/03/%E6%B5%8B%E8%AF%95%E5%B0%8F%E5%B7%A5%E5%85%B7%E4%B8%80%E6%9C%9F-%E5%BD%95%E5%B1%8F%E5%B7%A5%E5%85%B7/</guid>
       <description>前言 工欲善其事必先利其器，这将是一个工具介绍合集，此文只是其一。
 在实际测试工作过程中，我们经常需要很清晰的描述BUG的复现步骤，除了详细的文字描述外，bug复现步骤的录制GIF图更能接地气的直接反应发现bug的过程。
 下面会介绍几个录屏工具，供大家选取使用。
@@ -101,10 +101,10 @@ Git安装 推荐官网安装，上链接：https://gitscm.com/downloads/ 默认�
     
     <item>
       <title>测试工具合集</title>
-      <link>https://naod.com.cn/some-test-tool-02/</link>
+      <link>https://naod.com.cn/2016/09/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/</link>
       <pubDate>Sun, 04 Sep 2016 13:34:41 +0000</pubDate>
       
-      <guid>https://naod.com.cn/some-test-tool-02/</guid>
+      <guid>https://naod.com.cn/2016/09/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/</guid>
       <description>测试相关 测试论坛 谷歌测试博客：http://googletesting.blogspot.com/
 testerhome：https://testerhome.com/
 51testing：http://bbs.51testing.com/forum.php
