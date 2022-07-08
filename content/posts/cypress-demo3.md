@@ -1,7 +1,6 @@
 ---
 title: "Cypress UI 自动化测试框架学习（3）- 元素定位，操作和断言"
 date: 2022-07-08T09:49:24+08:00
-draft: true
 tags:
 - 自动化测试
 - cypress
