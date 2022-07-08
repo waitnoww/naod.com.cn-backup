@@ -2,6 +2,9 @@
 title: "Cypress UI 自动化测试框架学习（1）- 上手"
 date: 2022-07-08T09:49:24+08:00
 draft: true
+tags:
+- 自动化测试
+- cypress
 ---
 
 ## Introduction
