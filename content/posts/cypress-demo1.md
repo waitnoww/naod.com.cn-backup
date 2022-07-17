@@ -2,9 +2,11 @@
 title: "Cypress UI 自动化测试框架学习（1）- 上手"
 date: 2022-07-08T09:49:24+08:00
 tags:
-- 自动化测试
-- cypress
+  - 自动化测试
+  - cypress
 ---
+
+这一篇文章主要介绍一下如何快速上手 cypress 这个自动化测试框架
 
 ## Introduction
 
