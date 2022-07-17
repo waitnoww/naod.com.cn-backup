@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright 2022 www.naod.com.cn</copyright>
-    <lastBuildDate>Sun, 24 May 2020 09:40:00 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jul 2022 09:49:24 +0800</lastBuildDate><atom:link href="https://naod.com.cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cypress</title>
+      <link>https://naod.com.cn/tags/cypress/</link>
+      <pubDate>Fri, 08 Jul 2022 09:49:24 +0800</pubDate>
+      
+      <guid>https://naod.com.cn/tags/cypress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>自动化测试</title>
+      <link>https://naod.com.cn/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Fri, 08 Jul 2022 09:49:24 +0800</pubDate>
+      
+      <guid>https://naod.com.cn/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>jenkins</title>
       <link>https://naod.com.cn/tags/jenkins/</link>
